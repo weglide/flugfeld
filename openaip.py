@@ -1,7 +1,7 @@
 import csv
 import json
 import os
-from typing import Optional, Any, Callable
+from typing import Any, Callable, Optional
 from xml.etree import ElementTree as ET  # type: ignore
 
 import numpy as np
@@ -9,14 +9,16 @@ from geojson import Feature, FeatureCollection
 from geojson import Point as GeoJsonPoint
 from geojson import dump
 from scipy.spatial.distance import cdist
+from shapely.geometry import Point
+from shapely.wkt import dumps
 from timezonefinder import TimezoneFinder
 
-
+WGS_84_SRID: int = 4326
 EARTH_RADIUS_KM: float = 6371.0
 METER_PER_FEET: float = 0.3048
 
 AIRPORT_DATA = "data/"
-CONTINENTS = "continents.json"
+CONTINENTS = "geo/continents.json"
 GEOJSON_DUMP = "airport.geojson"
 
 
@@ -151,10 +153,11 @@ class OpenAipParser:
                 self.identifiers.append(identifier)
 
             name = match["name"] if match is not None else openaip_name.title()
+            if (timezone := self.tf.timezone_at(lng=lon, lat=lat)) is None:
+                continue
             properties = {
                 "id": identifier,
-                "latitude": lat,
-                "longitude": lon,
+                "geom_wkt": dumps(Point(lon, lat), WGS_84_SRID),
                 "name": name,
                 "openaip_name": openaip_name,
                 "kind": kind,
@@ -167,7 +170,7 @@ class OpenAipParser:
                 "reign": 256 if match is not None else 0,
                 "openaip_elevation": elevation,
                 "elevation": elevation,
-                "timezone": self.tf.timezone_at(lng=lon, lat=lat),
+                "timezone": timezone,
                 **radio,
                 **rwy,
             }
