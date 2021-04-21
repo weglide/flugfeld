@@ -1,4 +1,4 @@
-name: Test
+name: Tests
 
 on: [push, pull_request]
 
@@ -15,6 +15,6 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Run test
+    - name: Run tests
       run: python test.py
   
