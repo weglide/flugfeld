@@ -9,8 +9,6 @@ from geojson import Feature, FeatureCollection
 from geojson import Point as GeoJsonPoint
 from geojson import dump
 from scipy.spatial.distance import cdist
-from shapely.geometry import Point
-from shapely.wkt import dumps
 from timezonefinder import TimezoneFinder
 
 WGS_84_SRID: int = 4326
@@ -157,7 +155,6 @@ class OpenAipParser:
                 continue
             properties = {
                 "id": identifier,
-                "geom_wkt": dumps(Point(lon, lat), WGS_84_SRID),
                 "name": name,
                 "openaip_name": openaip_name,
                 "kind": kind,
