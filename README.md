@@ -9,6 +9,8 @@ Maintained list of worldwide airfields with gliding activity with number of laun
 This list is used internally at WeGlide to make airports appear on the map based on their 'importance' in the gliding world.
 We are syncing the number of flights from the airfields (uploaded on WeGlide) on a yearly basis.
 
+Additionally, this repo contains all kinds of sectors/regions one might want to filter for. Contributions are always welcomed!
+
 ## OpenAIP Link
 
 To link GliderList to OpenAIP, you first need to get a custom export URL from them.
@@ -36,7 +38,7 @@ If you find an airfield with gliding activity missing, there are two steps.
 
 ### Airfield not in administrative region
 
-OpenAIP does not provide administrative regions. All airfields that are not in this list (For example EDDF) only berlong to a country,
+OpenAIP does not provide administrative regions. All airfields that are not in this list (For example EDDF) only belong to a country,
 not to a particular region. If there is in fact gliding activity on this airfield, you can add it here.
 
 ### Number of launches
@@ -61,14 +63,14 @@ This in parts due to airport information missing on OpenAIP
 ### Sectors
 
 The sectors.json file describes all sectors that do not match administrative regions. You may add relevant sectors of your choice.
-Just copy and paste the content of the file [here](https://geojson.io/) to have a look at already existing sectors.
+Just copy and paste the content of the file [here](https://geojson.io/) or look at the GitHub preview to get an overview of already existing sectors.
 
 Order of languages is German, English, French, Dutch, Czech, Italian, Polish.
 
 ### Multi Regions
 
 Multi regions are filters that combine multiple regions or countries. You may add relevant multi regions of your choice.
-Multi regions can contains both, countries and regions.
+Multi regions can contain both, countries and regions.
 
 ## Tiles
 
@@ -93,7 +95,7 @@ Then, to render the tiles
 tippecanoe -Z3 -z14 -f -r1 -pk -pf -J airport_filter.json -o airport.mbtiles airport.geojson
 ```
 
-To have a look at the tiles, run
+To have a look at the tiles, run the code below and open ``localhost:8080`` in your browser.
 
 ```bash
 docker run --rm -it -v $(pwd):/data -p 8080:80 maptiler/tileserver-gl
