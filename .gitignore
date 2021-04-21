@@ -3,6 +3,16 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# VSCODE
+.vscode/*
+
+# Data dir
+/data/*
+
+# Mbtiles and geojson
+*.geojson
+*.mbtiles
+
 # User-specific files
 *.rsuser
 *.suo
