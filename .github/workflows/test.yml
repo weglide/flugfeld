@@ -1,4 +1,4 @@
-name: Python application
+name: Test
 
 on: [push, pull_request]
 
@@ -15,6 +15,6 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Run assert pk
+    - name: Run test
       run: python test.py
   
