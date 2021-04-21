@@ -96,5 +96,5 @@ tippecanoe -Z3 -z14 -f -r1 -pk -pf -J airport_filter.json -o airport.mbtiles air
 To have a look at the tiles, run
 
 ```bash
-docker run --rm -it -v $(pwd)/data:/data -p 8080:80 maptiler/tileserver-gl
+docker run --rm -it -v $(pwd):/data -p 8080:80 maptiler/tileserver-gl
 ```
