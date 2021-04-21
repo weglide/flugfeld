@@ -1,0 +1,38 @@
+{
+    "languages": [
+        "de",
+        "en",
+        "fr",
+        "nl",
+        "cz",
+        "it",
+        "pl"
+    ],
+    "data": {
+        "EG": {
+            "name": [
+                "Ostdeutschland",
+                "East Germany",
+                "Allemagne de l'est",
+                "Oost-Duitsland",
+                "Východní Německo",
+                "Germania dell'est",
+                "wschodnie Niemcy"
+            ],
+            "regions": ["DE-BB", "DE-BE", "DE-MV", "DE-SN", "DE-ST", "DE-SH", "DE-TH"]
+        },
+        "IB": {
+            "name": [
+                "Iberische Halbinsel",
+                "Iberian Peninsula",
+                "péninsule Ibérique",
+                "Iberisch schiereiland",
+                "Pyrenejský poloostrov",
+                "Penisola Iberica",
+                "Półwysep Iberyjski"
+            ],
+            "regions": ["ES", "PT"]
+        }
+    }
+}
+               
