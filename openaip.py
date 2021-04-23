@@ -138,6 +138,7 @@ class OpenAipParser:
                     "rwy_name": text_or_none(rwy_xml, "NAME"),
                     "rwy_sfc": text_or_none(rwy_xml, "SFC"),
                     "rwy_direction": int(rwy_xml.find("DIRECTION").attrib["TC"]),
+                    "runway_rotation": int(rwy_xml.find("DIRECTION").attrib["TC"]),
                     "rwy_length": and_then(text_or_none(rwy_xml, "LENGTH"), float),
                     "rwy_width":  and_then(text_or_none(rwy_xml, "WIDTH"), float),
                     "rwy_strength": text_or_none(rwy_xml, "STRENGTH"),
