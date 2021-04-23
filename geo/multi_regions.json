@@ -9,6 +9,30 @@
         "pl"
     ],
     "data": {
+        "NG": {
+            "name": [
+                "Norddeutschland",
+                "North Germany",
+                "Allemagne du Nord",
+                "Noord-Duitsland",
+                "Severní Německo",
+                "Germania settentrionale",
+                "Północne Niemcy"
+            ],
+            "regions": ["DE-SH", "DE-HB", "DE-HH", "DE-MV", "DE-NI"]
+        },
+        "WG": {
+            "name": [
+                "Westdeutschland",
+                "West Germany",
+                "Allemagne de l'Ouest",
+                "West-Duitsland",
+                "západní Německo",
+                "Germania dell'Ovest",
+                "Zachodnie Niemcy"
+            ],
+            "regions": ["DE-NW", "DE-HE", "DE-RP", "DE-SL"]
+        },
         "EG": {
             "name": [
                 "Ostdeutschland",
@@ -19,7 +43,19 @@
                 "Germania dell'est",
                 "wschodnie Niemcy"
             ],
-            "regions": ["DE-BB", "DE-BE", "DE-MV", "DE-SN", "DE-ST", "DE-SH", "DE-TH"]
+            "regions": ["DE-BB", "DE-BE", "DE-SN", "DE-ST", "DE-TH"]
+        },
+        "SG": {
+            "name": [
+                "Süddeutschland",
+                "South Germany",
+                "Allemagne du Sud",
+                "Zuid-Duitsland",
+                "Jižní Německo",
+                "Germania meridionale",
+                "Południowe Niemcy"
+            ],
+            "regions": ["DE-BW", "DE-BY"]
         },
         "IB": {
             "name": [
