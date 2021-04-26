@@ -30,6 +30,17 @@ def test_countries_and_regions():
             assert_region(row[0], countries)
 
 
+def test_unique_id():
+    with open("flugfeld.csv") as file:
+        reader = csv.reader(file, delimiter=",")
+        next(reader)
+        seen = set()
+        for row in reader:
+            if row[5] == "x":
+                continue
+            assert row[3] not in seen
+            seen.add(row[3])
+        
 def test_multi_regions():
     for k, v in multi_regions.items():
         for r in v["regions"]:
