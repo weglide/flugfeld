@@ -40,7 +40,8 @@ def test_unique_id():
                 continue
             assert row[3] not in seen
             seen.add(row[3])
-        
+
+
 def test_multi_regions():
     for k, v in multi_regions.items():
         for r in v["regions"]:

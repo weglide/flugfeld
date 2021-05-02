@@ -159,7 +159,6 @@ class OpenAipParser:
                 "name": name,
                 "openaip_name": openaip_name,
                 "kind": kind,
-                "country": country,
                 "region": match["region"] if match is not None else country,
                 "continent": self.find_continent(country),
                 "launches": match["launches"] if match is not None else None,
