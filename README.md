@@ -13,7 +13,7 @@ Additionally, this repo contains all kinds of sectors/regions one might want to 
 
 ## OpenAIP Link
 
-To link GliderList to OpenAIP, you first need to get a custom export URL from them.
+To link **flugfeld** to OpenAIP, you first need to get a custom export URL from them.
 Then you can download the data into data dir
 
 ```bash
