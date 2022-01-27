@@ -9,6 +9,18 @@
         "pl"
     ],
     "data": {
+        "BNL": {
+            "name": [
+                "BeNeLux",
+                "BeNeLux",
+                "BeNeLux",
+                "BeNeLux",
+                "BeNeLux",
+                "BeNeLux",
+                "BeNeLux"
+            ],
+            "regions": ["BE", "NL", "LU"]
+        },
         "NG": {
             "name": [
                 "Norddeutschland",
