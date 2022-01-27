@@ -266,7 +266,31 @@
                         "Belgie",
                         "Belgio",
                         "Belgia"
-                    ]
+                    ],
+                    "regions": {
+                        "BE-VLG": {
+                            "name": [
+                                "Flandern",
+                                "Flanders",
+                                "Flandre",
+                                "Vlaanderen",
+                                "Flandry",
+                                "Fiandre",
+                                "Flandria"
+                            ]
+                        },
+                        "BE-WAL": {
+                            "name": [
+                                "Wallonien",
+                                "Wallonia",
+                                "Wallonie",
+                                "Wallonië",
+                                "Valonsko",
+                                "Vallonia",
+                                "Walonia"
+                            ]
+                        }
+                    }
                 },
                 "BG": {
                     "name": [
