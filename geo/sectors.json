@@ -5,7 +5,15 @@
             "type": "Feature",
             "id": "ALP",
             "properties": {
-                "name": ["Alpen", "Alps", "Alpes", "Alpen", "Alpy", "Alpi", "Alpy"]
+                "name": [
+                    "Alpen",
+                    "Alps",
+                    "Alpes",
+                    "Alpen",
+                    "Alpy",
+                    "Alpi",
+                    "Alpy"
+                ]
             },
             "geometry": {
                 "type": "Polygon",
