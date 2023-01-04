@@ -13,18 +13,12 @@ Additionally, this repo contains all kinds of sectors/regions one might want to 
 
 ## OpenAIP Link
 
-To link **flugfeld** to OpenAIP, you first need to get a custom export URL from them.
-Then you can download the data into data dir
+To link **flugfeld** to OpenAIP, you first need to register at OpenAIP and get a custom API client.
+Then you can download and parse the data
 
 ```bash
-export OPENAIP_URL=your_custom_url
-bash download.sh
-```
-
-Link the data (creates a .geojson file) with
-
-```bash
-python openaip.py
+export X-OPENAIP-CLIENT-ID=your_client_id
+python -m src.openaip.py
 ```
 
 ## Contributing
@@ -95,7 +89,13 @@ Then, to render the tiles
 tippecanoe -Z3 -z14 -f -r1 -pk -pf -J airport_filter.json -o airport.mbtiles airport.geojson
 ```
 
-To have a look at the tiles, run the code below and open ``localhost:8080`` in your browser.
+To only include important fields, run
+
+```bash
+tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -J airport_filter.json -o airport.mbtiles airport.geojson
+```
+
+To have a look at the tiles, run the code below and open `localhost:8080` in your browser.
 
 ```bash
 docker run --rm -it -v $(pwd):/data -p 8080:80 maptiler/tileserver-gl

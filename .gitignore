@@ -6,9 +6,6 @@
 # VSCODE
 .vscode/*
 
-# Data dir
-/data/*
-
 # Mbtiles and geojson
 *.geojson
 *.mbtiles
