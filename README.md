@@ -18,7 +18,7 @@ Then you can download and parse the data
 
 ```bash
 export X-OPENAIP-CLIENT-ID=your_client_id
-python -m src.openaip.py
+python -m src.download
 ```
 
 ## Contributing
@@ -86,13 +86,7 @@ make install
 Then, to render the tiles
 
 ```bash
-tippecanoe -Z3 -z14 -f -r1 -pk -pf -J airport_filter.json -o airport.mbtiles airport.geojson
-```
-
-To only include important fields, run
-
-```bash
-tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -J airport_filter.json -o airport.mbtiles airport.geojson
+tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -J airport_filter.json -o airport.mbtiles airport.geojson
 ```
 
 To have a look at the tiles, run the code below and open `localhost:8080` in your browser.

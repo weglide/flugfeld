@@ -134,8 +134,6 @@ class OpenAipParser:
         self.features: dict[int, Any] = {f["properties"]["id"]: f for f in features}
 
     def as_feature(self, item: dict[str, Any]) -> Feature | None:
-        if not item["approved"]:
-            return None
         openaip_id = item["_id"]
         kind = OpenAipKind(int(item["type"]))
         if kind in (OpenAipKind.HELIPORT_CIVIL, OpenAipKind.HELIPORT_MILITARY):
@@ -199,6 +197,8 @@ class OpenAipParser:
         if (timezone := self.tf.timezone_at(lng=lon, lat=lat)) is None:
             return None
         properties: dict[str, Any] = {
+            "lng": lon,
+            "lat": lat,
             "id": db_id,
             "openaip_id": openaip_id,
             "name": name,
