@@ -68,16 +68,10 @@ Multi regions can contain both, countries and regions.
 
 ## Tiles
 
-To render mbtiles from geojson, we suggest using [tippecanoe](https://github.com/mapbox/tippecanoe). Install on OS X with
+To render mbtiles from geojson, we suggest using [tippecanoe](https://github.com/felt/tippecanoe). Install on OS X with
 
 ```bash
-brew install tippecanoe
-```
-
-or on Ubuntu with
-
-```bash
-git clone https://github.com/mapbox/tippecanoe.git
+git clone https://github.com/felt/tippecanoe.git
 cd tippecanoe
 make -j
 make install
