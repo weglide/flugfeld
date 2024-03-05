@@ -50,10 +50,12 @@ jobs:
       
     - name: Bake tiles
       run: |
-        tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -J airport_filter.json -o airport.mbtiles airport.geojson
-
-    - name: Copy mbtiles to S3
+        tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -J airport_filter.json -o airport.pmtiles airport.geojson
+      
+    - name: Copy pmtiles to S3
       env: 
         AWS_S3_TILE_BUCKET: ${{ secrets.AWS_S3_TILE_BUCKET }}
       run: |
-        aws s3 cp airport.mbtiles s3://$AWS_S3_TILE_BUCKET/airport.mbtiles
+        aws s3 cp airport.pmtiles s3://$AWS_S3_TILE_BUCKET/airport.pmtiles
+
+    
