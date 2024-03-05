@@ -35,3 +35,24 @@ jobs:
         AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
       run: |
         aws s3 cp airport.geojson s3://$AWS_S3_BUCKET/airport.geojson
+        
+    - name: Checkout tippecanoe
+      uses: actions/checkout@v4
+      with:
+        repository: mapbox/tippecanoe
+    
+    - name: Build tippecanoe
+      run: |
+        cd tippecanoe
+        make -j
+        make install
+      
+    - name: Build mbtiles
+      run: |
+        tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -J airport_filter.json -o airport.mbtiles airport.geojson
+
+    - name: Copy mbtiles to S3
+      env: 
+        AWS_S3_BUCKET: ${{ secrets.AWS_S3_TILE_BUCKET }}
+      run: |
+        aws s3 cp airport.mbtiles s3://$AWS_S3_TILE_BUCKET/airport.mbtiles
