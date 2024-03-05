@@ -39,7 +39,7 @@ jobs:
     - name: Checkout tippecanoe
       uses: actions/checkout@v4
       with:
-        repository: mapbox/tippecanoe
+        repository: felt/tippecanoe
         path: tippecanoe
     
     - name: Build tippecanoe
