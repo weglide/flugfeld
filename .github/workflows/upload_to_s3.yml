@@ -46,10 +46,9 @@ jobs:
       run: |
         cd tippecanoe
         make -j
-        make install
-        cd ..
+        sudo make install
       
-    - name: Build mbtiles
+    - name: Bake tiles
       run: |
         tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -J airport_filter.json -o airport.mbtiles airport.geojson
 
