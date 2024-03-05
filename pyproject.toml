@@ -5,7 +5,7 @@ description = ""
 authors = ["Your Name <you@example.com>"]
 
 [tool.poetry.dependencies]
-python = "=3.12"
+python = "^3.12"
 numpy = "^1.26.4"
 geojson = "^3.1.0"
 timezonefinder = "^6.4.1"
@@ -14,7 +14,7 @@ python-dotenv = "^1.0.1"
 requests = "^2.31.0"
 
 [tool.poetry.group.dev.dependencies]
-pytest = "^6.2.3"
+pytest = "^8.0.2"
 ruff = "^0.3.0"
 
 [build-system]
