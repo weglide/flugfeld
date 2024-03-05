@@ -1,3 +1,4 @@
+import argparse
 import csv
 import datetime as dt
 import json
@@ -15,6 +16,7 @@ from timezonefinder import TimezoneFinder
 
 from src.api_types import FrequencyKind, OpenAipKind, RunwayComposition
 
+logging.basicConfig(level=logging.INFO, format="%(message)s")
 logger = logging.getLogger(__name__)
 
 WGS_84_SRID: int = 4326
@@ -28,16 +30,17 @@ GEOJSON_DUMP = "airport.geojson"
 AIRPORT_URL = "https://api.core.openaip.net/api/airports"
 
 load_dotenv()
-CLIENT_ID = os.environ["X-OPENAIP-CLIENT-ID"]
+CLIENT_ID = os.environ["X_OPENAIP_CLIENT_ID"]
 
 
 class OpenAipParser:
-    def __init__(self):
+    def __init__(self, add_new_airports: bool = False) -> None:
         self.tf = TimezoneFinder()
         self.identifiers: list[int] = []
         self.lat: list[int] = []
         self.lon: list[int] = []
         self.no_existing_ids: list[tuple[int, str, str]] = []
+        self.add_new_airports = add_new_airports
 
         with open(CONTINENTS) as json_file:
             self.continents = json.load(json_file)
@@ -95,7 +98,8 @@ class OpenAipParser:
             self.assign_reign()
             logger.info("Assigned reign")
 
-        self.write_new_mapping()
+        if self.add_new_airports:
+            self.write_new_mapping()
 
     def write_new_mapping(self) -> None:
         # write new ids
@@ -130,7 +134,10 @@ class OpenAipParser:
         features = [self.as_feature(item) for item in airports]
         features = [f for f in features if f is not None]
         logger.info(f"Converted {len(features)} to features (HELIPORTS are excluded)")
-        logger.info(f"{len(self.no_existing_ids)} new airports")
+        if self.add_new_airports:
+            logger.info(f"{len(self.no_existing_ids)} new airports added")
+        else:
+            logger.info("No new airports added (use --new)")
 
         self.features: dict[int, Any] = {f["properties"]["id"]: f for f in features}
 
@@ -184,6 +191,8 @@ class OpenAipParser:
         match = None
         db_id = self.pk_mapping.get(openaip_id, {}).get("id")
         if db_id is None:
+            if not self.add_new_airports:
+                return None
             self.max_id += 1
             db_id = self.max_id
             self.no_existing_ids.append((db_id, openaip_id, openaip_name))
@@ -253,6 +262,16 @@ class OpenAipParser:
 
 
 if __name__ == "__main__":
-    aip_parser = OpenAipParser()
+    cli_parser = argparse.ArgumentParser()
+    cli_parser.add_argument(
+        "--new",
+        action="store_true",
+        help="Add new airports to the mapping",
+        default=False,
+    )
+    args = cli_parser.parse_args()
+    logger.info(f"Adding new aiports set to {args.new}")
+
+    aip_parser = OpenAipParser(add_new_airports=args.new)
     aip_parser.parse()
     aip_parser.dump_to_geojson()

@@ -9,7 +9,7 @@ Maintained list of worldwide airfields with gliding activity with number of laun
 This list is used internally at WeGlide to make airports appear on the map based on their 'importance' in the gliding world.
 We are syncing the number of flights from the airfields (uploaded on WeGlide) on a yearly basis.
 
-Additionally, this repo contains all kinds of sectors/regions one might want to filter for. Contributions are always welcomed!
+Additionally, this repo contains all kinds of sectors/regions one might want to filter for. Contributions are always welcome!
 
 ## OpenAIP Link
 
@@ -17,8 +17,16 @@ To link **flugfeld** to OpenAIP, you first need to register at OpenAIP and get a
 Then you can download and parse the data
 
 ```bash
-export X-OPENAIP-CLIENT-ID=your_client_id
+export X_OPENAIP_CLIENT_ID=your_client_id
 python -m src.download
+```
+
+This command will use the existing mapping to WeGlide primary keys in `pk_mapping.json` and ignore new airports that are not present in this file.
+To also download new airports and assign new IDs, run
+
+```bash
+export X_OPENAIP_CLIENT_ID=your_client_id
+python -m src.download --new
 ```
 
 ## Contributing
