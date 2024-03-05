@@ -54,6 +54,6 @@ jobs:
 
     - name: Copy mbtiles to S3
       env: 
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_TILE_BUCKET }}
+        AWS_S3_TILE_BUCKET: ${{ secrets.AWS_S3_TILE_BUCKET }}
       run: |
         aws s3 cp airport.mbtiles s3://$AWS_S3_TILE_BUCKET/airport.mbtiles
