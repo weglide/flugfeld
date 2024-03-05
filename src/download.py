@@ -1,24 +1,25 @@
 import csv
 import datetime as dt
 import json
+import logging
 import os
 from typing import Any
 
 import numpy as np
 import requests
 from dotenv import load_dotenv
-from geojson import Feature, FeatureCollection
+from geojson import Feature, FeatureCollection, dump
 from geojson import Point as GeoJsonPoint
-from geojson import dump
 from scipy.spatial.distance import cdist
 from timezonefinder import TimezoneFinder
 
-from .api_types import FrequencyKind, OpenAipKind, RunwayComposition
+from src.api_types import FrequencyKind, OpenAipKind, RunwayComposition
+
+logger = logging.getLogger(__name__)
 
 WGS_84_SRID: int = 4326
 EARTH_RADIUS_KM: float = 6371.0
 METER_PER_FEET: float = 0.3048
-MAX_DB_ID: int = 3218781
 
 CONTINENTS = "geo/continents.json"
 PK_MAPPING = "data/pk_mapping.json"
@@ -43,7 +44,7 @@ class OpenAipParser:
 
         with open(PK_MAPPING) as json_file:
             self.items = json.load(json_file)
-            self.max_id = max(max([v["id"] for v in self.items]), MAX_DB_ID)
+            self.max_id = max([v["id"] for v in self.items])
             self.pk_mapping = {v["openaip_id"]: v for v in self.items}
 
     def find_continent(self, country: str) -> str:
@@ -62,11 +63,11 @@ class OpenAipParser:
         return cdist(lonlat, lonlat, "euclidean") * EARTH_RADIUS_KM
 
     def dump_to_geojson(self):
-        print(f"Dumping to {GEOJSON_DUMP}...")
+        logger.info(f"Dumping to {GEOJSON_DUMP}...")
         feature_collection = FeatureCollection(list(self.features.values()))
         with open(GEOJSON_DUMP, "w") as f:
             dump(feature_collection, f, indent=4)
-        print(f"Dumped to {GEOJSON_DUMP}")
+        logger.info(f"Dumped to {GEOJSON_DUMP}")
 
     def read_csv(self):
         self.airports = {}
@@ -90,9 +91,9 @@ class OpenAipParser:
         self.read_csv()
         self.download()
         if self.features:
-            print("Assigning reign...")
+            logger.info("Assigning reign...")
             self.assign_reign()
-            print("Assigned reign")
+            logger.info("Assigned reign")
 
         self.write_new_mapping()
 
@@ -111,7 +112,7 @@ class OpenAipParser:
             ]
             combined = self.items + new_items
             json.dump(combined, json_file, indent=4)
-        print(f"Wrote new mappings for {len(new_items)} airports")
+        logger.info(f"Wrote new mappings for {len(new_items)} airports")
 
     def download(self):
         airports: list[Any] = []
@@ -122,14 +123,14 @@ class OpenAipParser:
         for i in range(1, 2 + (total_count // 1000)):
             response = requests.get(AIRPORT_URL, params={"page": i}, headers=headers)
             data = response.json()
-            print(f"{len(data['items'])} airports on page {i}")
+            logger.info(f"{len(data['items'])} airports on page {i}")
             airports.extend(data["items"])
-        print(f"Downloaded {len(airports)} airports")
+        logger.info(f"Downloaded {len(airports)} airports")
 
         features = [self.as_feature(item) for item in airports]
         features = [f for f in features if f is not None]
-        print(f"Converted {len(features)} to features (HELIPORTS are excluded)")
-        print(f"No old ids for {len(self.no_existing_ids)} airports")
+        logger.info(f"Converted {len(features)} to features (HELIPORTS are excluded)")
+        logger.info(f"{len(self.no_existing_ids)} new airports")
 
         self.features: dict[int, Any] = {f["properties"]["id"]: f for f in features}
 
@@ -246,9 +247,8 @@ class OpenAipParser:
                 if reign[i] > dist:
                     reign[i] = round(dist)
 
-        for i in range(len(reign)):
+        for i, r in enumerate(reign):
             identifier = self.identifiers[i]
-            r = reign[i]
             self.features[identifier]["properties"]["reign"] = r
 
 
