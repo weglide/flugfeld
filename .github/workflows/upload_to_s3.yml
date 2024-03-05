@@ -40,12 +40,14 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: mapbox/tippecanoe
+        path: tippecanoe
     
     - name: Build tippecanoe
       run: |
         cd tippecanoe
         make -j
         make install
+        cd ..
       
     - name: Build mbtiles
       run: |
