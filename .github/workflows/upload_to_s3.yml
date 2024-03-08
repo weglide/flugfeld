@@ -56,6 +56,6 @@ jobs:
       env: 
         AWS_S3_TILE_BUCKET: ${{ secrets.AWS_S3_TILE_BUCKET }}
       run: |
-        aws s3 cp airport.pmtiles s3://$AWS_S3_TILE_BUCKET/airport.pmtiles
+        aws s3 cp airport.pmtiles s3://$AWS_S3_TILE_BUCKET/airport-$(date +%Y).pmtiles --acl public-read
 
     
