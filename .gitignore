@@ -9,6 +9,7 @@
 # Mbtiles and geojson
 *.geojson
 *.mbtiles
+*.pmtiles
 
 # User-specific files
 *.rsuser
