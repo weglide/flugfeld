@@ -157,10 +157,13 @@ class OpenAipParser:
             frequency = next(
                 (f for f in item["frequencies"] if f["primary"]), item["frequencies"][0]
             )
+            description = frequency.get("name")
+            if description is not None:
+                description = description.title()
             radio = {
                 "radio_frequency": frequency["value"],
                 "radio_type": FrequencyKind(int(frequency["type"])).name,
-                "radio_description": frequency.get("name"),
+                "radio_description": description,
             }
 
         rwy = {}
