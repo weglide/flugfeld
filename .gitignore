@@ -6,6 +6,18 @@
 # VSCODE
 .vscode/*
 
+# data directory
+data/*
+
+# MacOS
+.DS_Store
+
+# env
+.env
+
+# tippecanoe
+tippecanoe/*
+
 # Mbtiles and geojson
 *.geojson
 *.mbtiles
