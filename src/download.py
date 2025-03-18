@@ -30,8 +30,7 @@ GEOJSON_DUMP = "airport.geojson"
 AIRPORT_URL = "https://api.core.openaip.net/api/airports"
 
 load_dotenv()
-CLIENT_ID = os.environ["X_OPENAIP_CLIENT_ID"]
-
+API_KEY = os.environ["X_OPENAIP_CLIENT_ID"]
 
 class OpenAipParser:
     def __init__(self, add_new_airports: bool = False) -> None:
@@ -120,7 +119,7 @@ class OpenAipParser:
 
     def download(self):
         airports: list[Any] = []
-        headers = {"x-openaip-client-id": CLIENT_ID}
+        headers = {"x-openaip-api-key": API_KEY}
         response = requests.get(AIRPORT_URL, headers=headers)
         data = response.json()
         total_count = data["totalCount"]
