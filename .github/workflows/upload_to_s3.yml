@@ -11,18 +11,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@main
-    - uses: actions/setup-python@v5
+    - name: Install uv
+      uses: astral-sh/setup-uv@v5
+    - name: Set up Python
+      uses: actions/setup-python@v5
       with:
-        python-version: '3.12'
-
-    - uses: Gr1N/setup-poetry@v8
+        python-version-file: "pyproject.toml"
     - name: Install dependencies
-      run: |
-        poetry install
+      run: uv sync --frozen
     - name: Download data & build geojson
       env:
         X_OPENAIP_CLIENT_ID: ${{ secrets.X_OPENAIP_CLIENT_ID }}
-      run: poetry run python -m src.download
+      run: uv run python -m src.download
     
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
