@@ -1,10 +1,8 @@
 [project]
-authors = [
-    {name = "WeGlide", email = "info@weglide.com"},
-]
+authors = [{ name = "WeGlide", email = "info@weglide.com" }]
 requires-python = "<4.0,>=3.12"
 dependencies = [
-    "numpy<2.0.0,>=1.26.4",
+    "numpy<3.0.0,>=2.0.0",
     "geojson<4.0.0,>=3.1.0",
     "timezonefinder<7.0.0,>=6.4.1",
     "scipy<2.0.0,>=1.12.0",
@@ -16,7 +14,4 @@ version = "0.1.0"
 description = ""
 
 [dependency-groups]
-dev = [
-    "pytest<9.0.0,>=8.0.2",
-    "ruff<1.0.0,>=0.3.0",
-]
+dev = ["pytest<9.0.0,>=8.0.2", "ruff<1.0.0,>=0.3.0"]
