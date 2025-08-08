@@ -20,9 +20,9 @@ def assert_region(region: str, countries: dict):
     assert country is not None, f"Country {country_str} not found"
     if "-" in region:
         assert country.get("regions") is not None, f"No regions for country {country}"
-        assert (
-            country["regions"].get(region) is not None
-        ), f"No region {region} for country {country}"
+        assert country["regions"].get(region) is not None, (
+            f"No region {region} for country {country}"
+        )
 
 
 def test_countries_and_regions():

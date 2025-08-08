@@ -32,6 +32,7 @@ AIRPORT_URL = "https://api.core.openaip.net/api/airports"
 load_dotenv()
 API_KEY = os.environ["X_OPENAIP_CLIENT_ID"]
 
+
 class OpenAipParser:
     def __init__(self, add_new_airports: bool = False) -> None:
         self.tf = TimezoneFinder()

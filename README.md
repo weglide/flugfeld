@@ -1,7 +1,3 @@
-![WeGlide flugfeld](./logo-flugfeld.png)
-
-![Tests](https://github.com/weglide/flugfeld/workflows/Tests/badge.svg)
-
 # flugfeld
 
 Maintained list of worldwide airfields with gliding activity with number of launches and link to [OpenAIP](https://www.openaip.net).
@@ -16,7 +12,7 @@ Additionally, this repo contains all kinds of sectors/regions one might want to 
 To link **flugfeld** to OpenAIP, you first need to register at OpenAIP and get a custom API client.
 Then you can download and parse the data
 
-```bash
+```sh
 export X_OPENAIP_CLIENT_ID=your_client_id
 uv run python -m src.download
 ```
@@ -24,9 +20,15 @@ uv run python -m src.download
 This command will use the existing mapping to WeGlide primary keys in `pk_mapping.json` and ignore new airports that are not present in this file.
 To also download new airports and assign new IDs, run
 
-```bash
+```sh
 export X_OPENAIP_CLIENT_ID=your_client_id
 uv run python -m src.download --new
+```
+
+## Test
+
+```sh
+uv run pytest
 ```
 
 ## Contributing
@@ -78,7 +80,7 @@ Multi regions can contain both, countries and regions.
 
 To render mbtiles from geojson, we suggest using [tippecanoe](https://github.com/felt/tippecanoe). Install on OS X with
 
-```bash
+```sh
 git clone https://github.com/felt/tippecanoe.git
 cd tippecanoe
 make -j
@@ -87,13 +89,13 @@ make install
 
 Then, to render the tiles
 
-```bash
+```sh
 tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -y radio_frequency -y radio_description -J airport_filter.json -o airport.pmtiles airport.geojson
 
 ```
 
 To have a look at the tiles, run the code below and open `localhost:8080` in your browser.
 
-```bash
+```sh
 docker run --rm -it -v $(pwd):/data -p 8080:80 maptiler/tileserver-gl
 ```
