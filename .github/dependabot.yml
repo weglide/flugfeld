@@ -3,5 +3,10 @@ updates:
   - package-ecosystem: "uv"
     directory: "/"
     schedule:
-      interval: "weekly"
+      interval: "monthly"
     target-branch: "main"
+    groups:
+      minor:
+        update-types:
+          - "minor"
+          - "patch"
