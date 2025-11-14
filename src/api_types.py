@@ -1,24 +1,35 @@
 import enum
+from typing import Optional, TypedDict
 
 
-class OpenAipKind(int, enum.Enum):
-    AIRPORT = 0
-    GLIDER_SITE = 1
-    AIRFIELD_CIVIL = 2
-    INTERNATIONAL = 3
-    HELIPORT_MILITARY = 4
-    MILITARY_AERODROME = 5
-    UL_FLYING_SITE = 6
-    HELIPORT_CIVIL = 7
-    AERODROME_CLOSED = 8
-    AIRPORT_IFR = 9
-    AIRFIELD_WATER = 10
-    LANDING_STRIP = 11
-    AGRICULTURAL_STRIP = 12
-    ALTIPORT = 13
+class AirportKind(int, enum.Enum):
+    """
+    Kind of the airport / what it is used for.
+    Some of the kinds are not interesting for us such as heliports.
+    https://docs.openaip.net/#/Airports/get_airports
+    """
+
+    AIRPORT = 0  # Airport (civil/military)
+    GLIDER_SITE = 1  # Glider Site
+    AIRFIELD_CIVIL = 2  # Airfield Civil
+    INTERNATIONAL = 3  # International Airport
+    HELIPORT_MILITARY = 4  # Heliport Military
+    MILITARY_AERODROME = 5  # Military Aerodrome
+    UL_FLYING_SITE = 6  # Ultra Light Flying Site
+    HELIPORT_CIVIL = 7  # Heliport Civil
+    AERODROME_CLOSED = 8  # Aerodrome Closed
+    AIRPORT_IFR = 9  # Airport resp. Airfield IFR
+    AIRFIELD_WATER = 10  # Airfield Water
+    LANDING_STRIP = 11  # Landing Strip
+    AGRICULTURAL_STRIP = 12  # Agricultural Landing Strip
+    ALTIPORT = 13  # Altiport
 
 
-class FrequencyKind(int, enum.Enum):
+class RadioType(int, enum.Enum):
+    """
+    Usage type for a radio frequency.
+    """
+
     Approach = 0
     APRON = 1
     Arrival = 2
@@ -44,7 +55,11 @@ class FrequencyKind(int, enum.Enum):
     Unknown = 22
 
 
-class RunwayComposition(int, enum.Enum):
+class RunwaySurface(int, enum.Enum):
+    """
+    Type of the runway surface material.
+    """
+
     Asphalt = 0
     Concrete = 1
     Grass = 2
@@ -68,3 +83,40 @@ class RunwayComposition(int, enum.Enum):
     Wood = 20
     NonBituminousMix = 21
     Unknown = 22
+
+
+class Airport(TypedDict):
+    """
+    All possible airport information for CSV.
+    """
+
+    weglide_id: Optional[
+        int
+    ]  # OpenAIP changed their IDs from int to hashes, map it for backwards compatibility.
+    openaip_id: str
+    weglide_name: Optional[
+        str
+    ]  # WeGlide name contains non-ANSI characters and better casing.
+    openaip_name: str
+    kind: str  # Name from AirportKind enum.
+    longitude: float
+    latitude: float
+    elevation: int  # MSL in meter.
+    region: str  # Two letter country code with optional region code separated by a dash. E.g. DE-BY for Bavaria, US-OR for Oregon or CH for Switzerland.
+    continent: (
+        str  # Two letter continent code. E.g. NA for North America or EU for Europe.
+    )
+    timezone: Optional[str]
+    launches: Optional[int]  # Number of total glider launches done from this Airport.
+    reign: Optional[
+        int
+    ]  # Importance score relative to nearby airports based on number of glider launches.
+    icao: Optional[str]  # ICAO code for larger airports.
+    radio_frequency: Optional[str]  # E.g. "126.880"
+    radio_type: Optional[str]  # Name from RadioType enum.
+    radio_description: Optional[str]
+    rwy_name: Optional[str]
+    rwy_sfc: Optional[str]  # Name from RunwaySurface enum.
+    rwy_direction: Optional[int]  # in degree.
+    rwy_length: Optional[int]  # in meter.
+    rwy_width: Optional[int]  # in meter.
