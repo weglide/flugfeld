@@ -2,6 +2,7 @@ import csv
 import json
 import logging
 import os
+from time import sleep
 from typing import Any, List, Optional
 
 import numpy as np
@@ -26,7 +27,10 @@ METER_PER_FEET: float = 0.3048
 AIRPORT_CSV = "airport.csv"
 AIRPORT_GEOJSON = "airport.geojson"
 OPENAIP_ENDPOINT_URL = "https://api.core.openaip.net/api/airports"
+NOMINATIM_ENDPOINT_URL = "https://nominatim.openstreetmap.org/reverse"
+WEGLIDE_ENDPOIN_URL = ""
 CONTINENTS = "geo/continents.json"
+COUNTRIES = "geo/countries.json"
 
 
 def _parse_openaip_airport(openaip_airport: Any) -> Airport:
@@ -225,19 +229,6 @@ def assign_weglide_name(airports: List[Airport]) -> List[Airport]:
     return airports
 
 
-def assign_region(airports: List[Airport]) -> List[Airport]:
-    """
-    TODO
-    Add region to country string (append separated by dash) for selected countries.
-    Region is reverse geocoded by coordinates because it is not present in OpenAIP.
-    Overwrites existing region string.
-    """
-    # Clone list before modifying.
-    airports = list(airports)
-
-    return airports
-
-
 def assign_continent(airports: List[Airport]) -> List[Airport]:
     """
     Add continent based on country part of the region (first two letters) to airports.
@@ -271,6 +262,79 @@ def assign_timezone(airports: List[Airport]) -> List[Airport]:
         lng = airport["longitude"]
         lat = airport["latitude"]
         airport["timezone"] = tz.timezone_at(lng=lng, lat=lat)
+
+    return airports
+
+
+def _get_airport_region(airport: Airport) -> str | None:
+    """
+    Makes a reverse geocoding request to OpenStreetMaps Nominatim service.
+    Requests per second should be limited to 1.
+    Send informative User-Agent header.
+    """
+    assert len(airport["region"]) == 2
+
+    params = {
+        "lon": airport["longitude"],
+        "lat": airport["latitude"],
+        "format": "json",
+        "zoom": 15,
+    }
+    headers = {"User-Agent": "WeGlide/1.0 Match airport to country and region"}
+    response = requests.get(NOMINATIM_ENDPOINT_URL, params=params, headers=headers)
+    data = response.json()
+    nominatim_region = data.get("address", {}).get("ISO3166-2-lvl4")
+
+    return nominatim_region
+
+
+def assign_region(airports: List[Airport]) -> List[Airport]:
+    """
+    Add region to country string (append separated by dash)
+    for countries with regions specified in countries.json.
+    Region is reverse geocoded by coordinates because it is not present in OpenAIP.
+    Overwrites existing region string if there should be a more detailed one.
+    """
+    # Clone list before modifying.
+    airports = list(airports)
+    missing_regions = []  # List of indices of airports missing a region.
+    with open(COUNTRIES) as json_file:
+        continents = json.load(json_file).get("data")
+        for i in range(len(airports)):
+            country = airports[i]["region"]
+            continent = airports[i]["continent"]
+            if len(country) != 2:
+                continue  # Already has a region specified.
+
+            found_continent = continents.get(continent)
+            if found_continent is None:
+                continue  # Continent not in the countries.json list.
+
+            found_country = found_continent["regions"].get(country)
+            if found_country is None:
+                continue  # Country not in the countries.json list.
+
+            if "regions" in found_country:
+                missing_regions.append(i)
+
+    logger.info(f"{len(missing_regions)} airports should have regions, processing...")
+    for missing in missing_regions:
+        airport_name = airports[missing]["weglide_name"]
+        nominatim_region = _get_airport_region(airports[missing])
+
+        assert nominatim_region is not None, (
+            f"Could not find region for {airport_name}. Please add manually."
+        )
+        assert nominatim_region[:2] == airports[missing]["region"], (
+            f"Found region country differs from existing one for {airport_name}. Please change manually."
+        )
+
+        airports[missing]["region"] = nominatim_region
+        logger.info(f"Updated region to {nominatim_region} for {airport_name}.")
+        # Intermediate save in case script or nominatime have problems.
+        write_airports_to_csv(airports)
+        # Sleep for responsible API usage.
+        sleep(1)
 
     return airports
 
@@ -479,6 +543,7 @@ if __name__ == "__main__":
     # Read data.
     remote_airports = download_airports(api_key)
     remote_airports = filter_airports(remote_airports)
+    # remote_airports = []
     existing_airports = read_airports_from_csv()
     airports = merge_airports(existing_airports, remote_airports)
     airports = sort_airports(airports)
@@ -486,9 +551,9 @@ if __name__ == "__main__":
     # Augment data.
     airports = assign_weglide_id(airports)
     airports = assign_weglide_name(airports)
-    airports = assign_region(airports)
     airports = assign_continent(airports)
     airports = assign_timezone(airports)
+    airports = assign_region(airports)
     airports = assign_launches(airports)
     # airports = assign_reign(airports)
 
