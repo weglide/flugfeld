@@ -90,7 +90,7 @@ def _parse_openaip_airport(openaip_airport: Any) -> Airport:
         "weglide_name": None,
         "kind": kind,
         "region": country,
-        "continent": _find_continent(country),
+        "continent": None,
         "launches": None,
         "icao": icao,
         "reign": None,
@@ -136,15 +136,6 @@ def download_airports(api_key: str | None) -> List[Airport]:
     airports = [_parse_openaip_airport(a) for a in openaip_airports]
 
     return airports
-
-
-def _find_continent(country: str) -> str:
-    with open(CONTINENTS) as json_file:
-        for k, v in json.load(json_file).items():
-            if country in v:
-                return k
-
-        raise AssertionError(f"No continent found for country {country}")
 
 
 def filter_airports(airports: List[Airport]) -> List[Airport]:
@@ -219,13 +210,17 @@ def assign_weglide_id(airports: List[Airport]) -> List[Airport]:
 def assign_weglide_name(airports: List[Airport]) -> List[Airport]:
     """
     Convert the OpenAIP name to title case for the WeGlide name.
-    Does not overwrite existing names.
+    Does not overwrite existing names but does clean them.
     """
     # Clone list before modifying.
     airports = list(airports)
     for airport in airports:
         if airport["weglide_name"] is None:
+            # Derive from OpenAIP Name.
             airport["weglide_name"] = airport["openaip_name"].title()
+
+        # Cleanup whitespace.
+        airport["weglide_name"] = airport["weglide_name"].strip().replace("  ", " ")
 
     return airports
 
@@ -479,7 +474,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO, format="%(message)s")
     logger = logging.getLogger(__name__)
     load_dotenv()
-    api_key = os.environ["OPENAIP_API_KEY"]
+    api_key = os.environ.get("OPENAIP_API_KEY")
 
     # Read data.
     remote_airports = download_airports(api_key)

@@ -103,9 +103,9 @@ class Airport(TypedDict):
     latitude: float
     elevation: int  # MSL in meter.
     region: str  # Two letter country code with optional region code separated by a dash. E.g. DE-BY for Bavaria, US-OR for Oregon or CH for Switzerland.
-    continent: (
-        str  # Two letter continent code. E.g. NA for North America or EU for Europe.
-    )
+    continent: Optional[
+        str
+    ]  # Two letter continent code. E.g. NA for North America or EU for Europe.
     timezone: Optional[str]
     launches: Optional[int]  # Number of total glider launches done from this Airport.
     reign: Optional[
