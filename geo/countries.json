@@ -1,1824 +1,1775 @@
 {
-    "languages": [
-        "de",
-        "en",
-        "fr",
-        "nl",
-        "cz",
-        "it",
-        "pl"
-    ],
-    "data": {
-        "AF": {
-            "name": [
-                "Afrika",
-                "Africa",
-                "Afrique",
-                "Afrika",
-                "Afrika",
-                "Africa",
-                "Afryka"
-            ],
-            "regions": {
-                "MA": {
-                    "name": [
-                        "Marokko",
-                        "Morocco",
-                        "Maroc",
-                        "Marokko",
-                        "Maroko",
-                        "Marocco",
-                        "Maroko"
-                    ]
-                },
-                "NA": {
-                    "name": [
-                        "Namibia",
-                        "Namibia",
-                        "Namibie",
-                        "Namibië",
-                        "Namibie",
-                        "Namibia",
-                        "Namibia"
-                    ]
-                },
-                "ZA": {
-                    "name": [
-                        "Südafrika",
-                        "South Africa",
-                        "Afrique du Sud",
-                        "Zuid-Afrika",
-                        "Jižní Afrika",
-                        "Sud Africa",
-                        "Afryka Południowa"
-                    ]
-                }
-            }
-        },
-        "AS": {
-            "name": [
-                "Asien",
-                "Asia",
-                "Asie",
-                "Azië",
-                "Asie",
-                "Asia",
-                "Azja"
-            ],
-            "regions": {
-                "CN": {
-                    "name": [
-                        "China",
-                        "China",
-                        "Chine",
-                        "China",
-                        "Čína",
-                        "Cina",
-                        "Chiny"
-                    ]
-                },
-                "IL": {
-                    "name": [
-                        "Israel",
-                        "Israel",
-                        "Israël",
-                        "Israël",
-                        "Izrael",
-                        "Israele",
-                        "Izrael"
-                    ]
-                },
-                "JP": {
-                    "name": [
-                        "Japan",
-                        "Japan",
-                        "Japon",
-                        "Japan",
-                        "Japonsko",
-                        "Giappone",
-                        "Japonia"
-                    ]
-                },
-                "PH": {
-                    "name": [
-                        "Philippinen",
-                        "Philippines",
-                        "Philippines",
-                        "Filippijnen",
-                        "Filipíny",
-                        "Filippine",
-                        "Filipiny"
-                    ]
-                },
-                "TR": {
-                    "name": [
-                        "Türkei",
-                        "Turkey",
-                        "Turquie",
-                        "Kalkoen",
-                        "Turecko",
-                        "Tacchino",
-                        "Turcja"
-                    ]
-                }
-            }
-        },
-        "EU": {
-            "name": [
-                "Europa",
-                "Europe",
-                "Europe",
-                "Europa",
-                "Evropa",
-                "Europa",
-                "Europa"
-            ],
-            "regions": {
-                "AT": {
-                    "name": [
-                        "Österreich",
-                        "Austria",
-                        "Autriche",
-                        "Oostenrijk",
-                        "Rakousko",
-                        "Austria",
-                        "Austria"
-                    ],
-                    "regions": {
-                        "AT-1": {
-                            "name": [
-                                "Burgenland",
-                                "Burgenland",
-                                "Burgenland",
-                                "Burgenland",
-                                "Burgenland",
-                                "Burgenland",
-                                "Burgenland"
-                            ]
-                        },
-                        "AT-2": {
-                            "name": [
-                                "Kärntnen",
-                                "Carinthia",
-                                "Carinthie",
-                                "Karinthië",
-                                "Korutany",
-                                "Carinzia",
-                                "Karyntia"
-                            ]
-                        },
-                        "AT-3": {
-                            "name": [
-                                "Niederösterreich",
-                                "Lower Austria",
-                                "Basse-Autriche",
-                                "Neder-Oostenrijk",
-                                "Dolní Rakousko",
-                                "Bassa Austria",
-                                "Dolna Austria"
-                            ]
-                        },
-                        "AT-4": {
-                            "name": [
-                                "Oberösterreich",
-                                "Upper Austria",
-                                "Haute-Autriche",
-                                "Opper-Oostenrijk",
-                                "Horní Rakousko",
-                                "Alta Austria",
-                                "Górna Austria"
-                            ]
-                        },
-                        "AT-5": {
-                            "name": [
-                                "Salzburg",
-                                "Salzburg",
-                                "Salzbourg",
-                                "Salzburg",
-                                "Salzburg",
-                                "Salisburgo",
-                                "Salzburg"
-                            ]
-                        },
-                        "AT-6": {
-                            "name": [
-                                "Steiermark",
-                                "Styria",
-                                "Styrie",
-                                "Stiermarken",
-                                "Štýrsko",
-                                "Stiria",
-                                "Styria"
-                            ]
-                        },
-                        "AT-7": {
-                            "name": [
-                                "Tirol",
-                                "Tirol",
-                                "Tyrol",
-                                "Tirol",
-                                "Tyrolsko",
-                                "Tirol",
-                                "Tirol"
-                            ]
-                        },
-                        "AT-8": {
-                            "name": [
-                                "Vorarlberg",
-                                "Vorarlberg",
-                                "Vorarlberg",
-                                "Vorarlberg",
-                                "Vorarlberg",
-                                "Vorarlberg",
-                                "Vorarlberg"
-                            ]
-                        },
-                        "AT-9": {
-                            "name": [
-                                "Wien",
-                                "Vienna",
-                                "Vienne",
-                                "Wenen",
-                                "Vídeň",
-                                "Vienna",
-                                "Wiedeń"
-                            ]
-                        }
-                    }
-                },
-                "BA": {
-                    "name": [
-                        "Bosnien-Herzegowina",
-                        "Bosnia and Herzegovina",
-                        "Bosnie Herzégovine",
-                        "Bosnië-Herzegovina",
-                        "Bosna a Hercegovina",
-                        "Bosnia Erzegovina",
-                        "Bośnia i Hercegowina"
-                    ]
-                },
-                "BE": {
-                    "name": [
-                        "Belgien",
-                        "Belgium",
-                        "Belgique",
-                        "Belgie",
-                        "Belgie",
-                        "Belgio",
-                        "Belgia"
-                    ],
-                    "regions": {
-                        "BE-VLG": {
-                            "name": [
-                                "Flandern",
-                                "Flanders",
-                                "Flandre",
-                                "Vlaanderen",
-                                "Flandry",
-                                "Fiandre",
-                                "Flandria"
-                            ]
-                        },
-                        "BE-WAL": {
-                            "name": [
-                                "Wallonien",
-                                "Wallonia",
-                                "Wallonie",
-                                "Wallonië",
-                                "Valonsko",
-                                "Vallonia",
-                                "Walonia"
-                            ]
-                        }
-                    }
-                },
-                "BG": {
-                    "name": [
-                        "Bulgarien",
-                        "Bulgaria",
-                        "Bulgarie",
-                        "Bulgarije ",
-                        "Bulharsko",
-                        "Bulgaria",
-                        "Bułgaria"
-                    ]
-                },
-                "CH": {
-                    "name": [
-                        "Schweiz",
-                        "Switzerland",
-                        "Suisse",
-                        "Zwitserland",
-                        "Švýcarsko",
-                        "Svizzera",
-                        "Szwajcaria"
-                    ]
-                },
-                "CZ": {
-                    "name": [
-                        "Tschechien",
-                        "Czech Republic",
-                        "République Tchèque",
-                        "Tsjechië",
-                        "Česká republika",
-                        "Repubblica Ceca",
-                        "Republika Czeska"
-                    ]
-                },
-                "DK": {
-                    "name": [
-                        "Dänemark",
-                        "Denmark",
-                        "Danemark",
-                        "Denemarken",
-                        "Dánsko",
-                        "Danimarca",
-                        "Dania"
-                    ]
-                },
-                "DE": {
-                    "name": [
-                        "Deutschland",
-                        "Germany",
-                        "Allemagne",
-                        "Duitsland",
-                        "Německo",
-                        "Germania",
-                        "Niemcy"
-                    ],
-                    "regions": {
-                        "DE-BW": {
-                            "name": [
-                                "Baden-Württemberg",
-                                "Baden-Württemberg",
-                                "Bade-Wurtemberg",
-                                "Baden-Württemberg",
-                                "Bádensko-Württembersko",
-                                "Baden-Württemberg",
-                                "Badenia-Wirtembergia"
-                            ]
-                        },
-                        "DE-BY": {
-                            "name": [
-                                "Bayern",
-                                "Bavaria",
-                                "Bavière",
-                                "Beieren",
-                                "Bavorsko",
-                                "Baviera",
-                                "Bawaria"
-                            ]
-                        },
-                        "DE-BE": {
-                            "name": [
-                                "Berlin",
-                                "Berlin",
-                                "Berlin",
-                                "Berlijn",
-                                "Berlín",
-                                "Berlino",
-                                "Berlin"
-                            ]
-                        },
-                        "DE-BB": {
-                            "name": [
-                                "Brandenburg",
-                                "Brandenburg",
-                                "Brandebourg",
-                                "Brandenburg",
-                                "Brandenburg",
-                                "Brandeburgo",
-                                "Brandenburgia"
-                            ]
-                        },
-                        "DE-HB": {
-                            "name": [
-                                "Bremen",
-                                "Bremen",
-                                "Brême",
-                                "Bremen",
-                                "Brémy",
-                                "Brema",
-                                "Brema"
-                            ]
-                        },
-                        "DE-HH": {
-                            "name": [
-                                "Hamburg",
-                                "Hamburg",
-                                "Hambourg",
-                                "Hamburg",
-                                "Hamburg",
-                                "Amburgo",
-                                "Hamburg"
-                            ]
-                        },
-                        "DE-HE": {
-                            "name": [
-                                "Hessen",
-                                "Hesse",
-                                "Hesse",
-                                "Hessen",
-                                "Hesse",
-                                "Assia",
-                                "Hesja"
-                            ]
-                        },
-                        "DE-MV": {
-                            "name": [
-                                "Mecklenburg-Vorpommern",
-                                "Mecklenburg Western Pomerania",
-                                "Mecklembourg Poméranie occidentale",
-                                "Mecklenburg Voor-Pommeren",
-                                "Meklenbursko-Přední Pomořansko",
-                                "Meclemburgo-Pomerania occidentale",
-                                "Meklemburgia Pomorze Przednie"
-                            ]
-                        },
-                        "DE-NI": {
-                            "name": [
-                                "Niedersachsen",
-                                "Lower Saxony",
-                                "Basse-Saxe",
-                                "Nedersaksen",
-                                "Dolní Sasko",
-                                "Bassa Sassonia",
-                                "Dolna Saksonia"
-                            ]
-                        },
-                        "DE-NW": {
-                            "name": [
-                                "Nordrhein-Westfalen",
-                                "North Rhine-Westphalia",
-                                "Rhénanie du Nord-Westphalie",
-                                "Noordrijn-Westfalen",
-                                "Severní Porýní-Vestfálsko",
-                                "Renania settentrionale-Vestfalia",
-                                "Nadrenia Północna-Westfalia"
-                            ]
-                        },
-                        "DE-RP": {
-                            "name": [
-                                "Rheinland-Pfalz",
-                                "Rhineland-Palatinate",
-                                "Rhénanie-Palatinat",
-                                "Rijnland-Palts",
-                                "Porýní-Falc",
-                                "Renania-Palatinato",
-                                "Nadrenia-Palatynat"
-                            ]
-                        },
-                        "DE-SL": {
-                            "name": [
-                                "Saarland",
-                                "Saarland",
-                                "Sarre",
-                                "Saarland",
-                                "Sársko",
-                                "Saarland",
-                                "Saarland"
-                            ]
-                        },
-                        "DE-SN": {
-                            "name": [
-                                "Sachsen",
-                                "Saxony",
-                                "Saxe",
-                                "Saksen",
-                                "Sasko",
-                                "Sassonia",
-                                "Saksonia"
-                            ]
-                        },
-                        "DE-ST": {
-                            "name": [
-                                "Sachsen-Anhalt",
-                                "Saxony-Anhalt",
-                                "Saxe-Anhalt",
-                                "Saksen-Anhalt",
-                                "Sasko-Anhaltsko",
-                                "Sassonia-Anhalt",
-                                "Saksonia-Anhalt"
-                            ]
-                        },
-                        "DE-SH": {
-                            "name": [
-                                "Schleswig-Holstein",
-                                "Schleswig-Holstein",
-                                "Schleswig-Holstein",
-                                "Sleeswijk-Holstein",
-                                "Schleswig-Holstein",
-                                "Schleswig-Holstein",
-                                "Szlezwik-Holsztyn"
-                            ]
-                        },
-                        "DE-TH": {
-                            "name": [
-                                "Thüringen",
-                                "Thuringa",
-                                "Thuringe",
-                                "Thüringen",
-                                "Durynsko",
-                                "Turingia",
-                                "Turyngia"
-                            ]
-                        }
-                    }
-                },
-                "ES": {
-                    "name": [
-                        "Spanien",
-                        "Spain",
-                        "Espagne",
-                        "Spanje",
-                        "Španělsko",
-                        "Spagna",
-                        "Hiszpania"
-                    ]
-                },
-                "FI": {
-                    "name": [
-                        "Finnland",
-                        "Finland",
-                        "Finlande",
-                        "Finland",
-                        "Finsko",
-                        "Finlandia",
-                        "Finlandia"
-                    ]
-                },
-                "FR": {
-                    "name": [
-                        "Frankreich",
-                        "France",
-                        "France",
-                        "Frankrijk",
-                        "Francie",
-                        "Francia",
-                        "Francja"
-                    ],
-                    "regions": {
-                        "FR-ARA": {
-                            "name": [
-                                "Auvergne-Rhône-Alpes",
-                                "Auvergne-Rhône-Alpes",
-                                "Auvergne-Rhône-Alpes",
-                                "Auvergne-Rhône-Alpes",
-                                "Auvergne-Rhône-Alpes",
-                                "Auvergne-Rhône-Alpes",
-                                "Auvergne-Rhône-Alpes"
-                            ]
-                        },
-                        "FR-BFC": {
-                            "name": [
-                                "Bourgogne-Franche-Comté",
-                                "Bourgogne-Franche-Comté",
-                                "Bourgogne-Franche-Comté",
-                                "Bourgogne-Franche-Comté",
-                                "Bourgogne-Franche-Comté",
-                                "Bourgogne-Franche-Comté",
-                                "Bourgogne-Franche-Comté"
-                            ]
-                        },
-                        "FR-BRE": {
-                            "name": [
-                                "Bretagne",
-                                "Brittany",
-                                "Bretagne",
-                                "Bretagne",
-                                "Bretaň",
-                                "Bretagna",
-                                "Bretania"
-                            ]
-                        },
-                        "FR-CVL": {
-                            "name": [
-                                "Centre-Val de Loire",
-                                "Centre-Val de Loire",
-                                "Centre-Val de Loire",
-                                "Centre-Val de Loire",
-                                "Centre-Val de Loire",
-                                "Centre-Val de Loire",
-                                "Centre-Val de Loire"
-                            ]
-                        },
-                        "FR-20R": {
-                            "name": [
-                                "Korsika",
-                                "Corsica",
-                                "Corse",
-                                "Corsica",
-                                "Korsika",
-                                "Corsica",
-                                "Korsyka"
-                            ]
-                        },
-                        "FR-GES": {
-                            "name": [
-                                "Grand-Est",
-                                "Grand-Est",
-                                "Grand-Est",
-                                "Grand-Est",
-                                "Grand-Est",
-                                "Grand-Est",
-                                "Grand-Est"
-                            ]
-                        },
-                        "FR-HDF": {
-                            "name": [
-                                "Hauts-de-France",
-                                "Hauts-de-France",
-                                "Hauts-de-France",
-                                "Hauts-de-France",
-                                "Hauts-de-France",
-                                "Hauts-de-France",
-                                "Hauts-de-France"
-                            ]
-                        },
-                        "FR-IDF": {
-                            "name": [
-                                "Île-de-France",
-                                "Île-de-France",
-                                "Île-de-France",
-                                "Île-de-France",
-                                "Île-de-France",
-                                "Île-de-France",
-                                "Île-de-France"
-                            ]
-                        },
-                        "FR-NOR": {
-                            "name": [
-                                "Normandie",
-                                "Normandy",
-                                "Normandie",
-                                "Normandië",
-                                "Normandie",
-                                "Normandia",
-                                "Normandia"
-
-                            ]
-                        },
-                        "FR-NAQ": {
-                            "name": [
-                                "Neu-Aquitanien",
-                                "New Aquitaine",
-                                "Nouvelle-Aquitaine",
-                                "Nieuw Aquitanië",
-                                "Nová Akvitánie",
-                                "Nuova Aquitania",
-                                "Nowa Akwitania"
-                            ]
-                        },
-                        "FR-OCC": {
-                            "name": [
-                                "Okzitanien",
-                                "Occitania",
-                                "Occitanie",
-                                "Occitanië",
-                                "Okcitánie",
-                                "Occitania",
-                                "Oksytania"
-                            ]
-                        },
-                        "FR-PDL": {
-                            "name": [
-                                "Pays-de-la-Loire",
-                                "Pays-de-la-Loire",
-                                "Pays-de-la-Loire",
-                                "Pays-de-la-Loire",
-                                "Pays-de-la-Loire",
-                                "Pays-de-la-Loire",
-                                "Pays-de-la-Loire"
-                            ]
-                        },
-                        "FR-PAC": {
-                            "name": [
-                                "Provence-Alpes-Côte-d’Azur",
-                                "Provence-Alpes-Côte-d’Azur",
-                                "Provence-Alpes-Côte-d’Azur",
-                                "Provence-Alpes-Côte-d’Azur",
-                                "Provence-Alpes-Côte-d’Azur",
-                                "Provence-Alpes-Côte-d’Azur",
-                                "Provence-Alpes-Côte-d’Azur"
-                            ]
-                        }
-                    }
-                },
-                "GB": {
-                    "name": [
-                        "Vereinigtes Königreich",
-                        "United Kingdom",
-                        "Royaume-Uni",
-                        "Verenigd Koningkrijk",
-                        "Spojené království",
-                        "Regno Unito ",
-                        "Zjednoczone Królestwo"
-                    ]
-                },
-                "GR": {
-                    "name": [
-                        "Griechenland",
-                        "Greece",
-                        "Grèce",
-                        "Griekenland",
-                        "Řecko",
-                        "Grecia",
-                        "Grecja"
-                    ]
-                },
-                "HR": {
-                    "name": [
-                        "Kroatien",
-                        "Croatia",
-                        "Croatie",
-                        "Kroatië",
-                        "Chorvatsko",
-                        "Croazia",
-                        "Chorwacja"
-                    ]
-                },
-                "HU": {
-                    "name": [
-                        "Ungarn",
-                        "Hungary",
-                        "Hongrie",
-                        "Hongarije",
-                        "Maďarsko",
-                        "Ungheria",
-                        "Węgry"
-                    ]
-                },
-                "IE": {
-                    "name": [
-                        "Irland",
-                        "Ireland",
-                        "Irlande",
-                        "Ierland",
-                        "Irsko",
-                        "Irlanda",
-                        "Irlandia"
-                    ]
-                },
-                "IS": {
-                    "name": [
-                        "Island",
-                        "Iceland",
-                        "Islande",
-                        "IJsland",
-                        "Island",
-                        "Islanda",
-                        "Islandia"
-                    ]
-                },
-                "IT": {
-                    "name": [
-                        "Italien",
-                        "Italy",
-                        "Italie",
-                        "Italië",
-                        "Itálie",
-                        "Italia",
-                        "Włochy"
-                    ]
-                },
-                "LT": {
-                    "name": [
-                        "Litauen",
-                        "Lithuania",
-                        "Lituanie",
-                        "Litouwen",
-                        "Litva",
-                        "Lituania",
-                        "Litwa"
-                    ]
-                },
-                "LU": {
-                    "name": [
-                        "Luxemburg",
-                        "Luxembourg",
-                        "Luxembourg",
-                        "Luxemburg",
-                        "Lucembursko",
-                        "Lussemburgo",
-                        "Luksemburg"
-                    ]
-                },
-                "ME": {
-                    "name": [
-                        "Montenegro",
-                        "Montenegro",
-                        "Monténégro",
-                        "Montenegro",
-                        "Černá Hora",
-                        "Montenegro",
-                        "Czarnogóra"
-                    ]
-                },
-                "MK": {
-                    "name": [
-                        "Nordmazedonien",
-                        "North Macedonia",
-                        "Macédoine du Nord",
-                        "Noord-Macedonië",
-                        "Severní Makedonie",
-                        "Macedonia del Nord",
-                        "Macedonia Północna"
-                    ]
-                },
-                "NL": {
-                    "name": [
-                        "Niederlande",
-                        "Netherlands",
-                        "Pays-Bas",
-                        "Nederland",
-                        "Holandsko",
-                        "Olanda",
-                        "Holandia"
-                    ]
-                },
-                "NO": {
-                    "name": [
-                        "Norwegen",
-                        "Norway",
-                        "Norvège",
-                        "Noorwegen",
-                        "Norsko",
-                        "Norvegia",
-                        "Norwegia"
-                    ]
-                },
-                "PL": {
-                    "name": [
-                        "Polen",
-                        "Poland",
-                        "Pologne",
-                        "Polen",
-                        "Polsko",
-                        "Polonia",
-                        "Polska"
-                    ]
-                },
-                "PT": {
-                    "name": [
-                        "Portugal",
-                        "Portugal",
-                        "Portugal",
-                        "Portugal",
-                        "Portugalsko",
-                        "Portogallo",
-                        "Portugalia"
-                    ]
-                },
-                "RO": {
-                    "name": [
-                        "Rumänien",
-                        "Rumania",
-                        "Roumanie",
-                        "Roemenië",
-                        "Rumunsko",
-                        "Romania",
-                        "Rumunia"
-                    ]
-                },
-                "RS": {
-                    "name": [
-                        "Serbien",
-                        "Serbia",
-                        "Serbie",
-                        "Servië",
-                        "Srbsko",
-                        "Serbia",
-                        "Serbia"
-                    ]
-                },
-                "RU": {
-                    "name": [
-                        "Russland",
-                        "Russia",
-                        "Russie",
-                        "Rusland",
-                        "Rusko",
-                        "Russia",
-                        "Rosja"
-                    ]
-                },
-                "SE": {
-                    "name": [
-                        "Schweden",
-                        "Sweden",
-                        "Suède",
-                        "Zweden",
-                        "Švédsko",
-                        "Svezia",
-                        "Szwecja"
-                    ]
-                },
-                "SK": {
-                    "name": [
-                        "Slowakei",
-                        "Slovakia",
-                        "Slovaquie",
-                        "Slowakije",
-                        "Slovensko",
-                        "Slovacchia",
-                        "Słowacja"
-                    ]
-                },
-                "SI": {
-                    "name": [
-                        "Slovenien",
-                        "Slovenia",
-                        "Slovénie",
-                        "Slovenië",
-                        "Slovinsko",
-                        "Slovenia",
-                        "Słowenia"
-                    ]
-                },
-                "UA": {
-                    "name": [
-                        "Ukraine",
-                        "Ukraine",
-                        "Ukraine",
-                        "Oekraïne",
-                        "Ukrajina",
-                        "Ucraina",
-                        "Ukraina"
-                    ]
-                }
-            }
-        },
-        "OC": {
-            "name": [
-                "Ozeanien",
-                "Oceania",
-                "Océanie",
-                "Oceanië",
-                "Oceánie",
-                "Oceania",
-                "Oceania"
-            ],
-            "regions": {
-                "AU": {
-                    "name": [
-                        "Australien",
-                        "Australia",
-                        "Australie",
-                        "Australië",
-                        "Austrálie",
-                        "Australia",
-                        "Australia"
-                    ],
-                    "regions": {
-                        "AU-NSW": {
-                            "name": [
-                                "New South Wales",
-                                "New South Wales",
-                                "Nouvelle Galles du Sud",
-                                "Nieuw Zuid-Wales",
-                                "Nový Jížní Wales",
-                                "Nuovo Galles del Sud",
-                                "Nowa Południowa Walia"
-                            ]
-                        },
-                        "AU-NT": {
-                            "name": [
-                                "Northern Territory",
-                                "Northern Territory",
-                                "Territoire du Nord",
-                                "Noordelijk Territorium",
-                                "Severní území",
-                                "Territori del Nord",
-                                "Północne terytorium"
-                            ]
-                        },
-                        "AU-QLD": {
-                            "name": [
-                                "Queensland",
-                                "Queensland",
-                                "Queensland",
-                                "Queensland",
-                                "Queensland",
-                                "Queensland",
-                                "Queensland"
-                            ]
-                        },
-                        "AU-SA": {
-                            "name": [
-                                "Südaustralien",
-                                "South Australia",
-                                "Australie du Sud",
-                                "Zuid Australië",
-                                "jižní Austrálie",
-                                "sud dell'Australia",
-                                "Południowa Australia"
-                            ]
-                        },
-                        "AU-TAS": {
-                            "name": [
-                                "Tasmanien",
-                                "Tasmania",
-                                "Tasmanie",
-                                "Tasmanië",
-                                "Tasmánie",
-                                "Tasmania",
-                                "Tasmania"
-                            ]
-                        },
-                        "AU-VIC": {
-                            "name": [
-                                "Victoria",
-                                "Victoria",
-                                "Victoria",
-                                "Victoria",
-                                "Victoria",
-                                "Victoria",
-                                "Wiktoria"
-                            ]
-                        },
-                        "AU-WA": {
-                            "name": [
-                                "Westaustralien",
-                                "Western Australia",
-                                "Australie occidentale",
-                                "West Australië",
-                                "západní Austrálie",
-                                "Australia Occidentale",
-                                "Zachodnia australia"
-                            ]
-                        }
-                    }
-                },
-                "NZ": {
-                    "name": [
-                        "Neuseeland",
-                        "New Zealand",
-                        "Nouvelle-Zélande",
-                        "Nieuw-Zeeland",
-                        "Nový Zéland",
-                        "Nuova Zelanda",
-                        "Nowa Zelandia"
-                    ],
-                    "regions": {
-                        "NZ-N": {
-                            "name": [
-                                "Nordinsel",
-                                "North Island",
-                                "Île du Nord",
-                                "Noord eiland",
-                                "Severní ostrov",
-                                "Isola del nord",
-                                "Północna Wyspa"
-                            ]
-                        },
-                        "NZ-S": {
-                            "name": [
-                                "Südinsel",
-                                "South Island",
-                                "Île du Sud",
-                                "zuidelijk eiland",
-                                "Jižní ostrov",
-                                "Isola del Sud",
-                                "Południowa Wyspa"
-                            ]
-                        }
-                    }
-                }
-            }
+  "languages": ["de", "en", "fr", "nl", "cz", "it", "pl"],
+  "data": {
+    "AF": {
+      "name": [
+        "Afrika",
+        "Africa",
+        "Afrique",
+        "Afrika",
+        "Afrika",
+        "Africa",
+        "Afryka"
+      ],
+      "regions": {
+        "MA": {
+          "name": [
+            "Marokko",
+            "Morocco",
+            "Maroc",
+            "Marokko",
+            "Maroko",
+            "Marocco",
+            "Maroko"
+          ]
         },
         "NA": {
-            "name": [
-                "Nordamerika",
-                "North America",
-                "Amérique du Nord",
-                "Noord-Amerika",
-                "Severní Amerika",
-                "Nord America",
-                "Ameryka północna"
-            ],
-            "regions": {
-                "CA": {
-                    "name": [
-                        "Kanada",
-                        "Canada",
-                        "Canada",
-                        "Canada",
-                        "Kanada",
-                        "Canada",
-                        "Kanada"
-                    ],
-                    "regions": {
-                        "CA-AB": {
-                            "name": [
-                                "Alberta",
-                                "Alberta",
-                                "Alberta",
-                                "Alberta",
-                                "Alberta",
-                                "Alberta",
-                                "Alberta"
-                            ]
-                        },
-                        "CA-BC": {
-                            "name": [
-                                "British Colombia",
-                                "British Colombia",
-                                "Colombie britannique",
-                                "Brits Columbia",
-                                "Britská Kolumbie",
-                                "British Columbia",
-                                "Brytyjska Kolumbia"
-                            ]
-                        },
-                        "CA-MB": {
-                            "name": [
-                                "Manitoba",
-                                "Manitoba",
-                                "Manitoba",
-                                "Manitoba",
-                                "Manitoba",
-                                "Manitoba",
-                                "Manitoba"
-                            ]
-                        },
-                        "CA-ON": {
-                            "name": [
-                                "Ontario",
-                                "Ontario",
-                                "Ontario",
-                                "Ontario",
-                                "Ontario",
-                                "Ontario",
-                                "Ontario"
-                            ]
-                        },
-                        "CA-QC": {
-                            "name": [
-                                "Québec",
-                                "Québec",
-                                "Québec",
-                                "Québec",
-                                "Québec",
-                                "Québec",
-                                "Québec"
-                            ]
-                        },
-                        "CA-SK": {
-                            "name": [
-                                "Saskatchewan",
-                                "Saskatchewan",
-                                "Saskatchewan",
-                                "Saskatchewan",
-                                "Saskatchewan",
-                                "Saskatchewan",
-                                "Saskatchewan"
-                            ]
-                        }
-                    }
-                },
-                "MX": {
-                    "name": [
-                        "Mexiko",
-                        "Mexico",
-                        "Mexique",
-                        "Mexico",
-                        "Mexiko",
-                        "Messico",
-                        "Meksyk"
-                    ]
-                },
-                "US": {
-                    "name": [
-                        "Vereinigte Staaten",
-                        "United States",
-                        "États-Unis",
-                        "Verenigde Staten",
-                        "Spojené státy",
-                        "stati Uniti",
-                        "Stany Zjednoczone"
-                    ],
-                    "regions": {
-                        "US-AL": {
-                            "name": [
-                                "Alabama",
-                                "Alabama",
-                                "Alabama",
-                                "Alabama",
-                                "Alabama",
-                                "Alabama",
-                                "Alabama"
-                            ]
-                        },
-                        "US-AK": {
-                            "name": [
-                                "Alaska",
-                                "Alaska",
-                                "Alaska",
-                                "Alaska",
-                                "Aljaška",
-                                "Alaska",
-                                "Alaska"
-                            ]
-                        },
-                        "US-AZ": {
-                            "name": [
-                                "Arizona",
-                                "Arizona",
-                                "Arizona",
-                                "Arizona",
-                                "Arizona",
-                                "Arizona",
-                                "Arizona"
-                            ]
-                        },
-                        "US-AR": {
-                            "name": [
-                                "Arkansas",
-                                "Arkansas",
-                                "Arkansas",
-                                "Arkansas",
-                                "Arkansas",
-                                "Arkansas",
-                                "Arkansas"
-                            ]
-                        },
-                        "US-CA": {
-                            "name": [
-                                "California",
-                                "California",
-                                "Californie",
-                                "Californië",
-                                "Kalifornie",
-                                "California",
-                                "Kalifornia"
-                            ]
-                        },
-                        "US-CO": {
-                            "name": [
-                                "Colorado",
-                                "Colorado",
-                                "Colorado",
-                                "Colorado",
-                                "Colorado",
-                                "Colorado",
-                                "Kolorado"
-                            ]
-                        },
-                        "US-CT": {
-                            "name": [
-                                "Connecticut",
-                                "Connecticut",
-                                "Connecticut",
-                                "Connecticut",
-                                "Connecticut",
-                                "Connecticut",
-                                "Connecticut"
-                            ]
-                        },
-                        "US-DE": {
-                            "name": [
-                                "Delaware",
-                                "Delaware",
-                                "Delaware",
-                                "Delaware",
-                                "Delaware",
-                                "Delaware",
-                                "Delaware"
-                            ]
-                        },
-                        "US-FL": {
-                            "name": [
-                                "Florida",
-                                "Florida",
-                                "Floride",
-                                "Florida",
-                                "Florida",
-                                "Florida",
-                                "Floryda"
-                            ]
-                        },
-                        "US-GA": {
-                            "name": [
-                                "Georgia",
-                                "Georgia",
-                                "Géorgie",
-                                "Georgië",
-                                "Gruzie",
-                                "Georgia",
-                                "Gruzja"
-                            ]
-                        },
-                        "US-HI": {
-                            "name": [
-                                "Hawaii",
-                                "Hawaii",
-                                "Hawaii",
-                                "Hawaii",
-                                "Havaj",
-                                "Hawaii",
-                                "Hawaje"
-                            ]
-                        },
-                        "US-ID": {
-                            "name": [
-                                "Idaho",
-                                "Idaho",
-                                "Idaho",
-                                "Idaho",
-                                "Idaho",
-                                "Idaho",
-                                "Idaho"
-                            ]
-                        },
-                        "US-IL": {
-                            "name": [
-                                "Illinois",
-                                "Illinois",
-                                "Illinois",
-                                "Illinois",
-                                "Illinois",
-                                "Illinois",
-                                "Illinois"
-                            ]
-                        },
-                        "US-IN": {
-                            "name": [
-                                "Indiana",
-                                "Indiana",
-                                "Indiana",
-                                "Indiana",
-                                "Indiana",
-                                "Indiana",
-                                "Indiana"
-                            ]
-                        },
-                        "US-IA": {
-                            "name": [
-                                "Iowa",
-                                "Iowa",
-                                "Iowa",
-                                "Iowa",
-                                "Iowo",
-                                "Iowa",
-                                "Iowa"
-                            ]
-                        },
-                        "US-KS": {
-                            "name": [
-                                "Kansas",
-                                "Kansas",
-                                "Kansas",
-                                "Kansas",
-                                "Kansas",
-                                "Kansas",
-                                "Kansas"
-                            ]
-                        },
-                        "US-KY": {
-                            "name": [
-                                "Kentucky",
-                                "Kentucky",
-                                "Kentucky",
-                                "Kentucky",
-                                "Kentucky",
-                                "Kentucky",
-                                "Kentucky"
-                            ]
-                        },
-                        "US-LA": {
-                            "name": [
-                                "Louisiana",
-                                "Louisiana",
-                                "Louisiane",
-                                "Louisiana",
-                                "Louisiana",
-                                "Louisiana",
-                                "Luizjana"
-                            ]
-                        },
-                        "US-ME": {
-                            "name": [
-                                "Maine",
-                                "Maine",
-                                "Maine",
-                                "Maine",
-                                "Maine",
-                                "Maine",
-                                "Maine"
-                            ]
-                        },
-                        "US-MD": {
-                            "name": [
-                                "Maryland",
-                                "Maryland",
-                                "Maryland",
-                                "Maryland",
-                                "Maryland",
-                                "Maryland",
-                                "Maryland"
-                            ]
-                        },
-                        "US-MA": {
-                            "name": [
-                                "Massachusetts",
-                                "Massachusetts",
-                                "Massachusetts",
-                                "Massachusetts",
-                                "Massachusetts",
-                                "Massachusetts",
-                                "Massachusetts"
-                            ]
-                        },
-                        "US-MI": {
-                            "name": [
-                                "Michigan",
-                                "Michigan",
-                                "Michigan",
-                                "Michigan",
-                                "Michigan",
-                                "Michigan",
-                                "Michigan"
-                            ]
-                        },
-                        "US-MN": {
-                            "name": [
-                                "Minnesota",
-                                "Minnesota",
-                                "Minnesota",
-                                "Minnesota",
-                                "Minnesota",
-                                "Minnesota",
-                                "Minnesota"
-                            ]
-                        },
-                        "US-MS": {
-                            "name": [
-                                "Mississippi",
-                                "Mississippi",
-                                "Mississippi",
-                                "Mississippi",
-                                "Mississippi",
-                                "Mississippi",
-                                "Mississippi"
-                            ]
-                        },
-                        "US-MO": {
-                            "name": [
-                                "Missouri",
-                                "Missouri",
-                                "Missouri",
-                                "Missouri",
-                                "Missouri",
-                                "Missouri",
-                                "Missouri"
-                            ]
-                        },
-                        "US-MT": {
-                            "name": [
-                                "Montana",
-                                "Montana",
-                                "Montana",
-                                "Montana",
-                                "Montana",
-                                "Montana",
-                                "Montana"
-                            ]
-                        },
-                        "US-NE": {
-                            "name": [
-                                "Nebraska",
-                                "Nebraska",
-                                "Nebraska",
-                                "Nebraska",
-                                "Nebraska",
-                                "Nebraska",
-                                "Nebraska"
-                            ]
-                        },
-                        "US-NV": {
-                            "name": [
-                                "Nevada",
-                                "Nevada",
-                                "Nevada",
-                                "Nevada",
-                                "Nevada",
-                                "Nevada",
-                                "Nevada"
-                            ]
-                        },
-                        "US-NH": {
-                            "name": [
-                                "New Hampshire",
-                                "New Hampshire",
-                                "New Hampshire",
-                                "New Hampshire",
-                                "New Hampshire",
-                                "New Hampshire",
-                                "New Hampshire"
-                            ]
-                        },
-                        "US-NJ": {
-                            "name": [
-                                "New Jersey",
-                                "New Jersey",
-                                "New Jersey",
-                                "New Jersey",
-                                "New Jersey",
-                                "New Jersey",
-                                "New Jersey"
-                            ]
-                        },
-                        "US-NM": {
-                            "name": [
-                                "New Mexico",
-                                "New Mexico",
-                                "Nouveau Mexique",
-                                "New Mexico",
-                                "Nové Mexiko",
-                                "Nuovo Messico",
-                                "Nowy Meksyk"
-                            ]
-                        },
-                        "US-NY": {
-                            "name": [
-                                "New York",
-                                "New York",
-                                "New York",
-                                "New York",
-                                "New York",
-                                "New York",
-                                "Nowy Jork"
-                            ]
-                        },
-                        "US-NC": {
-                            "name": [
-                                "North Carolina",
-                                "North Carolina",
-                                "Caroline du Nord",
-                                "Noord Carolina",
-                                "Severní Karolina",
-                                "Carolina del Nord",
-                                "Karolina Północna"
-                            ]
-                        },
-                        "US-ND": {
-                            "name": [
-                                "North Dakota",
-                                "North Dakota",
-                                "Dakota du Nord",
-                                "Noord-Dakota",
-                                "Severní Dakota",
-                                "Nord Dakota",
-                                "Północna Dakota"
-                            ]
-                        },
-                        "US-OH": {
-                            "name": [
-                                "Ohio",
-                                "Ohio",
-                                "Ohio",
-                                "Ohio",
-                                "Ohio",
-                                "Ohio",
-                                "Ohio"
-                            ]
-                        },
-                        "US-OK": {
-                            "name": [
-                                "Oklahoma",
-                                "Oklahoma",
-                                "Oklahoma",
-                                "Oklahoma",
-                                "Oklahoma",
-                                "Oklahoma",
-                                "Oklahoma"
-                            ]
-                        },
-                        "US-OR": {
-                            "name": [
-                                "Oregon",
-                                "Oregon",
-                                "Oregon",
-                                "Oregon",
-                                "Oregon",
-                                "Oregon",
-                                "Oregon"
-                            ]
-                        },
-                        "US-PA": {
-                            "name": [
-                                "Pennsylvania",
-                                "Pennsylvania",
-                                "Pennsylvanie",
-                                "Pennsylvania",
-                                "Pensylvánie",
-                                "Pennsylvania",
-                                "Pensylwania"
-                            ]
-                        },
-                        "US-RI": {
-                            "name": [
-                                "Rhode Island",
-                                "Rhode Island",
-                                "Rhode Island",
-                                "Rhode Island",
-                                "Rhode Island",
-                                "Rhode Island",
-                                "Rhode Island"
-                            ]
-                        },
-                        "US-SC": {
-                            "name": [
-                                "South Carolina",
-                                "South Carolina",
-                                "Caroline du Sud",
-                                "zuid Carolina",
-                                "Jižní Karolína",
-                                "Carolina del Sud",
-                                "Karolina Południowa"
-                            ]
-                        },
-                        "US-SD": {
-                            "name": [
-                                "South Dakota",
-                                "South Dakota",
-                                "Dakota du Sud",
-                                "zuid Dakota",
-                                "Jižní Dakota",
-                                "Sud Dakota",
-                                "Południowa Dakota"
-                            ]
-                        },
-                        "US-TN": {
-                            "name": [
-                                "Tennessee",
-                                "Tennessee",
-                                "Tennessee",
-                                "Tennessee",
-                                "Tennessee",
-                                "Tennessee",
-                                "Tennessee"
-                            ]
-                        },
-                        "US-TX": {
-                            "name": [
-                                "Texas",
-                                "Texas",
-                                "Texas",
-                                "Texas",
-                                "Texas",
-                                "Texas",
-                                "Teksas"
-                            ]
-                        },
-                        "US-UT": {
-                            "name": [
-                                "Utah",
-                                "Utah",
-                                "Utah",
-                                "Utah",
-                                "Utah",
-                                "Utah",
-                                "Utah"
-                            ]
-                        },
-                        "US-VT": {
-                            "name": [
-                                "Vermont",
-                                "Vermont",
-                                "Vermont",
-                                "Vermont",
-                                "Vermont",
-                                "Vermont",
-                                "Vermont"
-                            ]
-                        },
-                        "US-VA": {
-                            "name": [
-                                "Virginia",
-                                "Virginia",
-                                "Virginie",
-                                "Virginia",
-                                "Virginie",
-                                "Virginia",
-                                "Virginia"
-                            ]
-                        },
-                        "US-WA": {
-                            "name": [
-                                "Washington",
-                                "Washington",
-                                "Washington",
-                                "Washington",
-                                "Washington",
-                                "Washington",
-                                "Washington"
-                            ]
-                        },
-                        "US-WV": {
-                            "name": [
-                                "West Virginia",
-                                "West Virginia",
-                                "Virginie-Occidentale",
-                                "Virginia Occidentale",
-                                "západní Virginie",
-                                "Virginia dell'ovest",
-                                "Wirginia Zachodnia"
-                            ]
-                        },
-                        "US-WI": {
-                            "name": [
-                                "Wisconsin",
-                                "Wisconsin",
-                                "Wisconsin",
-                                "Wisconsin",
-                                "Wisconsin",
-                                "Wisconsin",
-                                "Wisconsin"
-                            ]
-                        },
-                        "US-WY": {
-                            "name": [
-                                "Wyoming",
-                                "Wyoming",
-                                "Wyoming",
-                                "Wyoming",
-                                "Wyoming",
-                                "Wyoming",
-                                "Wyoming"
-                            ]
-                        }
-                    }
-                }
-            }
+          "name": [
+            "Namibia",
+            "Namibia",
+            "Namibie",
+            "Namibië",
+            "Namibie",
+            "Namibia",
+            "Namibia"
+          ]
         },
-        "SA": {
-            "name": [
-                "Südamerika",
-                "South America",
-                "Amérique du Sud",
-                "Zuid-Amerika",
-                "Jižní Amerika",
-                "Sud America",
-                "Ameryka Południowa"
-            ],
-            "regions": {
-                "AR": {
-                    "name": [
-                        "Argentinien",
-                        "Argentinia",
-                        "Argentine",
-                        "Argentinië",
-                        "Argentina",
-                        "Argentina",
-                        "Argentyna"
-                    ]
-                },
-                "BR": {
-                    "name": [
-                        "Brasilien",
-                        "Brazil",
-                        "Brésil",
-                        "Brazilië",
-                        "Brazílie",
-                        "Brasile",
-                        "Brazylia"
-                    ]
-                },
-                "CL": {
-                    "name": [
-                        "Chile",
-                        "Chile",
-                        "Chili",
-                        "Chili",
-                        "Chile",
-                        "Chile",
-                        "Chile"
-                    ]
-                },
-                "CO": {
-                    "name": [
-                        "Kolumbien",
-                        "Colombia",
-                        "Colombie",
-                        "Colombia",
-                        "Kolumbie",
-                        "Colombia",
-                        "Kolumbia"
-                    ]
-                },
-                "EC": {
-                    "name": [
-                        "Ecuador",
-                        "Ecuador",
-                        "Equateur",
-                        "Ecuador",
-                        "Ekvádor",
-                        "Ecuador",
-                        "Ekwador"
-                    ]
-                }
-            }
+        "ZA": {
+          "name": [
+            "Südafrika",
+            "South Africa",
+            "Afrique du Sud",
+            "Zuid-Afrika",
+            "Jižní Afrika",
+            "Sud Africa",
+            "Afryka Południowa"
+          ]
         }
+      }
+    },
+    "AS": {
+      "name": ["Asien", "Asia", "Asie", "Azië", "Asie", "Asia", "Azja"],
+      "regions": {
+        "CN": {
+          "name": ["China", "China", "Chine", "China", "Čína", "Cina", "Chiny"]
+        },
+        "IL": {
+          "name": [
+            "Israel",
+            "Israel",
+            "Israël",
+            "Israël",
+            "Izrael",
+            "Israele",
+            "Izrael"
+          ]
+        },
+        "JP": {
+          "name": [
+            "Japan",
+            "Japan",
+            "Japon",
+            "Japan",
+            "Japonsko",
+            "Giappone",
+            "Japonia"
+          ]
+        },
+        "PH": {
+          "name": [
+            "Philippinen",
+            "Philippines",
+            "Philippines",
+            "Filippijnen",
+            "Filipíny",
+            "Filippine",
+            "Filipiny"
+          ]
+        },
+        "TR": {
+          "name": [
+            "Türkei",
+            "Turkey",
+            "Turquie",
+            "Kalkoen",
+            "Turecko",
+            "Tacchino",
+            "Turcja"
+          ]
+        }
+      }
+    },
+    "EU": {
+      "name": [
+        "Europa",
+        "Europe",
+        "Europe",
+        "Europa",
+        "Evropa",
+        "Europa",
+        "Europa"
+      ],
+      "regions": {
+        "AT": {
+          "name": [
+            "Österreich",
+            "Austria",
+            "Autriche",
+            "Oostenrijk",
+            "Rakousko",
+            "Austria",
+            "Austria"
+          ],
+          "regions": {
+            "AT-1": {
+              "name": [
+                "Burgenland",
+                "Burgenland",
+                "Burgenland",
+                "Burgenland",
+                "Burgenland",
+                "Burgenland",
+                "Burgenland"
+              ]
+            },
+            "AT-2": {
+              "name": [
+                "Kärntnen",
+                "Carinthia",
+                "Carinthie",
+                "Karinthië",
+                "Korutany",
+                "Carinzia",
+                "Karyntia"
+              ]
+            },
+            "AT-3": {
+              "name": [
+                "Niederösterreich",
+                "Lower Austria",
+                "Basse-Autriche",
+                "Neder-Oostenrijk",
+                "Dolní Rakousko",
+                "Bassa Austria",
+                "Dolna Austria"
+              ]
+            },
+            "AT-4": {
+              "name": [
+                "Oberösterreich",
+                "Upper Austria",
+                "Haute-Autriche",
+                "Opper-Oostenrijk",
+                "Horní Rakousko",
+                "Alta Austria",
+                "Górna Austria"
+              ]
+            },
+            "AT-5": {
+              "name": [
+                "Salzburg",
+                "Salzburg",
+                "Salzbourg",
+                "Salzburg",
+                "Salzburg",
+                "Salisburgo",
+                "Salzburg"
+              ]
+            },
+            "AT-6": {
+              "name": [
+                "Steiermark",
+                "Styria",
+                "Styrie",
+                "Stiermarken",
+                "Štýrsko",
+                "Stiria",
+                "Styria"
+              ]
+            },
+            "AT-7": {
+              "name": [
+                "Tirol",
+                "Tirol",
+                "Tyrol",
+                "Tirol",
+                "Tyrolsko",
+                "Tirol",
+                "Tirol"
+              ]
+            },
+            "AT-8": {
+              "name": [
+                "Vorarlberg",
+                "Vorarlberg",
+                "Vorarlberg",
+                "Vorarlberg",
+                "Vorarlberg",
+                "Vorarlberg",
+                "Vorarlberg"
+              ]
+            },
+            "AT-9": {
+              "name": [
+                "Wien",
+                "Vienna",
+                "Vienne",
+                "Wenen",
+                "Vídeň",
+                "Vienna",
+                "Wiedeń"
+              ]
+            }
+          }
+        },
+        "BA": {
+          "name": [
+            "Bosnien-Herzegowina",
+            "Bosnia and Herzegovina",
+            "Bosnie Herzégovine",
+            "Bosnië-Herzegovina",
+            "Bosna a Hercegovina",
+            "Bosnia Erzegovina",
+            "Bośnia i Hercegowina"
+          ]
+        },
+        "BE": {
+          "name": [
+            "Belgien",
+            "Belgium",
+            "Belgique",
+            "Belgie",
+            "Belgie",
+            "Belgio",
+            "Belgia"
+          ],
+          "regions": {
+            "BE-VLG": {
+              "name": [
+                "Flandern",
+                "Flanders",
+                "Flandre",
+                "Vlaanderen",
+                "Flandry",
+                "Fiandre",
+                "Flandria"
+              ]
+            },
+            "BE-WAL": {
+              "name": [
+                "Wallonien",
+                "Wallonia",
+                "Wallonie",
+                "Wallonië",
+                "Valonsko",
+                "Vallonia",
+                "Walonia"
+              ]
+            }
+          }
+        },
+        "BG": {
+          "name": [
+            "Bulgarien",
+            "Bulgaria",
+            "Bulgarie",
+            "Bulgarije ",
+            "Bulharsko",
+            "Bulgaria",
+            "Bułgaria"
+          ]
+        },
+        "CH": {
+          "name": [
+            "Schweiz",
+            "Switzerland",
+            "Suisse",
+            "Zwitserland",
+            "Švýcarsko",
+            "Svizzera",
+            "Szwajcaria"
+          ]
+        },
+        "CZ": {
+          "name": [
+            "Tschechien",
+            "Czech Republic",
+            "République Tchèque",
+            "Tsjechië",
+            "Česká republika",
+            "Repubblica Ceca",
+            "Republika Czeska"
+          ]
+        },
+        "DK": {
+          "name": [
+            "Dänemark",
+            "Denmark",
+            "Danemark",
+            "Denemarken",
+            "Dánsko",
+            "Danimarca",
+            "Dania"
+          ]
+        },
+        "DE": {
+          "name": [
+            "Deutschland",
+            "Germany",
+            "Allemagne",
+            "Duitsland",
+            "Německo",
+            "Germania",
+            "Niemcy"
+          ],
+          "regions": {
+            "DE-BW": {
+              "name": [
+                "Baden-Württemberg",
+                "Baden-Württemberg",
+                "Bade-Wurtemberg",
+                "Baden-Württemberg",
+                "Bádensko-Württembersko",
+                "Baden-Württemberg",
+                "Badenia-Wirtembergia"
+              ]
+            },
+            "DE-BY": {
+              "name": [
+                "Bayern",
+                "Bavaria",
+                "Bavière",
+                "Beieren",
+                "Bavorsko",
+                "Baviera",
+                "Bawaria"
+              ]
+            },
+            "DE-BE": {
+              "name": [
+                "Berlin",
+                "Berlin",
+                "Berlin",
+                "Berlijn",
+                "Berlín",
+                "Berlino",
+                "Berlin"
+              ]
+            },
+            "DE-BB": {
+              "name": [
+                "Brandenburg",
+                "Brandenburg",
+                "Brandebourg",
+                "Brandenburg",
+                "Brandenburg",
+                "Brandeburgo",
+                "Brandenburgia"
+              ]
+            },
+            "DE-HB": {
+              "name": [
+                "Bremen",
+                "Bremen",
+                "Brême",
+                "Bremen",
+                "Brémy",
+                "Brema",
+                "Brema"
+              ]
+            },
+            "DE-HH": {
+              "name": [
+                "Hamburg",
+                "Hamburg",
+                "Hambourg",
+                "Hamburg",
+                "Hamburg",
+                "Amburgo",
+                "Hamburg"
+              ]
+            },
+            "DE-HE": {
+              "name": [
+                "Hessen",
+                "Hesse",
+                "Hesse",
+                "Hessen",
+                "Hesse",
+                "Assia",
+                "Hesja"
+              ]
+            },
+            "DE-MV": {
+              "name": [
+                "Mecklenburg-Vorpommern",
+                "Mecklenburg Western Pomerania",
+                "Mecklembourg Poméranie occidentale",
+                "Mecklenburg Voor-Pommeren",
+                "Meklenbursko-Přední Pomořansko",
+                "Meclemburgo-Pomerania occidentale",
+                "Meklemburgia Pomorze Przednie"
+              ]
+            },
+            "DE-NI": {
+              "name": [
+                "Niedersachsen",
+                "Lower Saxony",
+                "Basse-Saxe",
+                "Nedersaksen",
+                "Dolní Sasko",
+                "Bassa Sassonia",
+                "Dolna Saksonia"
+              ]
+            },
+            "DE-NW": {
+              "name": [
+                "Nordrhein-Westfalen",
+                "North Rhine-Westphalia",
+                "Rhénanie du Nord-Westphalie",
+                "Noordrijn-Westfalen",
+                "Severní Porýní-Vestfálsko",
+                "Renania settentrionale-Vestfalia",
+                "Nadrenia Północna-Westfalia"
+              ]
+            },
+            "DE-RP": {
+              "name": [
+                "Rheinland-Pfalz",
+                "Rhineland-Palatinate",
+                "Rhénanie-Palatinat",
+                "Rijnland-Palts",
+                "Porýní-Falc",
+                "Renania-Palatinato",
+                "Nadrenia-Palatynat"
+              ]
+            },
+            "DE-SL": {
+              "name": [
+                "Saarland",
+                "Saarland",
+                "Sarre",
+                "Saarland",
+                "Sársko",
+                "Saarland",
+                "Saarland"
+              ]
+            },
+            "DE-SN": {
+              "name": [
+                "Sachsen",
+                "Saxony",
+                "Saxe",
+                "Saksen",
+                "Sasko",
+                "Sassonia",
+                "Saksonia"
+              ]
+            },
+            "DE-ST": {
+              "name": [
+                "Sachsen-Anhalt",
+                "Saxony-Anhalt",
+                "Saxe-Anhalt",
+                "Saksen-Anhalt",
+                "Sasko-Anhaltsko",
+                "Sassonia-Anhalt",
+                "Saksonia-Anhalt"
+              ]
+            },
+            "DE-SH": {
+              "name": [
+                "Schleswig-Holstein",
+                "Schleswig-Holstein",
+                "Schleswig-Holstein",
+                "Sleeswijk-Holstein",
+                "Schleswig-Holstein",
+                "Schleswig-Holstein",
+                "Szlezwik-Holsztyn"
+              ]
+            },
+            "DE-TH": {
+              "name": [
+                "Thüringen",
+                "Thuringa",
+                "Thuringe",
+                "Thüringen",
+                "Durynsko",
+                "Turingia",
+                "Turyngia"
+              ]
+            }
+          }
+        },
+        "ES": {
+          "name": [
+            "Spanien",
+            "Spain",
+            "Espagne",
+            "Spanje",
+            "Španělsko",
+            "Spagna",
+            "Hiszpania"
+          ]
+        },
+        "FI": {
+          "name": [
+            "Finnland",
+            "Finland",
+            "Finlande",
+            "Finland",
+            "Finsko",
+            "Finlandia",
+            "Finlandia"
+          ]
+        },
+        "FR": {
+          "name": [
+            "Frankreich",
+            "France",
+            "France",
+            "Frankrijk",
+            "Francie",
+            "Francia",
+            "Francja"
+          ],
+          "regions": {
+            "FR-ARA": {
+              "name": [
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes"
+              ]
+            },
+            "FR-BFC": {
+              "name": [
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté"
+              ]
+            },
+            "FR-BRE": {
+              "name": [
+                "Bretagne",
+                "Brittany",
+                "Bretagne",
+                "Bretagne",
+                "Bretaň",
+                "Bretagna",
+                "Bretania"
+              ]
+            },
+            "FR-CVL": {
+              "name": [
+                "Centre-Val de Loire",
+                "Centre-Val de Loire",
+                "Centre-Val de Loire",
+                "Centre-Val de Loire",
+                "Centre-Val de Loire",
+                "Centre-Val de Loire",
+                "Centre-Val de Loire"
+              ]
+            },
+            "FR-20R": {
+              "name": [
+                "Korsika",
+                "Corsica",
+                "Corse",
+                "Corsica",
+                "Korsika",
+                "Corsica",
+                "Korsyka"
+              ]
+            },
+            "FR-GES": {
+              "name": [
+                "Grand-Est",
+                "Grand-Est",
+                "Grand-Est",
+                "Grand-Est",
+                "Grand-Est",
+                "Grand-Est",
+                "Grand-Est"
+              ]
+            },
+            "FR-HDF": {
+              "name": [
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "Hauts-de-France"
+              ]
+            },
+            "FR-IDF": {
+              "name": [
+                "Île-de-France",
+                "Île-de-France",
+                "Île-de-France",
+                "Île-de-France",
+                "Île-de-France",
+                "Île-de-France",
+                "Île-de-France"
+              ]
+            },
+            "FR-NOR": {
+              "name": [
+                "Normandie",
+                "Normandy",
+                "Normandie",
+                "Normandië",
+                "Normandie",
+                "Normandia",
+                "Normandia"
+              ]
+            },
+            "FR-NAQ": {
+              "name": [
+                "Neu-Aquitanien",
+                "New Aquitaine",
+                "Nouvelle-Aquitaine",
+                "Nieuw Aquitanië",
+                "Nová Akvitánie",
+                "Nuova Aquitania",
+                "Nowa Akwitania"
+              ]
+            },
+            "FR-OCC": {
+              "name": [
+                "Okzitanien",
+                "Occitania",
+                "Occitanie",
+                "Occitanië",
+                "Okcitánie",
+                "Occitania",
+                "Oksytania"
+              ]
+            },
+            "FR-PDL": {
+              "name": [
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire"
+              ]
+            },
+            "FR-PAC": {
+              "name": [
+                "Provence-Alpes-Côte-d’Azur",
+                "Provence-Alpes-Côte-d’Azur",
+                "Provence-Alpes-Côte-d’Azur",
+                "Provence-Alpes-Côte-d’Azur",
+                "Provence-Alpes-Côte-d’Azur",
+                "Provence-Alpes-Côte-d’Azur",
+                "Provence-Alpes-Côte-d’Azur"
+              ]
+            }
+          }
+        },
+        "GB": {
+          "name": [
+            "Vereinigtes Königreich",
+            "United Kingdom",
+            "Royaume-Uni",
+            "Verenigd Koningkrijk",
+            "Spojené království",
+            "Regno Unito ",
+            "Zjednoczone Królestwo"
+          ]
+        },
+        "GR": {
+          "name": [
+            "Griechenland",
+            "Greece",
+            "Grèce",
+            "Griekenland",
+            "Řecko",
+            "Grecia",
+            "Grecja"
+          ]
+        },
+        "HR": {
+          "name": [
+            "Kroatien",
+            "Croatia",
+            "Croatie",
+            "Kroatië",
+            "Chorvatsko",
+            "Croazia",
+            "Chorwacja"
+          ]
+        },
+        "HU": {
+          "name": [
+            "Ungarn",
+            "Hungary",
+            "Hongrie",
+            "Hongarije",
+            "Maďarsko",
+            "Ungheria",
+            "Węgry"
+          ]
+        },
+        "IE": {
+          "name": [
+            "Irland",
+            "Ireland",
+            "Irlande",
+            "Ierland",
+            "Irsko",
+            "Irlanda",
+            "Irlandia"
+          ]
+        },
+        "IS": {
+          "name": [
+            "Island",
+            "Iceland",
+            "Islande",
+            "IJsland",
+            "Island",
+            "Islanda",
+            "Islandia"
+          ]
+        },
+        "IT": {
+          "name": [
+            "Italien",
+            "Italy",
+            "Italie",
+            "Italië",
+            "Itálie",
+            "Italia",
+            "Włochy"
+          ]
+        },
+        "LT": {
+          "name": [
+            "Litauen",
+            "Lithuania",
+            "Lituanie",
+            "Litouwen",
+            "Litva",
+            "Lituania",
+            "Litwa"
+          ]
+        },
+        "LU": {
+          "name": [
+            "Luxemburg",
+            "Luxembourg",
+            "Luxembourg",
+            "Luxemburg",
+            "Lucembursko",
+            "Lussemburgo",
+            "Luksemburg"
+          ]
+        },
+        "ME": {
+          "name": [
+            "Montenegro",
+            "Montenegro",
+            "Monténégro",
+            "Montenegro",
+            "Černá Hora",
+            "Montenegro",
+            "Czarnogóra"
+          ]
+        },
+        "MK": {
+          "name": [
+            "Nordmazedonien",
+            "North Macedonia",
+            "Macédoine du Nord",
+            "Noord-Macedonië",
+            "Severní Makedonie",
+            "Macedonia del Nord",
+            "Macedonia Północna"
+          ]
+        },
+        "NL": {
+          "name": [
+            "Niederlande",
+            "Netherlands",
+            "Pays-Bas",
+            "Nederland",
+            "Holandsko",
+            "Olanda",
+            "Holandia"
+          ]
+        },
+        "NO": {
+          "name": [
+            "Norwegen",
+            "Norway",
+            "Norvège",
+            "Noorwegen",
+            "Norsko",
+            "Norvegia",
+            "Norwegia"
+          ]
+        },
+        "PL": {
+          "name": [
+            "Polen",
+            "Poland",
+            "Pologne",
+            "Polen",
+            "Polsko",
+            "Polonia",
+            "Polska"
+          ]
+        },
+        "PT": {
+          "name": [
+            "Portugal",
+            "Portugal",
+            "Portugal",
+            "Portugal",
+            "Portugalsko",
+            "Portogallo",
+            "Portugalia"
+          ]
+        },
+        "RO": {
+          "name": [
+            "Rumänien",
+            "Rumania",
+            "Roumanie",
+            "Roemenië",
+            "Rumunsko",
+            "Romania",
+            "Rumunia"
+          ]
+        },
+        "RS": {
+          "name": [
+            "Serbien",
+            "Serbia",
+            "Serbie",
+            "Servië",
+            "Srbsko",
+            "Serbia",
+            "Serbia"
+          ]
+        },
+        "RU": {
+          "name": [
+            "Russland",
+            "Russia",
+            "Russie",
+            "Rusland",
+            "Rusko",
+            "Russia",
+            "Rosja"
+          ]
+        },
+        "SE": {
+          "name": [
+            "Schweden",
+            "Sweden",
+            "Suède",
+            "Zweden",
+            "Švédsko",
+            "Svezia",
+            "Szwecja"
+          ]
+        },
+        "SK": {
+          "name": [
+            "Slowakei",
+            "Slovakia",
+            "Slovaquie",
+            "Slowakije",
+            "Slovensko",
+            "Slovacchia",
+            "Słowacja"
+          ]
+        },
+        "SI": {
+          "name": [
+            "Slovenien",
+            "Slovenia",
+            "Slovénie",
+            "Slovenië",
+            "Slovinsko",
+            "Slovenia",
+            "Słowenia"
+          ]
+        },
+        "UA": {
+          "name": [
+            "Ukraine",
+            "Ukraine",
+            "Ukraine",
+            "Oekraïne",
+            "Ukrajina",
+            "Ucraina",
+            "Ukraina"
+          ]
+        }
+      }
+    },
+    "OC": {
+      "name": [
+        "Ozeanien",
+        "Oceania",
+        "Océanie",
+        "Oceanië",
+        "Oceánie",
+        "Oceania",
+        "Oceania"
+      ],
+      "regions": {
+        "AU": {
+          "name": [
+            "Australien",
+            "Australia",
+            "Australie",
+            "Australië",
+            "Austrálie",
+            "Australia",
+            "Australia"
+          ],
+          "regions": {
+            "AU-NSW": {
+              "name": [
+                "New South Wales",
+                "New South Wales",
+                "Nouvelle Galles du Sud",
+                "Nieuw Zuid-Wales",
+                "Nový Jížní Wales",
+                "Nuovo Galles del Sud",
+                "Nowa Południowa Walia"
+              ]
+            },
+            "AU-NT": {
+              "name": [
+                "Northern Territory",
+                "Northern Territory",
+                "Territoire du Nord",
+                "Noordelijk Territorium",
+                "Severní území",
+                "Territori del Nord",
+                "Północne terytorium"
+              ]
+            },
+            "AU-QLD": {
+              "name": [
+                "Queensland",
+                "Queensland",
+                "Queensland",
+                "Queensland",
+                "Queensland",
+                "Queensland",
+                "Queensland"
+              ]
+            },
+            "AU-SA": {
+              "name": [
+                "Südaustralien",
+                "South Australia",
+                "Australie du Sud",
+                "Zuid Australië",
+                "jižní Austrálie",
+                "sud dell'Australia",
+                "Południowa Australia"
+              ]
+            },
+            "AU-TAS": {
+              "name": [
+                "Tasmanien",
+                "Tasmania",
+                "Tasmanie",
+                "Tasmanië",
+                "Tasmánie",
+                "Tasmania",
+                "Tasmania"
+              ]
+            },
+            "AU-VIC": {
+              "name": [
+                "Victoria",
+                "Victoria",
+                "Victoria",
+                "Victoria",
+                "Victoria",
+                "Victoria",
+                "Wiktoria"
+              ]
+            },
+            "AU-WA": {
+              "name": [
+                "Westaustralien",
+                "Western Australia",
+                "Australie occidentale",
+                "West Australië",
+                "západní Austrálie",
+                "Australia Occidentale",
+                "Zachodnia australia"
+              ]
+            }
+          }
+        },
+        "NZ": {
+          "name": [
+            "Neuseeland",
+            "New Zealand",
+            "Nouvelle-Zélande",
+            "Nieuw-Zeeland",
+            "Nový Zéland",
+            "Nuova Zelanda",
+            "Nowa Zelandia"
+          ],
+          "regions": {
+            "NZ-N": {
+              "name": [
+                "Nordinsel",
+                "North Island",
+                "Île du Nord",
+                "Noord eiland",
+                "Severní ostrov",
+                "Isola del nord",
+                "Północna Wyspa"
+              ]
+            },
+            "NZ-S": {
+              "name": [
+                "Südinsel",
+                "South Island",
+                "Île du Sud",
+                "zuidelijk eiland",
+                "Jižní ostrov",
+                "Isola del Sud",
+                "Południowa Wyspa"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "NA": {
+      "name": [
+        "Nordamerika",
+        "North America",
+        "Amérique du Nord",
+        "Noord-Amerika",
+        "Severní Amerika",
+        "Nord America",
+        "Ameryka północna"
+      ],
+      "regions": {
+        "CA": {
+          "name": [
+            "Kanada",
+            "Canada",
+            "Canada",
+            "Canada",
+            "Kanada",
+            "Canada",
+            "Kanada"
+          ],
+          "regions": {
+            "CA-AB": {
+              "name": [
+                "Alberta",
+                "Alberta",
+                "Alberta",
+                "Alberta",
+                "Alberta",
+                "Alberta",
+                "Alberta"
+              ]
+            },
+            "CA-BC": {
+              "name": [
+                "British Colombia",
+                "British Colombia",
+                "Colombie britannique",
+                "Brits Columbia",
+                "Britská Kolumbie",
+                "British Columbia",
+                "Brytyjska Kolumbia"
+              ]
+            },
+            "CA-MB": {
+              "name": [
+                "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "Manitoba"
+              ]
+            },
+            "CA-ON": {
+              "name": [
+                "Ontario",
+                "Ontario",
+                "Ontario",
+                "Ontario",
+                "Ontario",
+                "Ontario",
+                "Ontario"
+              ]
+            },
+            "CA-QC": {
+              "name": [
+                "Québec",
+                "Québec",
+                "Québec",
+                "Québec",
+                "Québec",
+                "Québec",
+                "Québec"
+              ]
+            },
+            "CA-SK": {
+              "name": [
+                "Saskatchewan",
+                "Saskatchewan",
+                "Saskatchewan",
+                "Saskatchewan",
+                "Saskatchewan",
+                "Saskatchewan",
+                "Saskatchewan"
+              ]
+            }
+          }
+        },
+        "MX": {
+          "name": [
+            "Mexiko",
+            "Mexico",
+            "Mexique",
+            "Mexico",
+            "Mexiko",
+            "Messico",
+            "Meksyk"
+          ]
+        },
+        "US": {
+          "name": [
+            "Vereinigte Staaten",
+            "United States",
+            "États-Unis",
+            "Verenigde Staten",
+            "Spojené státy",
+            "stati Uniti",
+            "Stany Zjednoczone"
+          ],
+          "regions": {
+            "US-AL": {
+              "name": [
+                "Alabama",
+                "Alabama",
+                "Alabama",
+                "Alabama",
+                "Alabama",
+                "Alabama",
+                "Alabama"
+              ]
+            },
+            "US-AK": {
+              "name": [
+                "Alaska",
+                "Alaska",
+                "Alaska",
+                "Alaska",
+                "Aljaška",
+                "Alaska",
+                "Alaska"
+              ]
+            },
+            "US-AZ": {
+              "name": [
+                "Arizona",
+                "Arizona",
+                "Arizona",
+                "Arizona",
+                "Arizona",
+                "Arizona",
+                "Arizona"
+              ]
+            },
+            "US-AR": {
+              "name": [
+                "Arkansas",
+                "Arkansas",
+                "Arkansas",
+                "Arkansas",
+                "Arkansas",
+                "Arkansas",
+                "Arkansas"
+              ]
+            },
+            "US-CA": {
+              "name": [
+                "California",
+                "California",
+                "Californie",
+                "Californië",
+                "Kalifornie",
+                "California",
+                "Kalifornia"
+              ]
+            },
+            "US-CO": {
+              "name": [
+                "Colorado",
+                "Colorado",
+                "Colorado",
+                "Colorado",
+                "Colorado",
+                "Colorado",
+                "Kolorado"
+              ]
+            },
+            "US-CT": {
+              "name": [
+                "Connecticut",
+                "Connecticut",
+                "Connecticut",
+                "Connecticut",
+                "Connecticut",
+                "Connecticut",
+                "Connecticut"
+              ]
+            },
+            "US-DE": {
+              "name": [
+                "Delaware",
+                "Delaware",
+                "Delaware",
+                "Delaware",
+                "Delaware",
+                "Delaware",
+                "Delaware"
+              ]
+            },
+            "US-FL": {
+              "name": [
+                "Florida",
+                "Florida",
+                "Floride",
+                "Florida",
+                "Florida",
+                "Florida",
+                "Floryda"
+              ]
+            },
+            "US-GA": {
+              "name": [
+                "Georgia",
+                "Georgia",
+                "Géorgie",
+                "Georgië",
+                "Gruzie",
+                "Georgia",
+                "Gruzja"
+              ]
+            },
+            "US-HI": {
+              "name": [
+                "Hawaii",
+                "Hawaii",
+                "Hawaii",
+                "Hawaii",
+                "Havaj",
+                "Hawaii",
+                "Hawaje"
+              ]
+            },
+            "US-ID": {
+              "name": [
+                "Idaho",
+                "Idaho",
+                "Idaho",
+                "Idaho",
+                "Idaho",
+                "Idaho",
+                "Idaho"
+              ]
+            },
+            "US-IL": {
+              "name": [
+                "Illinois",
+                "Illinois",
+                "Illinois",
+                "Illinois",
+                "Illinois",
+                "Illinois",
+                "Illinois"
+              ]
+            },
+            "US-IN": {
+              "name": [
+                "Indiana",
+                "Indiana",
+                "Indiana",
+                "Indiana",
+                "Indiana",
+                "Indiana",
+                "Indiana"
+              ]
+            },
+            "US-IA": {
+              "name": ["Iowa", "Iowa", "Iowa", "Iowa", "Iowo", "Iowa", "Iowa"]
+            },
+            "US-KS": {
+              "name": [
+                "Kansas",
+                "Kansas",
+                "Kansas",
+                "Kansas",
+                "Kansas",
+                "Kansas",
+                "Kansas"
+              ]
+            },
+            "US-KY": {
+              "name": [
+                "Kentucky",
+                "Kentucky",
+                "Kentucky",
+                "Kentucky",
+                "Kentucky",
+                "Kentucky",
+                "Kentucky"
+              ]
+            },
+            "US-LA": {
+              "name": [
+                "Louisiana",
+                "Louisiana",
+                "Louisiane",
+                "Louisiana",
+                "Louisiana",
+                "Louisiana",
+                "Luizjana"
+              ]
+            },
+            "US-ME": {
+              "name": [
+                "Maine",
+                "Maine",
+                "Maine",
+                "Maine",
+                "Maine",
+                "Maine",
+                "Maine"
+              ]
+            },
+            "US-MD": {
+              "name": [
+                "Maryland",
+                "Maryland",
+                "Maryland",
+                "Maryland",
+                "Maryland",
+                "Maryland",
+                "Maryland"
+              ]
+            },
+            "US-MA": {
+              "name": [
+                "Massachusetts",
+                "Massachusetts",
+                "Massachusetts",
+                "Massachusetts",
+                "Massachusetts",
+                "Massachusetts",
+                "Massachusetts"
+              ]
+            },
+            "US-MI": {
+              "name": [
+                "Michigan",
+                "Michigan",
+                "Michigan",
+                "Michigan",
+                "Michigan",
+                "Michigan",
+                "Michigan"
+              ]
+            },
+            "US-MN": {
+              "name": [
+                "Minnesota",
+                "Minnesota",
+                "Minnesota",
+                "Minnesota",
+                "Minnesota",
+                "Minnesota",
+                "Minnesota"
+              ]
+            },
+            "US-MS": {
+              "name": [
+                "Mississippi",
+                "Mississippi",
+                "Mississippi",
+                "Mississippi",
+                "Mississippi",
+                "Mississippi",
+                "Mississippi"
+              ]
+            },
+            "US-MO": {
+              "name": [
+                "Missouri",
+                "Missouri",
+                "Missouri",
+                "Missouri",
+                "Missouri",
+                "Missouri",
+                "Missouri"
+              ]
+            },
+            "US-MT": {
+              "name": [
+                "Montana",
+                "Montana",
+                "Montana",
+                "Montana",
+                "Montana",
+                "Montana",
+                "Montana"
+              ]
+            },
+            "US-NE": {
+              "name": [
+                "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "Nebraska"
+              ]
+            },
+            "US-NV": {
+              "name": [
+                "Nevada",
+                "Nevada",
+                "Nevada",
+                "Nevada",
+                "Nevada",
+                "Nevada",
+                "Nevada"
+              ]
+            },
+            "US-NH": {
+              "name": [
+                "New Hampshire",
+                "New Hampshire",
+                "New Hampshire",
+                "New Hampshire",
+                "New Hampshire",
+                "New Hampshire",
+                "New Hampshire"
+              ]
+            },
+            "US-NJ": {
+              "name": [
+                "New Jersey",
+                "New Jersey",
+                "New Jersey",
+                "New Jersey",
+                "New Jersey",
+                "New Jersey",
+                "New Jersey"
+              ]
+            },
+            "US-NM": {
+              "name": [
+                "New Mexico",
+                "New Mexico",
+                "Nouveau Mexique",
+                "New Mexico",
+                "Nové Mexiko",
+                "Nuovo Messico",
+                "Nowy Meksyk"
+              ]
+            },
+            "US-NY": {
+              "name": [
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "New York",
+                "Nowy Jork"
+              ]
+            },
+            "US-NC": {
+              "name": [
+                "North Carolina",
+                "North Carolina",
+                "Caroline du Nord",
+                "Noord Carolina",
+                "Severní Karolina",
+                "Carolina del Nord",
+                "Karolina Północna"
+              ]
+            },
+            "US-ND": {
+              "name": [
+                "North Dakota",
+                "North Dakota",
+                "Dakota du Nord",
+                "Noord-Dakota",
+                "Severní Dakota",
+                "Nord Dakota",
+                "Północna Dakota"
+              ]
+            },
+            "US-OH": {
+              "name": ["Ohio", "Ohio", "Ohio", "Ohio", "Ohio", "Ohio", "Ohio"]
+            },
+            "US-OK": {
+              "name": [
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma"
+              ]
+            },
+            "US-OR": {
+              "name": [
+                "Oregon",
+                "Oregon",
+                "Oregon",
+                "Oregon",
+                "Oregon",
+                "Oregon",
+                "Oregon"
+              ]
+            },
+            "US-PA": {
+              "name": [
+                "Pennsylvania",
+                "Pennsylvania",
+                "Pennsylvanie",
+                "Pennsylvania",
+                "Pensylvánie",
+                "Pennsylvania",
+                "Pensylwania"
+              ]
+            },
+            "US-RI": {
+              "name": [
+                "Rhode Island",
+                "Rhode Island",
+                "Rhode Island",
+                "Rhode Island",
+                "Rhode Island",
+                "Rhode Island",
+                "Rhode Island"
+              ]
+            },
+            "US-SC": {
+              "name": [
+                "South Carolina",
+                "South Carolina",
+                "Caroline du Sud",
+                "zuid Carolina",
+                "Jižní Karolína",
+                "Carolina del Sud",
+                "Karolina Południowa"
+              ]
+            },
+            "US-SD": {
+              "name": [
+                "South Dakota",
+                "South Dakota",
+                "Dakota du Sud",
+                "zuid Dakota",
+                "Jižní Dakota",
+                "Sud Dakota",
+                "Południowa Dakota"
+              ]
+            },
+            "US-TN": {
+              "name": [
+                "Tennessee",
+                "Tennessee",
+                "Tennessee",
+                "Tennessee",
+                "Tennessee",
+                "Tennessee",
+                "Tennessee"
+              ]
+            },
+            "US-TX": {
+              "name": [
+                "Texas",
+                "Texas",
+                "Texas",
+                "Texas",
+                "Texas",
+                "Texas",
+                "Teksas"
+              ]
+            },
+            "US-UT": {
+              "name": ["Utah", "Utah", "Utah", "Utah", "Utah", "Utah", "Utah"]
+            },
+            "US-VT": {
+              "name": [
+                "Vermont",
+                "Vermont",
+                "Vermont",
+                "Vermont",
+                "Vermont",
+                "Vermont",
+                "Vermont"
+              ]
+            },
+            "US-VA": {
+              "name": [
+                "Virginia",
+                "Virginia",
+                "Virginie",
+                "Virginia",
+                "Virginie",
+                "Virginia",
+                "Virginia"
+              ]
+            },
+            "US-WA": {
+              "name": [
+                "Washington",
+                "Washington",
+                "Washington",
+                "Washington",
+                "Washington",
+                "Washington",
+                "Washington"
+              ]
+            },
+            "US-WV": {
+              "name": [
+                "West Virginia",
+                "West Virginia",
+                "Virginie-Occidentale",
+                "Virginia Occidentale",
+                "západní Virginie",
+                "Virginia dell'ovest",
+                "Wirginia Zachodnia"
+              ]
+            },
+            "US-WI": {
+              "name": [
+                "Wisconsin",
+                "Wisconsin",
+                "Wisconsin",
+                "Wisconsin",
+                "Wisconsin",
+                "Wisconsin",
+                "Wisconsin"
+              ]
+            },
+            "US-WY": {
+              "name": [
+                "Wyoming",
+                "Wyoming",
+                "Wyoming",
+                "Wyoming",
+                "Wyoming",
+                "Wyoming",
+                "Wyoming"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "SA": {
+      "name": [
+        "Südamerika",
+        "South America",
+        "Amérique du Sud",
+        "Zuid-Amerika",
+        "Jižní Amerika",
+        "Sud America",
+        "Ameryka Południowa"
+      ],
+      "regions": {
+        "AR": {
+          "name": [
+            "Argentinien",
+            "Argentinia",
+            "Argentine",
+            "Argentinië",
+            "Argentina",
+            "Argentina",
+            "Argentyna"
+          ]
+        },
+        "BR": {
+          "name": [
+            "Brasilien",
+            "Brazil",
+            "Brésil",
+            "Brazilië",
+            "Brazílie",
+            "Brasile",
+            "Brazylia"
+          ]
+        },
+        "CL": {
+          "name": [
+            "Chile",
+            "Chile",
+            "Chili",
+            "Chili",
+            "Chile",
+            "Chile",
+            "Chile"
+          ]
+        },
+        "CO": {
+          "name": [
+            "Kolumbien",
+            "Colombia",
+            "Colombie",
+            "Colombia",
+            "Kolumbie",
+            "Colombia",
+            "Kolumbia"
+          ]
+        },
+        "EC": {
+          "name": [
+            "Ecuador",
+            "Ecuador",
+            "Equateur",
+            "Ecuador",
+            "Ekvádor",
+            "Ecuador",
+            "Ekwador"
+          ]
+        }
+      }
     }
+  }
 }

@@ -2,6 +2,7 @@ import csv
 import json
 import logging
 import os
+import signal
 from time import sleep
 from typing import Any, List, Optional
 
@@ -28,7 +29,7 @@ AIRPORT_CSV = "airport.csv"
 AIRPORT_GEOJSON = "airport.geojson"
 OPENAIP_ENDPOINT_URL = "https://api.core.openaip.net/api/airports"
 NOMINATIM_ENDPOINT_URL = "https://nominatim.openstreetmap.org/reverse"
-WEGLIDE_ENDPOIN_URL = ""
+WEGLIDE_ENDPOINT_URL = "https://api.weglide.org/v1/airport"
 CONTINENTS = "geo/continents.json"
 COUNTRIES = "geo/countries.json"
 
@@ -159,19 +160,55 @@ def filter_airports(airports: List[Airport]) -> List[Airport]:
     return list(filter(is_of_interest, airports))
 
 
+def _airport_changed(new: Airport, old: Airport) -> bool:
+    """
+    Returns True if there is changed OpenAIP information
+    in the new airport compared to the old one.
+    """
+    assert new["openaip_id"] == old["openaip_id"]
+    return (
+        new["openaip_name"] == old["openaip_name"]
+        and new["kind"] == old["kind"]
+        and new["longitude"] == old["longitude"]
+        and new["latitude"] == old["latitude"]
+        and new["elevation"] == old["elevation"]
+        and new["icao"] == old["icao"]
+        and new["radio_frequency"] == old["radio_frequency"]
+        and new["radio_type"] == old["radio_type"]
+        and new["radio_description"] == old["radio_description"]
+        and new["rwy_name"] == old["rwy_name"]
+        and new["rwy_sfc"] == old["rwy_sfc"]
+        and new["rwy_direction"] == old["rwy_direction"]
+        and new["rwy_length"] == old["rwy_length"]
+        and new["rwy_width"] == old["rwy_width"]
+    )
+
+
 def merge_airports(existing: List[Airport], remote: List[Airport]) -> List[Airport]:
     """
     Add all airports from the remote which do not yet exist (check by openaip_id).
+    Replace airports where the OpenAIP data has chagend, resetting the WeGlide derived data except for `weglide_name`.
     Returns the merged airport list.
     """
-    merged_list = list(existing)
-    existing_ids = {airport["openaip_id"] for airport in existing}
+    merged = list(existing)
 
     for remote_airport in remote:
-        if remote_airport["openaip_id"] not in existing_ids:
-            merged_list.append(remote_airport)
+        existing_airport = next(
+            (
+                airport
+                for airport in merged
+                if airport["openaip_id"] == remote_airport["openaip_id"]
+            ),
+            None,
+        )
+        if existing_airport is None:
+            merged.append(remote_airport)
+        elif _airport_changed(remote_airport, existing_airport):
+            # Losing WeGlide specific data except for `weglide_name` on replace.
+            remote_airport["weglide_name"] = existing_airport["weglide_name"]
+            existing_airport = remote_airport
 
-    return merged_list
+    return merged
 
 
 def sort_airports(airports: List[Airport]) -> List[Airport]:
@@ -211,6 +248,37 @@ def assign_weglide_id(airports: List[Airport]) -> List[Airport]:
     return airports
 
 
+def _format_name(name: str) -> str:
+    return (
+        name
+        # Remove "Airport" variants from name.
+        .replace("Airport", "")
+        # Remove "Airpark" variants from name.
+        .replace("Airpark", "")
+        .replace("Air Park", "")
+        # Remove "Airfield" variants from name.
+        .replace("Airfield", "")
+        .replace("Air Field", "")
+        .replace("Field", "")
+        # Remove "Airstrip" variants from name.
+        .replace("Airstrip", "")
+        .replace("Air Strip", "")
+        .replace("Landing Strip", "")
+        .replace("Strip", "")
+        # Remove other airport synonyms from name.
+        .replace("Ultralightport", "")
+        .replace("Stolport", "")
+        # Remove escape slashes from /Private/.
+        .replace("/Private/", "Private")
+        # No title case for " And ".
+        .replace(" And ", " and ")
+        # Fix double spaces.
+        .replace("  ", " ")
+        # Trim whitespace.
+        .strip()
+    )
+
+
 def assign_weglide_name(airports: List[Airport]) -> List[Airport]:
     """
     Convert the OpenAIP name to title case for the WeGlide name.
@@ -222,9 +290,8 @@ def assign_weglide_name(airports: List[Airport]) -> List[Airport]:
         if airport["weglide_name"] is None:
             # Derive from OpenAIP Name.
             airport["weglide_name"] = airport["openaip_name"].title()
-
-        # Cleanup whitespace.
-        airport["weglide_name"] = airport["weglide_name"].strip().replace("  ", " ")
+        # Adjust name.
+        airport["weglide_name"] = _format_name(airport["weglide_name"])
 
     return airports
 
@@ -266,13 +333,34 @@ def assign_timezone(airports: List[Airport]) -> List[Airport]:
     return airports
 
 
-def _get_airport_region(airport: Airport) -> str | None:
+def _new_zealand_region(airport: Airport) -> str:
+    """
+    Get North- or South Island region of New Zealand airport based on coordinates.
+    """
+    assert airport["region"] == "NZ"
+    if (
+        airport["longitude"] > 165.410156
+        and airport["longitude"] < 174.495850
+        and airport["latitude"] > -48.389419
+        and airport["latitude"] < -40.171149
+    ):
+        return "NZ-S"  # South Island
+    else:
+        return "NZ-N"  # North Island
+
+
+def _get_airport_region(airport: Airport) -> str:
     """
     Makes a reverse geocoding request to OpenStreetMaps Nominatim service.
     Requests per second should be limited to 1.
     Send informative User-Agent header.
     """
     assert len(airport["region"]) == 2
+
+    # Special case for New Zealand
+    # for which North/South Island is used instead of regions.
+    if airport["region"] == "NZ":
+        return _new_zealand_region(airport)
 
     params = {
         "lon": airport["longitude"],
@@ -282,22 +370,29 @@ def _get_airport_region(airport: Airport) -> str | None:
     }
     headers = {"User-Agent": "WeGlide/1.0 Match airport to country and region"}
     response = requests.get(NOMINATIM_ENDPOINT_URL, params=params, headers=headers)
+    response.raise_for_status()
     data = response.json()
-    nominatim_region = data.get("address", {}).get("ISO3166-2-lvl4")
-
+    address = data.get("address", {})
+    nominatim_region = address.get("ISO3166-2-lvl4") or address.get("ISO3166-2-lvl6")
+    assert response.status_code == 200, (
+        f"Failed request for region (status code {response.status_code}) for {airport['weglide_name']}. Please try again. \n {response.url}"
+    )
+    assert nominatim_region is not None, (
+        f"Could not find region for {airport['weglide_name']}. Please add manually. \n {response.url}"
+    )
+    assert nominatim_region[:2] == airport["region"], (
+        f"Found region country ({nominatim_region}) differs from existing one ({airport['region']}) for {airport['weglide_name']}. Please verify manually. \n {response.url}"
+    )
     return nominatim_region
 
 
-def assign_region(airports: List[Airport]) -> List[Airport]:
+def _missing_region_airport_indices(airports: List[Airport]) -> List[int]:
     """
-    Add region to country string (append separated by dash)
-    for countries with regions specified in countries.json.
-    Region is reverse geocoded by coordinates because it is not present in OpenAIP.
-    Overwrites existing region string if there should be a more detailed one.
+    Search in countries.json file for all countries we need regions for.
+    Only regions that are searchable on WeGlide need to be added.
+    Returns a list of airport indices which do not yet have a region but need one.
     """
-    # Clone list before modifying.
-    airports = list(airports)
-    missing_regions = []  # List of indices of airports missing a region.
+    missing_regions: List[int] = []  # List of indices of airports missing a region.
     with open(COUNTRIES) as json_file:
         continents = json.load(json_file).get("data")
         for i in range(len(airports)):
@@ -317,37 +412,77 @@ def assign_region(airports: List[Airport]) -> List[Airport]:
             if "regions" in found_country:
                 missing_regions.append(i)
 
-    logger.info(f"{len(missing_regions)} airports should have regions, processing...")
-    for missing in missing_regions:
-        airport_name = airports[missing]["weglide_name"]
-        nominatim_region = _get_airport_region(airports[missing])
+    return missing_regions
 
-        assert nominatim_region is not None, (
-            f"Could not find region for {airport_name}. Please add manually."
-        )
-        assert nominatim_region[:2] == airports[missing]["region"], (
-            f"Found region country differs from existing one for {airport_name}. Please change manually."
-        )
 
-        airports[missing]["region"] = nominatim_region
-        logger.info(f"Updated region to {nominatim_region} for {airport_name}.")
-        # Intermediate save in case script or nominatime have problems.
+def assign_region(airports: List[Airport]) -> List[Airport]:
+    """
+    Add region to country string (append separated by dash)
+    for countries with regions specified in countries.json.
+    Region is reverse geocoded by coordinates because it is not present in OpenAIP.
+    Overwrites existing region string if there should be a more detailed one.
+    """
+    # Clone list before modifying.
+    airports = list(airports)
+    missing_regions = _missing_region_airport_indices(airports)
+    for i in range(len(missing_regions)):
+        missing_airport = airports[missing_regions[i]]
+        nominatim_region = _get_airport_region(missing_airport)
+        missing_airport["region"] = nominatim_region
+        logger.info(
+            f"Update region {i + 1}/{len(missing_regions)} to {nominatim_region} for {missing_airport['weglide_name']}."
+        )
+        # Intermediate save in case script or api have problems.
         write_airports_to_csv(airports)
         # Sleep for responsible API usage.
-        sleep(1)
+        # sleep(1)
 
     return airports
 
 
-def assign_launches(airports: List[Airport]) -> List[Airport]:
+def _get_airport_launches(airport: Airport) -> int | None:
     """
-    TODO
+    Request airport information from WeGlide and extract number of launches.
+    Returns None when airport does not (yet) exist on WeGlide or on error.
+    """
+    assert airport["weglide_id"] is not None
+
+    headers = {"User-Agent": "WeGlide/1.0 Airport launches"}
+    url = f"{WEGLIDE_ENDPOINT_URL}/{airport['weglide_id']}"
+    response = requests.get(url, headers=headers)
+    data = response.json()
+    launches = data.get("stats", {}).get("count")
+    assert response.status_code == 200 or response.status_code == 404, (
+        f"Failed request for launches (status code {response.status_code}) for {airport['weglide_name']}. Please try again. \n {response.url}"
+    )
+    return launches
+
+
+def assign_launches(airports: List[Airport], force=False) -> List[Airport]:
+    """
     Assign the number of glider launches to each aiport.
     Fetched from WeGlide API and used for reign calculation.
-    Overwrites existing launch number.
+    Overwrites existing launch number and None if airport could not be found on WeGlide.
     """
     # Clone list before modifying.
     airports = list(airports)
+
+    for airport in airports:
+        if not force and airport["launches"] is not None:
+            continue  # Do not update existing values.
+
+        name = airport["weglide_name"]
+        launches = _get_airport_launches(airport)
+        if launches is not None:
+            airport["launches"] = launches
+            logger.info(f"Added {launches} launches to {name}.")
+            # Intermediate save in case script or api have problems.
+            write_airports_to_csv(airports)
+        else:
+            logger.info(f"Skipped launches for {name} (not found on WeGlide).")
+
+        # Sleep for responsible API usage.
+        sleep(0.2)
 
     return airports
 
@@ -480,12 +615,18 @@ def write_airports_to_csv(airports: List[Airport]) -> None:
         "rwy_width",
     ]
 
-    print(f"Writing {len(airports)} airports to {AIRPORT_CSV}...")
+    # Prevent keyboard interruption of script during file write.
+    original_sigint_handler = signal.getsignal(signal.SIGINT)
+    signal.signal(signal.SIGINT, signal.SIG_IGN)
+    # print(f"Writing {len(airports)} airports to {AIRPORT_CSV}...")
+
     with open(AIRPORT_CSV, "w", newline="", encoding="utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
         writer.writeheader()
         writer.writerows(airports)
-    print("Wrote airports to csv.")
+
+    signal.signal(signal.SIGINT, original_sigint_handler)
+    # print("Wrote airports to csv.")
 
 
 def _airport_to_feature(airport: Airport) -> Feature:
@@ -541,9 +682,9 @@ if __name__ == "__main__":
     api_key = os.environ.get("OPENAIP_API_KEY")
 
     # Read data.
-    remote_airports = download_airports(api_key)
-    remote_airports = filter_airports(remote_airports)
-    # remote_airports = []
+    # remote_airports = download_airports(api_key)
+    # remote_airports = filter_airports(remote_airports)
+    remote_airports = []
     existing_airports = read_airports_from_csv()
     airports = merge_airports(existing_airports, remote_airports)
     airports = sort_airports(airports)
@@ -554,7 +695,7 @@ if __name__ == "__main__":
     airports = assign_continent(airports)
     airports = assign_timezone(airports)
     airports = assign_region(airports)
-    airports = assign_launches(airports)
+    airports = assign_launches(airports, force=False)
     # airports = assign_reign(airports)
 
     # Write data.
