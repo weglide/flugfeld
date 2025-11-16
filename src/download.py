@@ -3,12 +3,12 @@ from typing import Any, List, Optional
 import requests
 
 from src.logger import logger
-from src.types import Airport, AirportKind, RadioType, RunwaySurface
+from src.types import Airport, AirportKind, OpenaipAirport, RadioType, RunwaySurface
 
 OPENAIP_ENDPOINT_URL = "https://api.core.openaip.net/api/airports"
 
 
-def _parse_openaip_airport(openaip_airport: Any) -> Airport:
+def _parse_openaip_airport(openaip_airport: OpenaipAirport) -> Airport:
     """
     Convert a raw OpenAIP airport JSON API response to our internal airport representation.
     Ignores Heliports and airports for which no timezone can be found.
@@ -95,7 +95,7 @@ def download_airports(api_key: str | None) -> List[Airport]:
     """
     assert api_key is not None
 
-    openaip_airports: list[Any] = []
+    openaip_airports: list[OpenaipAirport] = []
     headers = {"x-openaip-api-key": api_key}
     response = requests.get(OPENAIP_ENDPOINT_URL, headers=headers)
     data = response.json()

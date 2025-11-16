@@ -1,5 +1,106 @@
+import datetime
 import enum
-from typing import Optional, TypedDict
+from typing import Any, List, Optional, TypedDict
+
+
+class OpenaipRunwayMtow(TypedDict):
+    value: int
+    unit: int
+
+
+class OpenaipRunwaySurface(TypedDict):
+    composition: list[int]
+    mainComposite: int
+    condition: int
+    mtow: OpenaipRunwayMtow
+
+
+class OpenaipRunwayLengthWidth(TypedDict):
+    value: int
+    unit: int
+
+
+class OpenaipRunwayDimension(TypedDict):
+    length: OpenaipRunwayLengthWidth
+    width: OpenaipRunwayLengthWidth
+
+
+class OpenaipElevation(TypedDict):
+    value: int
+    unit: int
+    referenceDatum: int
+
+
+class OpenaipGeometry(TypedDict):
+    type: str
+    coordinates: list[float]
+
+
+class OpenaipFrequency(TypedDict):
+    _id: str
+    value: str
+    unit: int
+    type: int
+    name: str
+    primary: bool
+    publicUse: bool
+
+
+class OpenaipImage(TypedDict):
+    _id: str
+    filename: str
+    description: str
+
+
+class OpenaipServices(TypedDict):
+    fuelTypes: list[Any]
+    gliderTowing: list[int]
+    handlingFacilities: list[Any]
+    passengerFacilities: list[Any]
+
+
+class OpenaipRunway(TypedDict):
+    _id: str
+    designator: str
+    trueHeading: int
+    alignedTrueNorth: bool
+    operations: int
+    mainRunway: bool
+    turnDirection: int
+    takeOffOnly: bool
+    landingOnly: bool
+    surface: OpenaipRunwaySurface
+    dimension: OpenaipRunwayDimension
+    exclusiveAircraftType: list[Any]
+    pilotCtrlLighting: bool
+    lightingSystem: list[Any]
+    visualApproachAids: list[Any]
+    instrumentApproachAids: list[Any]
+
+
+class OpenaipAirport(TypedDict):
+    _id: str
+    name: str
+    type: int
+    trafficType: List[int]
+    magneticDeclination: float
+    country: str
+    icaoCode: Optional[str]
+    geometry: OpenaipGeometry
+    elevation: OpenaipElevation
+    ppr: bool
+    private: bool
+    skydiveActivity: bool
+    winchOnly: bool
+    frequencies: Optional[List[OpenaipFrequency]]
+    runways: Optional[List[OpenaipRunway]]
+    createdAt: datetime.datetime
+    updatedAt: datetime.datetime
+    createdBy: str
+    updatedBy: str
+    services: Optional[OpenaipServices]
+    images: List[OpenaipImage]
+    telephoneServices: List[Any]
 
 
 class AirportKind(int, enum.Enum):

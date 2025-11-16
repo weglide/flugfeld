@@ -1,0 +1,108 @@
+{
+  "_id": "62614a7d5e9ded571044454c",
+  "name": "KOENIGSDORF",
+  "type": 1,
+  "trafficType": [0],
+  "magneticDeclination": 4,
+  "country": "DE",
+  "geometry": {
+    "type": "Point",
+    "coordinates": [11.466277777777778, 47.82852777777778]
+  },
+  "elevation": { "value": 593, "unit": 0, "referenceDatum": 1 },
+  "ppr": false,
+  "private": false,
+  "skydiveActivity": false,
+  "winchOnly": false,
+  "frequencies": [
+    {
+      "value": "127.560",
+      "unit": 2,
+      "type": 16,
+      "name": "KÖNIGSDORF RADIO",
+      "primary": true,
+      "publicUse": true,
+      "_id": "67a276d3db4482ed01eed809"
+    }
+  ],
+  "runways": [
+    {
+      "designator": "10L",
+      "trueHeading": 100,
+      "alignedTrueNorth": false,
+      "operations": 0,
+      "mainRunway": true,
+      "turnDirection": 2,
+      "takeOffOnly": false,
+      "landingOnly": false,
+      "surface": {
+        "composition": [0],
+        "mainComposite": 0,
+        "condition": 1,
+        "mtow": { "value": 2, "unit": 9 }
+      },
+      "dimension": {
+        "length": { "value": 815, "unit": 0 },
+        "width": { "value": 10, "unit": 0 }
+      },
+      "declaredDistance": {
+        "tora": { "value": 790, "unit": 0 },
+        "lda": { "value": 790, "unit": 0 }
+      },
+      "exclusiveAircraftType": [],
+      "pilotCtrlLighting": false,
+      "lightingSystem": [],
+      "visualApproachAids": [],
+      "_id": "67a276d3db4482ed01eed80a",
+      "instrumentApproachAids": []
+    },
+    {
+      "designator": "28R",
+      "trueHeading": 280,
+      "alignedTrueNorth": false,
+      "operations": 0,
+      "mainRunway": true,
+      "turnDirection": 2,
+      "takeOffOnly": false,
+      "landingOnly": false,
+      "surface": {
+        "composition": [0],
+        "mainComposite": 0,
+        "condition": 1,
+        "mtow": { "value": 2, "unit": 9 }
+      },
+      "dimension": {
+        "length": { "value": 815, "unit": 0 },
+        "width": { "value": 10, "unit": 0 }
+      },
+      "declaredDistance": {
+        "tora": { "value": 540, "unit": 0 },
+        "lda": { "value": 540, "unit": 0 }
+      },
+      "exclusiveAircraftType": [],
+      "pilotCtrlLighting": false,
+      "lightingSystem": [],
+      "visualApproachAids": [],
+      "_id": "67a276d3db4482ed01eed80b",
+      "instrumentApproachAids": []
+    }
+  ],
+  "createdAt": "2022-04-21T12:13:49.646Z",
+  "updatedAt": "2025-02-05T08:12:45.741Z",
+  "createdBy": "AUTO-IMPORTER",
+  "updatedBy": "eBT9qSrxquPVguazo7MwJzzaf2p1",
+  "services": {
+    "fuelTypes": [],
+    "gliderTowing": [0, 1, 2],
+    "handlingFacilities": [],
+    "passengerFacilities": []
+  },
+  "images": [
+    {
+      "filename": "62614a7d5e9ded571044454c_1738700499135.jpeg",
+      "description": "Traffic pattern and noise abatement zones",
+      "_id": "67a276d3db4482ed01eed80c"
+    }
+  ],
+  "telephoneServices": []
+}
