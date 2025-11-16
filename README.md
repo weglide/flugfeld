@@ -13,7 +13,7 @@ Then you can download, parse and augment the data:
 
 ```sh
 export OPENAIP_API_KEY=your_api_key
-uv run python -m src.download
+uv run python -m src.main
 ```
 
 ## Test
