@@ -65,7 +65,11 @@ def assign_launches(airports: List[Airport], force=False) -> List[Airport]:
 def assign_reign(airports: List[Airport]) -> List[Airport]:
     """
     Assign a reign for each airport in the given list.
-    Reign is based on number of launches and distance to nearby airports.
+
+    This "reign" is defined as the distance to the nearest airport
+    that has an equal or greater number of launches. 
+    If an airport has the most launches in its vicinity, 
+    its reign will be set to the default large value (1000).
     """
     # Clone list before modifying.
     airports = list(airports)
@@ -81,26 +85,28 @@ def assign_reign(airports: List[Airport]) -> List[Airport]:
     dist_matrix = cdist(lonlatrad, lonlatrad, "euclidean") * EARTH_RADIUS_KM
 
     # Start with a large reign for every airport.
-    reign = [1000] * len(lonlat)
+    reign = [1000] * len(airports)
 
     # Build reign for each airport from distance matrix and number of launches.
-    for i in range(len(lonlat)):
-        for j in range(len(lonlat)):
-            # Only traverse upper triangle.
+    for i in range(len(airports)):
+        if i % 1000 == 0:
+            logger.info(f"Calculated reign for {i}/{len(airports)} airports.")
+
+        for j in range(len(airports)):
             if j >= i:
-                continue
+                continue  # Only traverse upper triangle (check each pair only once).
 
             dist = dist_matrix[i, j]
             if dist >= max(reign[i], reign[j]):
-                continue
+                continue  # Airport is too far away to matter.
 
-            launches1 = airports[i]["launches"]
-            assert launches1 is not None
+            launches_i = airports[i]["launches"] or 0
+            assert launches_i is not None
 
-            launches2 = airports[j]["launches"]
-            assert launches2 is not None
+            launches_j = airports[j]["launches"] or 0
+            assert launches_j is not None
 
-            if launches1 >= launches2:
+            if launches_i >= launches_j:
                 if reign[j] > dist:
                     reign[j] = round(dist)
                 continue

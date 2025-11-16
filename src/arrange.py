@@ -52,6 +52,7 @@ def merge_airports(existing: List[Airport], remote: List[Airport]) -> List[Airpo
     """
     merged = list(existing)
 
+    logger.info("Merging new and updated airports into existing ones...")
     for remote_airport in remote:
         existing_airport = next(
             (
