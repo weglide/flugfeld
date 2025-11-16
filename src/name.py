@@ -35,6 +35,7 @@ def format_name(original: str) -> str:
         .replace("Aviation", "")
         .replace("Aerodrome", "")
         .replace("Gliderport", "")
+        .replace("Glideport", "")
         # Remove escape slashes from /Private/.
         .replace("/Private/", "Private")
         # "The" is not necessary.

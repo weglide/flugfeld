@@ -9,7 +9,7 @@ from src.geojson import write_airports as write_geojson
 from src.id import assign_weglide_id
 from src.name import assign_weglide_name
 from src.region import assign_continent, assign_region, assign_timezone
-from src.reign import assign_launches
+from src.reign import assign_launches, assign_reign
 
 if __name__ == "__main__":
     # Setup.
@@ -30,8 +30,8 @@ if __name__ == "__main__":
     airports = assign_continent(airports)
     airports = assign_timezone(airports)
     airports = assign_region(airports)
-    airports = assign_launches(airports, force=False)
-    # airports = assign_reign(airports)
+    # airports = assign_launches(airports, force=False)
+    airports = assign_reign(airports)
 
     # Write data.
     write_csv(airports)
