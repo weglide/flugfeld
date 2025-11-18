@@ -1,5 +1,24 @@
 {
-  "languages": ["de", "en", "fr", "nl", "cz", "it", "pl"],
+  "languages": [
+    "de",
+    "en",
+    "fr",
+    "nl",
+    "cs",
+    "it",
+    "pl",
+    "es",
+    "fi",
+    "ja",
+    "lt",
+    "no",
+    "pt",
+    "ru",
+    "sv",
+    "uk",
+    "da",
+    "hu"
+  ],
   "data": {
     "AF": {
       "name": [
@@ -9,7 +28,18 @@
         "Afrika",
         "Afrika",
         "Africa",
-        "Afryka"
+        "Afryka",
+        "África",
+        "Afrikka",
+        "アフリカ",
+        "Afrika",
+        "Afrika",
+        "África",
+        "Африка",
+        "Afrika",
+        "Африка",
+        "Afrika",
+        "Afrika"
       ],
       "regions": {
         "MA": {
@@ -20,7 +50,18 @@
             "Marokko",
             "Maroko",
             "Marocco",
-            "Maroko"
+            "Maroko",
+            "Marruecos",
+            "Marokko",
+            "モロッコ",
+            "Marokas",
+            "Marokko",
+            "Marrocos",
+            "Марокко",
+            "Marocko",
+            "Марокко",
+            "Marokko",
+            "Marokkó"
           ]
         },
         "NA": {
@@ -31,7 +72,18 @@
             "Namibië",
             "Namibie",
             "Namibia",
-            "Namibia"
+            "Namibia",
+            "Namibia",
+            "Namibia",
+            "ナミビア",
+            "Namibija",
+            "Namibia",
+            "Namíbia",
+            "Намибия",
+            "Namibia",
+            "Намібія",
+            "Namibia",
+            "Namíbia"
           ]
         },
         "ZA": {
@@ -42,16 +94,65 @@
             "Zuid-Afrika",
             "Jižní Afrika",
             "Sud Africa",
-            "Afryka Południowa"
+            "Afryka Południowa",
+            "Sudáfrica",
+            "Etelä-Afrikka",
+            "南アフリカ",
+            "pietų Afrika",
+            "Sør-Afrika",
+            "África do Sul",
+            "Южная Африка",
+            "Sydafrika",
+            "Південна Африка",
+            "Sydafrika",
+            "Dél-afrikai Köztársaság"
           ]
         }
       }
     },
     "AS": {
-      "name": ["Asien", "Asia", "Asie", "Azië", "Asie", "Asia", "Azja"],
+      "name": [
+        "Asien",
+        "Asia",
+        "Asie",
+        "Azië",
+        "Asie",
+        "Asia",
+        "Azja",
+        "Asia",
+        "Aasia",
+        "アジア",
+        "Azija",
+        "Asia",
+        "Ásia",
+        "Азия",
+        "Asien",
+        "Азії",
+        "Asien",
+        "Ázsia"
+      ],
       "regions": {
         "CN": {
-          "name": ["China", "China", "Chine", "China", "Čína", "Cina", "Chiny"]
+          "name": [
+            "China",
+            "China",
+            "Chine",
+            "China",
+            "Čína",
+            "Cina",
+            "Chiny",
+            "China",
+            "Kiina",
+            "中国",
+            "Kinija",
+            "Kina",
+            "China",
+            "Китай",
+            "Kina",
+            "Китай",
+            "Kina",
+            "Kína"
+          ]
         },
         "IL": {
           "name": [
@@ -61,6 +162,17 @@
             "Israël",
             "Izrael",
             "Israele",
+            "Izrael",
+            "Israel",
+            "Israel",
+            "イスラエル",
+            "Izraelis",
+            "Israel",
+            "Israel",
+            "Израиль",
+            "Israel",
+            "Ізраїль",
+            "Israel",
             "Izrael"
           ]
         },
@@ -72,7 +184,18 @@
             "Japan",
             "Japonsko",
             "Giappone",
-            "Japonia"
+            "Japonia",
+            "Japón",
+            "Japani",
+            "日本",
+            "Japonija",
+            "Japan",
+            "Japão",
+            "Япония",
+            "Japan",
+            "Японія",
+            "Japan",
+            "Japán"
           ]
         },
         "PH": {
@@ -83,7 +206,18 @@
             "Filippijnen",
             "Filipíny",
             "Filippine",
-            "Filipiny"
+            "Filipiny",
+            "Filipinas",
+            "Filippiinit",
+            "フィリピン",
+            "Filipinai",
+            "Filippinene",
+            "Filipinas",
+            "Филиппины",
+            "Filippinerna",
+            "Філіппіни",
+            "Filippinerne",
+            "Fülöp-szigetek"
           ]
         },
         "TR": {
@@ -94,7 +228,18 @@
             "Kalkoen",
             "Turecko",
             "Tacchino",
-            "Turcja"
+            "Turcja",
+            "Turquía",
+            "Turkki",
+            "七面鳥",
+            "Turkija",
+            "Tyrkia",
+            "Turquia",
+            "Турция",
+            "Turkiet",
+            "Туреччина",
+            "Tyrkiet",
+            "Törökország"
           ]
         }
       }
@@ -107,7 +252,18 @@
         "Europa",
         "Evropa",
         "Europa",
-        "Europa"
+        "Europa",
+        "Europa",
+        "Euroopassa",
+        "ヨーロッパ",
+        "Europa",
+        "Europa",
+        "Europa",
+        "Европа",
+        "Europa",
+        "Європа",
+        "Europa",
+        "Európa"
       ],
       "regions": {
         "AT": {
@@ -118,7 +274,18 @@
             "Oostenrijk",
             "Rakousko",
             "Austria",
-            "Austria"
+            "Austria",
+            "Austria",
+            "Itävalta",
+            "オーストリア",
+            "Austrija",
+            "Østerrike",
+            "Áustria",
+            "Австрия",
+            "Österrike",
+            "Австрія",
+            "Østrig",
+            "Ausztria"
           ],
           "regions": {
             "AT-1": {
@@ -129,18 +296,40 @@
                 "Burgenland",
                 "Burgenland",
                 "Burgenland",
+                "Burgenland",
+                "Burgenlandia",
+                "Burgenland",
+                "ブルゲンラント",
+                "Burgenlandas",
+                "Burgenland",
+                "Burgenland",
+                "Бургенланд",
+                "Burgenland",
+                "Бургенланд",
+                "Burgenland",
                 "Burgenland"
               ]
             },
             "AT-2": {
               "name": [
-                "Kärntnen",
+                "Kärnten",
                 "Carinthia",
                 "Carinthie",
                 "Karinthië",
                 "Korutany",
                 "Carinzia",
-                "Karyntia"
+                "Karyntia",
+                "Carintia",
+                "Kärnten",
+                "カリンシア",
+                "Karintija",
+                "Kärnten",
+                "Caríntia",
+                "Каринтия",
+                "Carinthia",
+                "Каринтія",
+                "Kärnten",
+                "Karintia"
               ]
             },
             "AT-3": {
@@ -151,7 +340,18 @@
                 "Neder-Oostenrijk",
                 "Dolní Rakousko",
                 "Bassa Austria",
-                "Dolna Austria"
+                "Dolna Austria",
+                "Baja Austria",
+                "Ala-Itävalta",
+                "ニーダーエスターライヒ州",
+                "Žemutinė Austrija",
+                "Nedre Østerrike",
+                "Baixa Áustria",
+                "Нижняя Австрия",
+                "Lower Austria",
+                "Нижня Австрія",
+                "Niederösterreich",
+                "Alsó-Ausztria"
               ]
             },
             "AT-4": {
@@ -162,7 +362,18 @@
                 "Opper-Oostenrijk",
                 "Horní Rakousko",
                 "Alta Austria",
-                "Górna Austria"
+                "Górna Austria",
+                "Alta Austria",
+                "Ylä-Itävalta",
+                "オーバーエスターライヒ",
+                "Aukštutinė Austrija",
+                "Øvre Østerrike",
+                "Alta Áustria",
+                "Верхняя Австрия",
+                "Upper Austria",
+                "Верхня Австрія",
+                "Oberösterreich",
+                "Felső-Ausztria"
               ]
             },
             "AT-5": {
@@ -173,6 +384,17 @@
                 "Salzburg",
                 "Salzburg",
                 "Salisburgo",
+                "Salzburg",
+                "Salsburgo",
+                "Salzburg",
+                "ザルツブルク",
+                "Zalcburgas",
+                "Salzburg",
+                "Salzburgo",
+                "Зальцбург",
+                "Salzburg",
+                "Зальцбург",
+                "Salzburg",
                 "Salzburg"
               ]
             },
@@ -184,7 +406,18 @@
                 "Stiermarken",
                 "Štýrsko",
                 "Stiria",
-                "Styria"
+                "Styria",
+                "Estiria",
+                "Steiermark",
+                "スティリア",
+                "Štirija",
+                "Steiermark",
+                "Estíria",
+                "Штирия",
+                "Styria",
+                "Штирії",
+                "Steiermark",
+                "Stájerország"
               ]
             },
             "AT-7": {
@@ -194,6 +427,17 @@
                 "Tyrol",
                 "Tirol",
                 "Tyrolsko",
+                "Tirol",
+                "Tirol",
+                "Tirol",
+                "Tirol",
+                "チロル",
+                "Tirolis",
+                "Tirol",
+                "Tirol",
+                "Тироль",
+                "Tirol",
+                "Тіроль",
                 "Tirol",
                 "Tirol"
               ]
@@ -206,6 +450,17 @@
                 "Vorarlberg",
                 "Vorarlberg",
                 "Vorarlberg",
+                "Vorarlberg",
+                "Vorarlberg",
+                "Vorarlberg",
+                "フォアアールベルク",
+                "Forarlbergas",
+                "Vorarlberg",
+                "Vorarlberg",
+                "Форарльберг",
+                "Vorarlberg",
+                "Форарльберг",
+                "Vorarlberg",
                 "Vorarlberg"
               ]
             },
@@ -217,7 +472,18 @@
                 "Wenen",
                 "Vídeň",
                 "Vienna",
-                "Wiedeń"
+                "Wiedeń",
+                "Viena",
+                "Wien",
+                "ウィーン",
+                "Viena",
+                "Wien",
+                "Viena",
+                "Вена",
+                "Vienna",
+                "Відень",
+                "Wien",
+                "Bécs"
               ]
             }
           }
@@ -230,7 +496,18 @@
             "Bosnië-Herzegovina",
             "Bosna a Hercegovina",
             "Bosnia Erzegovina",
-            "Bośnia i Hercegowina"
+            "Bośnia i Hercegowina",
+            "Bosnia y Herzegovina",
+            "Bosnia ja Hertsegovina",
+            "ボスニア・ヘルツェゴビナ",
+            "Bosnija ir Hercegovina",
+            "Bosnia og Herzegovina",
+            "Bósnia e Herzegovina",
+            "Босния и Герцеговина",
+            "Bosnien och Hercegovina",
+            "Боснія і Герцеговина",
+            "Bosnien-Hercegovina",
+            "Bosznia-Hercegovina"
           ]
         },
         "BE": {
@@ -241,7 +518,18 @@
             "Belgie",
             "Belgie",
             "Belgio",
-            "Belgia"
+            "Belgia",
+            "Bélgica",
+            "Belgia",
+            "ベルギー",
+            "Belgija",
+            "Belgia",
+            "Bélgica",
+            "Бельгия",
+            "Belgien",
+            "Бельгія",
+            "Belgien",
+            "Belgium"
           ],
           "regions": {
             "BE-VLG": {
@@ -252,6 +540,17 @@
                 "Vlaanderen",
                 "Flandry",
                 "Fiandre",
+                "Flandria",
+                "Flandes",
+                "Flanderi",
+                "フランダース",
+                "Flandrija",
+                "Flandern",
+                "Flandres",
+                "Фландрия",
+                "Flandern",
+                "Фландрії",
+                "Flandern",
                 "Flandria"
               ]
             },
@@ -263,7 +562,18 @@
                 "Wallonië",
                 "Valonsko",
                 "Vallonia",
-                "Walonia"
+                "Walonia",
+                "Valonia",
+                "Vallonia",
+                "ワロン地域",
+                "Valonija",
+                "Vallonia",
+                "Valônia",
+                "Валлония",
+                "Vallonien",
+                "Валлонія",
+                "Vallonien",
+                "Vallónia"
               ]
             }
           }
@@ -273,10 +583,21 @@
             "Bulgarien",
             "Bulgaria",
             "Bulgarie",
-            "Bulgarije ",
+            "Bulgarije",
             "Bulharsko",
             "Bulgaria",
-            "Bułgaria"
+            "Bułgaria",
+            "Bulgaria",
+            "Bulgaria",
+            "ブルガリア",
+            "Bulgarija",
+            "Bulgaria",
+            "Bulgária",
+            "Болгария",
+            "Bulgarien",
+            "Болгарія",
+            "Bulgarien",
+            "Bulgária"
           ]
         },
         "CH": {
@@ -287,7 +608,18 @@
             "Zwitserland",
             "Švýcarsko",
             "Svizzera",
-            "Szwajcaria"
+            "Szwajcaria",
+            "Suiza",
+            "Sveitsi",
+            "スイス",
+            "Šveicarija",
+            "Sveits",
+            "Suíça",
+            "Швейцария",
+            "Schweiz",
+            "Швейцарія",
+            "Schweiz",
+            "Svájc"
           ]
         },
         "CZ": {
@@ -298,7 +630,18 @@
             "Tsjechië",
             "Česká republika",
             "Repubblica Ceca",
-            "Republika Czeska"
+            "Republika Czeska",
+            "Republica checa",
+            "Tšekin tasavalta",
+            "チェコ共和国",
+            "Čekijos Respublika",
+            "Tsjekkisk Republikk",
+            "República Checa",
+            "Чешская Республика",
+            "Tjeckien",
+            "Чеська Республіка",
+            "Tjekkiet",
+            "Csehország"
           ]
         },
         "DK": {
@@ -309,7 +652,18 @@
             "Denemarken",
             "Dánsko",
             "Danimarca",
-            "Dania"
+            "Dania",
+            "Dinamarca",
+            "Tanska",
+            "デンマーク",
+            "Danija",
+            "Danmark",
+            "Dinamarca",
+            "Дания",
+            "Danmark",
+            "Данія",
+            "Danmark",
+            "Dánia"
           ]
         },
         "DE": {
@@ -320,7 +674,18 @@
             "Duitsland",
             "Německo",
             "Germania",
-            "Niemcy"
+            "Niemcy",
+            "Alemania",
+            "Saksa",
+            "ドイツ",
+            "Vokietija",
+            "Tyskland",
+            "Alemanha",
+            "Германия",
+            "Tyskland",
+            "Німеччина",
+            "Tyskland",
+            "Németország"
           ],
           "regions": {
             "DE-BW": {
@@ -331,7 +696,18 @@
                 "Baden-Württemberg",
                 "Bádensko-Württembersko",
                 "Baden-Württemberg",
-                "Badenia-Wirtembergia"
+                "Badenia-Wirtembergia",
+                "Baden-Wurtemberg",
+                "Baden-Württemberg",
+                "バーデン・ヴュルテンベルク",
+                "Badenas-Viurtembergas",
+                "Baden-Württemberg",
+                "Baden-Württemberg",
+                "Баден-Вюртемберг",
+                "Baden-Württemberg",
+                "Баден-Вюртемберг",
+                "Baden-Württemberg",
+                "Baden-Württemberg"
               ]
             },
             "DE-BY": {
@@ -342,7 +718,18 @@
                 "Beieren",
                 "Bavorsko",
                 "Baviera",
-                "Bawaria"
+                "Bawaria",
+                "baviera",
+                "Baijeri",
+                "バイエルン",
+                "Bavarija",
+                "Bayern",
+                "Baviera",
+                "Бавария",
+                "Bayern",
+                "Баварія",
+                "Bayern",
+                "Bajorország"
               ]
             },
             "DE-BE": {
@@ -353,6 +740,17 @@
                 "Berlijn",
                 "Berlín",
                 "Berlino",
+                "Berlin",
+                "Berlina",
+                "Berliini",
+                "ベルリン",
+                "Berlynas",
+                "Berlin",
+                "Berlim",
+                "Берлин",
+                "Berlin",
+                "Берлін",
+                "Berlin",
                 "Berlin"
               ]
             },
@@ -364,7 +762,18 @@
                 "Brandenburg",
                 "Brandenburg",
                 "Brandeburgo",
-                "Brandenburgia"
+                "Brandenburgia",
+                "Brandeburgo",
+                "Brandenburg",
+                "ブランデンブルク",
+                "Brandenburgas",
+                "Brandenburg",
+                "Brandemburgo",
+                "Бранденбург",
+                "Brandenburg",
+                "Бранденбург",
+                "Brandenburg",
+                "Brandenburg"
               ]
             },
             "DE-HB": {
@@ -375,7 +784,18 @@
                 "Bremen",
                 "Brémy",
                 "Brema",
-                "Brema"
+                "Brema",
+                "Bremen",
+                "Bremen",
+                "ブレーメン",
+                "Brėmenas",
+                "Bremen",
+                "Bremen",
+                "Бремен",
+                "Bremen",
+                "Бремен",
+                "Bremen",
+                "Bréma"
               ]
             },
             "DE-HH": {
@@ -386,6 +806,17 @@
                 "Hamburg",
                 "Hamburg",
                 "Amburgo",
+                "Hamburg",
+                "Hamburgo",
+                "Hampuri",
+                "ハンブルク",
+                "Hamburgas",
+                "Hamburg",
+                "Hamburgo",
+                "Гамбург",
+                "Hamburg",
+                "Гамбург",
+                "Hamborg",
                 "Hamburg"
               ]
             },
@@ -397,7 +828,18 @@
                 "Hessen",
                 "Hesse",
                 "Assia",
-                "Hesja"
+                "Hesja",
+                "Hesse",
+                "Hesse",
+                "ヘッセン",
+                "Hesenas",
+                "Hessen",
+                "Hesse",
+                "Гессе",
+                "Hesse",
+                "Гессен",
+                "Hessen",
+                "Hessen"
               ]
             },
             "DE-MV": {
@@ -408,7 +850,18 @@
                 "Mecklenburg Voor-Pommeren",
                 "Meklenbursko-Přední Pomořansko",
                 "Meclemburgo-Pomerania occidentale",
-                "Meklemburgia Pomorze Przednie"
+                "Meklemburgia Pomorze Przednie",
+                "Mecklemburgo-Pomerania Occidental",
+                "Mecklenburg Länsi-Pommeri",
+                "メクレンブルクフォアポンメルン州",
+                "Meklenburgas Vakarų Pomeranijoje",
+                "Mecklenburg Vest-Pommern",
+                "Mecklemburgo Pomerânia Ocidental",
+                "Мекленбург Передняя Померания",
+                "Mecklenburg Vorpommern",
+                "Мекленбург Західна Померанія",
+                "Mecklenburg-Vorpommern",
+                "Mecklenburg-Elő-Pomeránia"
               ]
             },
             "DE-NI": {
@@ -419,7 +872,18 @@
                 "Nedersaksen",
                 "Dolní Sasko",
                 "Bassa Sassonia",
-                "Dolna Saksonia"
+                "Dolna Saksonia",
+                "Baja sajonia",
+                "Ala-Saksi",
+                "ニーダーザクセン",
+                "Žemutinė Saksonija",
+                "Niedersachsen",
+                "Baixa Saxônia",
+                "Нижняя Саксония",
+                "Niedersachsen",
+                "Нижня Саксонія",
+                "Niedersachsen",
+                "Alsó-Szászország"
               ]
             },
             "DE-NW": {
@@ -430,7 +894,18 @@
                 "Noordrijn-Westfalen",
                 "Severní Porýní-Vestfálsko",
                 "Renania settentrionale-Vestfalia",
-                "Nadrenia Północna-Westfalia"
+                "Nadrenia Północna-Westfalia",
+                "Norte de Rhine-Westphalia",
+                "Nordrhein-Westfalen",
+                "ノルトラインヴェストファーレン州",
+                "Šiaurės Reinas-Vestfalija",
+                "Nordrhein-Westfalen",
+                "Renânia do Norte-Vestfália",
+                "Северный Рейн-Вестфалия",
+                "Nordrhein-Westfalen",
+                "Північний Рейн-Вестфалія",
+                "Nordrhein-Westfalen",
+                "Észak-Rajna-Vesztfália"
               ]
             },
             "DE-RP": {
@@ -441,7 +916,18 @@
                 "Rijnland-Palts",
                 "Porýní-Falc",
                 "Renania-Palatinato",
-                "Nadrenia-Palatynat"
+                "Nadrenia-Palatynat",
+                "Renania-Palatinado",
+                "Rheinland-Pfalz",
+                "ラインラントプファルツ州",
+                "Reino kraštas-Pfalcas",
+                "Rheinland-Pfalz",
+                "Renânia-Palatinado",
+                "Рейнланд-Пфальц",
+                "Rheinland-Pfalz",
+                "Рейнланд-Пфальц",
+                "Rheinland-Pfalz",
+                "Rajna-vidék-Pfalz"
               ]
             },
             "DE-SL": {
@@ -452,7 +938,18 @@
                 "Saarland",
                 "Sársko",
                 "Saarland",
-                "Saarland"
+                "Saarland",
+                "Sarre",
+                "Saarland",
+                "ザールラント",
+                "Saro kraštas",
+                "Saarland",
+                "Sarre",
+                "Саар",
+                "Saarland",
+                "Саар",
+                "Saarland",
+                "Saar-vidék"
               ]
             },
             "DE-SN": {
@@ -463,7 +960,18 @@
                 "Saksen",
                 "Sasko",
                 "Sassonia",
-                "Saksonia"
+                "Saksonia",
+                "Sajonia",
+                "Saksi",
+                "ザクセン",
+                "Saksonija",
+                "Sachsen",
+                "Saxônia",
+                "Саксония",
+                "Sachsen",
+                "Саксонія",
+                "Sachsen",
+                "Szászország"
               ]
             },
             "DE-ST": {
@@ -474,7 +982,18 @@
                 "Saksen-Anhalt",
                 "Sasko-Anhaltsko",
                 "Sassonia-Anhalt",
-                "Saksonia-Anhalt"
+                "Saksonia-Anhalt",
+                "Sajonia-Anhalt",
+                "Saksi-Anhalt",
+                "ザクセンアンハルト",
+                "Saksonija-Anhaltas",
+                "Sachsen-Anhalt",
+                "Saxônia-Anhalt",
+                "Саксония-Анхальт",
+                "Sachsen-Anhalt",
+                "Саксонія-Ангальт",
+                "Sachsen-Anhalt",
+                "Szász-Anhalt"
               ]
             },
             "DE-SH": {
@@ -485,7 +1004,18 @@
                 "Sleeswijk-Holstein",
                 "Schleswig-Holstein",
                 "Schleswig-Holstein",
-                "Szlezwik-Holsztyn"
+                "Szlezwik-Holsztyn",
+                "Schleswig-Holstein",
+                "Schleswig-Holstein",
+                "シュレスヴィヒホルシュタイン",
+                "Šlėzvigas-Holšteinas",
+                "Schleswig-Holstein",
+                "Schleswig-Holstein",
+                "Шлезвиг-Гольштейн",
+                "Schleswig-Holstein",
+                "Шлезвіг-Гольштейн",
+                "Slesvig-Holsten",
+                "Schleswig-Holstein"
               ]
             },
             "DE-TH": {
@@ -496,7 +1026,18 @@
                 "Thüringen",
                 "Durynsko",
                 "Turingia",
-                "Turyngia"
+                "Turyngia",
+                "Turinga",
+                "Thüringen",
+                "テューリンゲン",
+                "Tiuringija",
+                "Thuringa",
+                "Turinga",
+                "Тюрингия",
+                "Thüringa",
+                "Тюрінга",
+                "Thüringen",
+                "Türingia"
               ]
             }
           }
@@ -509,7 +1050,18 @@
             "Spanje",
             "Španělsko",
             "Spagna",
-            "Hiszpania"
+            "Hiszpania",
+            "España",
+            "Espanja",
+            "スペイン",
+            "Ispanija",
+            "Spania",
+            "Espanha",
+            "Испания",
+            "Spanien",
+            "Іспанія",
+            "Spanien",
+            "Spanyolország"
           ]
         },
         "FI": {
@@ -520,7 +1072,18 @@
             "Finland",
             "Finsko",
             "Finlandia",
-            "Finlandia"
+            "Finlandia",
+            "Finlandia",
+            "Suomi",
+            "フィンランド",
+            "Suomija",
+            "Finland",
+            "Finlândia",
+            "Финляндия",
+            "Finland",
+            "Фінляндія",
+            "Finland",
+            "Finnország"
           ]
         },
         "FR": {
@@ -531,7 +1094,18 @@
             "Frankrijk",
             "Francie",
             "Francia",
-            "Francja"
+            "Francja",
+            "Francia",
+            "Ranska",
+            "フランス",
+            "Prancūzija",
+            "Frankrike",
+            "França",
+            "Франция",
+            "Frankrike",
+            "Франція",
+            "Frankrig",
+            "Franciaország"
           ],
           "regions": {
             "FR-ARA": {
@@ -541,6 +1115,17 @@
                 "Auvergne-Rhône-Alpes",
                 "Auvergne-Rhône-Alpes",
                 "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Auvernia-Ródano-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "オーヴェルニュ＝ローヌ＝アルペ",
+                "Overnė-Rona-Alpės",
+                "Auvergne-Rhône-Alpes",
+                "Auvergne-Rhône-Alpes",
+                "Овернь-Рона-Альпы",
+                "Auvergne-Rhône-Alpes",
+                "Овернь-Рона-Альпи",
                 "Auvergne-Rhône-Alpes",
                 "Auvergne-Rhône-Alpes"
               ]
@@ -553,6 +1138,17 @@
                 "Bourgogne-Franche-Comté",
                 "Bourgogne-Franche-Comté",
                 "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Borgoña-Franco Condado",
+                "Bourgogne-Franche-Comté",
+                "ブルゴーニュフランシュコンテ",
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Bourgogne-Franche-Comté",
+                "Бургундия-Франш-Конте",
+                "Bourgogne-Franche-Comté",
+                "Бурґунь-Франш-Конте",
+                "Bourgogne-Franche-Comté",
                 "Bourgogne-Franche-Comté"
               ]
             },
@@ -564,7 +1160,18 @@
                 "Bretagne",
                 "Bretaň",
                 "Bretagna",
-                "Bretania"
+                "Bretania",
+                "Bretaña",
+                "Bretagne",
+                "ブルターニュ",
+                "Bretanė",
+                "Bretagne",
+                "Bretanha",
+                "Бретань",
+                "Bretagne",
+                "Бретань",
+                "Bretagne",
+                "Bretagne"
               ]
             },
             "FR-CVL": {
@@ -574,6 +1181,17 @@
                 "Centre-Val de Loire",
                 "Centre-Val de Loire",
                 "Centre-Val de Loire",
+                "Centre-Val de Loire",
+                "Centre-Val de Loire",
+                "Centro-Valle del Loira",
+                "Keskusta - Val de Loire",
+                "サントルヴァルデロワール",
+                "Luaros centras",
+                "Centre-Val de Loire",
+                "Centro-Val de Loire",
+                "Центр-Валь-де-Луар",
+                "Centre-Val de Loire",
+                "Центр-Валь-де-Луара",
                 "Centre-Val de Loire",
                 "Centre-Val de Loire"
               ]
@@ -586,7 +1204,18 @@
                 "Corsica",
                 "Korsika",
                 "Corsica",
-                "Korsyka"
+                "Korsyka",
+                "Córcega",
+                "Korsika",
+                "コルシカ",
+                "Korsika",
+                "Korsika",
+                "Córsega",
+                "Корсика",
+                "Korsika",
+                "Корсика",
+                "Korsika",
+                "Korzika"
               ]
             },
             "FR-GES": {
@@ -597,7 +1226,18 @@
                 "Grand-Est",
                 "Grand-Est",
                 "Grand-Est",
-                "Grand-Est"
+                "Grand-Est",
+                "Gran Este",
+                "Grand-Est",
+                "グラン・テスト地域圏",
+                "Grand-Est",
+                "Grand-Est",
+                "Grand-Est",
+                "Гранд-Эст",
+                "Grand-Est",
+                "Grand-Est",
+                "Grand Est",
+                "Grand Est"
               ]
             },
             "FR-HDF": {
@@ -607,6 +1247,17 @@
                 "Hauts-de-France",
                 "Hauts-de-France",
                 "Hauts-de-France",
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "Altos de Francia",
+                "Hauts-de-France",
+                "オー＝ド＝フランス",
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "Hauts-de-France",
+                "О-де-Франс",
+                "Hauts-de-France",
+                "О-де-Франс",
                 "Hauts-de-France",
                 "Hauts-de-France"
               ]
@@ -619,6 +1270,17 @@
                 "Île-de-France",
                 "Île-de-France",
                 "Île-de-France",
+                "Île-de-France",
+                "Isla de Francia",
+                "Île-de-France",
+                "イル・ド・フランス",
+                "Île-de-France",
+                "Île-de-France",
+                "Ile de france",
+                "Иль-де-Франс",
+                "Île-de-France",
+                "Іль-де-Франс",
+                "Île-de-France",
                 "Île-de-France"
               ]
             },
@@ -630,6 +1292,17 @@
                 "Normandië",
                 "Normandie",
                 "Normandia",
+                "Normandia",
+                "Normandía",
+                "Normandia",
+                "ノルマンディー",
+                "Normandija",
+                "Normandie",
+                "Normandia",
+                "Нормандия",
+                "Normandie",
+                "Нормандії",
+                "Normandiet",
                 "Normandia"
               ]
             },
@@ -641,7 +1314,18 @@
                 "Nieuw Aquitanië",
                 "Nová Akvitánie",
                 "Nuova Aquitania",
-                "Nowa Akwitania"
+                "Nowa Akwitania",
+                "Nueva Aquitania",
+                "Uusi Aquitaine",
+                "新しいアキテーヌ",
+                "Naujoji Akvitanija",
+                "Nye Aquitaine",
+                "Nova Aquitânia",
+                "Новая Аквитания",
+                "Nya Aquitaine",
+                "Нова Аквітанія",
+                "Nouvelle-Aquitaine",
+                "Nouvelle-Aquitaine"
               ]
             },
             "FR-OCC": {
@@ -652,7 +1336,18 @@
                 "Occitanië",
                 "Okcitánie",
                 "Occitania",
-                "Oksytania"
+                "Oksytania",
+                "Occitania",
+                "Occitania",
+                "オクシタニア",
+                "Oksitanija",
+                "Oksitania",
+                "Occitânia",
+                "Окситания",
+                "Occitanien",
+                "Окситанія",
+                "Occitanien",
+                "Okcitánia"
               ]
             },
             "FR-PDL": {
@@ -663,7 +1358,18 @@
                 "Pays-de-la-Loire",
                 "Pays-de-la-Loire",
                 "Pays-de-la-Loire",
-                "Pays-de-la-Loire"
+                "Pays-de-la-Loire",
+                "Países del Loira",
+                "Pays-de-la-Loire",
+                "ペイ・ド・ラ・ロワール",
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire",
+                "Pays-de-la-Loire",
+                "Пэи-де-ла-Луар",
+                "Pays-de-la-Loire",
+                "Пей-де-ла-Луар",
+                "Pays de la Loire",
+                "Pays de la Loire"
               ]
             },
             "FR-PAC": {
@@ -674,7 +1380,18 @@
                 "Provence-Alpes-Côte-d’Azur",
                 "Provence-Alpes-Côte-d’Azur",
                 "Provence-Alpes-Côte-d’Azur",
-                "Provence-Alpes-Côte-d’Azur"
+                "Provence-Alpes-Côte-d’Azur",
+                "Provenza-Alpes-Costa Azul",
+                "Provence-Alpes-Côte-d'Azur",
+                "プロヴァンス-アルプ-コート-ダジュール",
+                "Provansas-Alpės-Žydrasis Krantas",
+                "Provence-Alpes-Côte-d'Azur",
+                "Provence-Alpes-Côte-d'Azur",
+                "Прованс-Альпы-Лазурный Берег",
+                "Provence-Alpes-Côte-d'Azur",
+                "Прованс-Альпи-Лазурний берег",
+                "Provence-Alpes-Côte d'Azur",
+                "Provence-Alpes-Côte d'Azur"
               ]
             }
           }
@@ -684,10 +1401,21 @@
             "Vereinigtes Königreich",
             "United Kingdom",
             "Royaume-Uni",
-            "Verenigd Koningkrijk",
+            "Verenigd Koninkrijk",
             "Spojené království",
-            "Regno Unito ",
-            "Zjednoczone Królestwo"
+            "Regno Unito",
+            "Zjednoczone Królestwo",
+            "Reino Unido",
+            "Yhdistynyt kuningaskunta",
+            "イギリス",
+            "Jungtinė Karalystė",
+            "Storbritannia",
+            "Reino Unido",
+            "объединенное Королевство",
+            "Storbritannien",
+            "Великобританія",
+            "Det Forenede Kongerige",
+            "Egyesült Királyság"
           ]
         },
         "GR": {
@@ -698,7 +1426,18 @@
             "Griekenland",
             "Řecko",
             "Grecia",
-            "Grecja"
+            "Grecja",
+            "Grecia",
+            "Kreikka",
+            "ギリシャ",
+            "Graikija",
+            "Hellas",
+            "Grécia",
+            "Греция",
+            "Grekland",
+            "Греція",
+            "Grækenland",
+            "Görögország"
           ]
         },
         "HR": {
@@ -709,7 +1448,18 @@
             "Kroatië",
             "Chorvatsko",
             "Croazia",
-            "Chorwacja"
+            "Chorwacja",
+            "Croacia",
+            "Kroatia",
+            "クロアチア",
+            "Kroatija",
+            "Kroatia",
+            "Croácia",
+            "Хорватия",
+            "Kroatien",
+            "Хорватія",
+            "Kroatien",
+            "Horvátország"
           ]
         },
         "HU": {
@@ -720,7 +1470,18 @@
             "Hongarije",
             "Maďarsko",
             "Ungheria",
-            "Węgry"
+            "Węgry",
+            "Hungría",
+            "Unkari",
+            "ハンガリー",
+            "Vengrija",
+            "Ungarn",
+            "Hungria",
+            "Венгрия",
+            "Ungern",
+            "Угорщина",
+            "Ungarn",
+            "Magyarország"
           ]
         },
         "IE": {
@@ -731,7 +1492,18 @@
             "Ierland",
             "Irsko",
             "Irlanda",
-            "Irlandia"
+            "Irlandia",
+            "Irlanda",
+            "Irlanti",
+            "アイルランド",
+            "Airija",
+            "Irland",
+            "Irlanda",
+            "Ирландия",
+            "Irland",
+            "Ірландія",
+            "Irland",
+            "Írország"
           ]
         },
         "IS": {
@@ -742,7 +1514,18 @@
             "IJsland",
             "Island",
             "Islanda",
-            "Islandia"
+            "Islandia",
+            "Islandia",
+            "Islanti",
+            "アイスランド",
+            "Islandija",
+            "Island",
+            "Islândia",
+            "Исландия",
+            "Island",
+            "Ісландія",
+            "Island",
+            "Izland"
           ]
         },
         "IT": {
@@ -753,7 +1536,18 @@
             "Italië",
             "Itálie",
             "Italia",
-            "Włochy"
+            "Włochy",
+            "Italia",
+            "Italia",
+            "イタリア",
+            "Italija",
+            "Italia",
+            "Itália",
+            "Италия",
+            "Italien",
+            "Італія",
+            "Italien",
+            "Olaszország"
           ]
         },
         "LT": {
@@ -764,7 +1558,18 @@
             "Litouwen",
             "Litva",
             "Lituania",
-            "Litwa"
+            "Litwa",
+            "Lituania",
+            "Liettua",
+            "リトアニア",
+            "Lietuva",
+            "Litauen",
+            "Lituânia",
+            "Литва",
+            "Litauen",
+            "Литва",
+            "Litauen",
+            "Litvánia"
           ]
         },
         "LU": {
@@ -775,7 +1580,18 @@
             "Luxemburg",
             "Lucembursko",
             "Lussemburgo",
-            "Luksemburg"
+            "Luksemburg",
+            "Luxemburgo",
+            "Luxemburg",
+            "ルクセンブルク",
+            "Liuksemburgas",
+            "Luxembourg",
+            "Luxemburgo",
+            "Люксембург",
+            "Luxemburg",
+            "Люксембург",
+            "Luxembourg",
+            "Luxemburg"
           ]
         },
         "ME": {
@@ -786,7 +1602,18 @@
             "Montenegro",
             "Černá Hora",
             "Montenegro",
-            "Czarnogóra"
+            "Czarnogóra",
+            "Montenegro",
+            "Montenegro",
+            "モンテネグロ",
+            "Juodkalnija",
+            "Montenegro",
+            "Montenegro",
+            "Черногория",
+            "Montenegro",
+            "Чорногорія",
+            "Montenegro",
+            "Montenegró"
           ]
         },
         "MK": {
@@ -797,7 +1624,18 @@
             "Noord-Macedonië",
             "Severní Makedonie",
             "Macedonia del Nord",
-            "Macedonia Północna"
+            "Macedonia Północna",
+            "Macedonia del Norte",
+            "Pohjois-Makedonia",
+            "北マケドニア",
+            "Šiaurės Makedonija",
+            "Nord-Makedonia",
+            "Macedônia do Norte",
+            "Северная Македония",
+            "Nordmakedonien",
+            "Північна Македонія",
+            "Nordmakedonien",
+            "Észak-Macedónia"
           ]
         },
         "NL": {
@@ -808,7 +1646,18 @@
             "Nederland",
             "Holandsko",
             "Olanda",
-            "Holandia"
+            "Holandia",
+            "Países Bajos",
+            "Alankomaat",
+            "オランダ",
+            "Nyderlandai",
+            "Nederland",
+            "Países Baixos",
+            "Нидерланды",
+            "Nederländerna",
+            "Нідерланди",
+            "Holland",
+            "Hollandia"
           ]
         },
         "NO": {
@@ -819,7 +1668,18 @@
             "Noorwegen",
             "Norsko",
             "Norvegia",
-            "Norwegia"
+            "Norwegia",
+            "Noruega",
+            "Norja",
+            "ノルウェー",
+            "Norvegija",
+            "Norge",
+            "Noruega",
+            "Норвегия",
+            "Norge",
+            "Норвегія",
+            "Norge",
+            "Norvégia"
           ]
         },
         "PL": {
@@ -830,7 +1690,18 @@
             "Polen",
             "Polsko",
             "Polonia",
-            "Polska"
+            "Polska",
+            "Polonia",
+            "Puola",
+            "ポーランド",
+            "Lenkija",
+            "Polen",
+            "Polônia",
+            "Польша",
+            "Polen",
+            "Польща",
+            "Polen",
+            "Lengyelország"
           ]
         },
         "PT": {
@@ -841,7 +1712,18 @@
             "Portugal",
             "Portugalsko",
             "Portogallo",
-            "Portugalia"
+            "Portugalia",
+            "Portugal",
+            "Portugali",
+            "ポルトガル",
+            "Portugalija",
+            "Portugal",
+            "Portugal",
+            "Португалия",
+            "Portugal",
+            "Португалія",
+            "Portugal",
+            "Portugália"
           ]
         },
         "RO": {
@@ -852,7 +1734,18 @@
             "Roemenië",
             "Rumunsko",
             "Romania",
-            "Rumunia"
+            "Rumunia",
+            "Rumania",
+            "Romania",
+            "ルーマニア",
+            "Rumunija",
+            "Rumania",
+            "Romênia",
+            "Румыния",
+            "rumänien",
+            "Румунія",
+            "Rumænien",
+            "Románia"
           ]
         },
         "RS": {
@@ -863,7 +1756,18 @@
             "Servië",
             "Srbsko",
             "Serbia",
-            "Serbia"
+            "Serbia",
+            "Serbia",
+            "Serbia",
+            "セルビア",
+            "Serbija",
+            "Serbia",
+            "Sérvia",
+            "Сербия",
+            "Serbien",
+            "Сербія",
+            "Serbien",
+            "Szerbia"
           ]
         },
         "RU": {
@@ -874,7 +1778,18 @@
             "Rusland",
             "Rusko",
             "Russia",
-            "Rosja"
+            "Rosja",
+            "Rusia",
+            "Venäjä",
+            "ロシア",
+            "Rusija",
+            "Russland",
+            "Rússia",
+            "Россия",
+            "Ryssland",
+            "Росія",
+            "Rusland",
+            "Oroszország"
           ]
         },
         "SE": {
@@ -885,7 +1800,18 @@
             "Zweden",
             "Švédsko",
             "Svezia",
-            "Szwecja"
+            "Szwecja",
+            "Suecia",
+            "Ruotsi",
+            "スウェーデン",
+            "Švedija",
+            "Sverige",
+            "Suécia",
+            "Швеция",
+            "Sverige",
+            "Швеція",
+            "Sverige",
+            "Svédország"
           ]
         },
         "SK": {
@@ -896,18 +1822,40 @@
             "Slowakije",
             "Slovensko",
             "Slovacchia",
-            "Słowacja"
+            "Słowacja",
+            "Eslovaquia",
+            "Slovakia",
+            "スロバキア",
+            "Slovakija",
+            "Slovakia",
+            "Eslováquia",
+            "Словакия",
+            "Slovakien",
+            "Словаччина",
+            "Slovakiet",
+            "Szlovákia"
           ]
         },
         "SI": {
           "name": [
-            "Slovenien",
+            "Slowenien",
             "Slovenia",
             "Slovénie",
             "Slovenië",
             "Slovinsko",
             "Slovenia",
-            "Słowenia"
+            "Słowenia",
+            "Eslovenia",
+            "Slovenia",
+            "スロベニア",
+            "Slovėnija",
+            "Slovenia",
+            "Eslovênia",
+            "Словения",
+            "Slovenien",
+            "Словенія",
+            "Slovenien",
+            "Szlovénia"
           ]
         },
         "UA": {
@@ -918,7 +1866,18 @@
             "Oekraïne",
             "Ukrajina",
             "Ucraina",
-            "Ukraina"
+            "Ukraina",
+            "Ucrania",
+            "Ukraina",
+            "ウクライナ",
+            "Ukraina",
+            "Ukraina",
+            "Ucrânia",
+            "Украина",
+            "Ukraina",
+            "Україна",
+            "Ukraine",
+            "Ukrajna"
           ]
         }
       }
@@ -931,7 +1890,18 @@
         "Oceanië",
         "Oceánie",
         "Oceania",
-        "Oceania"
+        "Oceania",
+        "Oceanía",
+        "Oseania",
+        "オセアニア",
+        "Okeanija",
+        "Oseania",
+        "Oceânia",
+        "Океания",
+        "Oceanien",
+        "Океанія",
+        "Oceanien",
+        "Óceánia"
       ],
       "regions": {
         "AU": {
@@ -942,7 +1912,18 @@
             "Australië",
             "Austrálie",
             "Australia",
-            "Australia"
+            "Australia",
+            "Australia",
+            "Australia",
+            "オーストラリア",
+            "Australija",
+            "Australia",
+            "Austrália",
+            "Австралия",
+            "Australien",
+            "Австралія",
+            "Australien",
+            "Ausztrália"
           ],
           "regions": {
             "AU-NSW": {
@@ -953,7 +1934,18 @@
                 "Nieuw Zuid-Wales",
                 "Nový Jížní Wales",
                 "Nuovo Galles del Sud",
-                "Nowa Południowa Walia"
+                "Nowa Południowa Walia",
+                "Nueva Gales del Sur",
+                "Uusi Etelä-Wales",
+                "ニューサウスウェールズ州",
+                "Naujasis Pietų Velsas",
+                "New South Wales",
+                "Nova Gales do Sul",
+                "Новый Южный Уэльс",
+                "New South Wales",
+                "Новий Південний Уельс",
+                "New South Wales",
+                "Új-Dél-Wales"
               ]
             },
             "AU-NT": {
@@ -964,7 +1956,18 @@
                 "Noordelijk Territorium",
                 "Severní území",
                 "Territori del Nord",
-                "Północne terytorium"
+                "Północne terytorium",
+                "Territorio del Norte",
+                "Pohjoinen alue",
+                "ノーザン・テリトリー",
+                "Šiaurinė teritorija",
+                "Nordlig territorie",
+                "Território do Norte",
+                "Северная территория",
+                "Northern Territory",
+                "Північна територія",
+                "Northern Territory",
+                "Északi terület"
               ]
             },
             "AU-QLD": {
@@ -974,6 +1977,17 @@
                 "Queensland",
                 "Queensland",
                 "Queensland",
+                "Queensland",
+                "Queensland",
+                "Queensland",
+                "Queensland",
+                "クイーンズランド",
+                "Kvinslandas",
+                "Queensland",
+                "Queensland",
+                "Квинсленд",
+                "Queensland",
+                "Квінсленд",
                 "Queensland",
                 "Queensland"
               ]
@@ -986,7 +2000,18 @@
                 "Zuid Australië",
                 "jižní Austrálie",
                 "sud dell'Australia",
-                "Południowa Australia"
+                "Południowa Australia",
+                "Sur de Australia",
+                "Etelä-Australia",
+                "南オーストラリア",
+                "Pietų Australija",
+                "Sør-Australia",
+                "Sul da Austrália",
+                "Южная Австралия",
+                "South Australia",
+                "Південна Австралія",
+                "South Australia",
+                "Dél-Ausztrália"
               ]
             },
             "AU-TAS": {
@@ -997,7 +2022,18 @@
                 "Tasmanië",
                 "Tasmánie",
                 "Tasmania",
-                "Tasmania"
+                "Tasmania",
+                "Tasmania",
+                "Tasmania",
+                "タスマニア",
+                "Tasmanija",
+                "Tasmania",
+                "Tasmânia",
+                "Тасмания",
+                "Tasmania",
+                "Тасманія",
+                "Tasmanien",
+                "Tasmánia"
               ]
             },
             "AU-VIC": {
@@ -1008,7 +2044,18 @@
                 "Victoria",
                 "Victoria",
                 "Victoria",
-                "Wiktoria"
+                "Wiktoria",
+                "Victoria",
+                "Victoria",
+                "ビクトリア",
+                "Viktorija",
+                "Victoria",
+                "Vitória",
+                "Виктория",
+                "Victoria",
+                "Вікторія",
+                "Victoria",
+                "Victoria"
               ]
             },
             "AU-WA": {
@@ -1019,7 +2066,18 @@
                 "West Australië",
                 "západní Austrálie",
                 "Australia Occidentale",
-                "Zachodnia australia"
+                "Zachodnia australia",
+                "El oeste de Australia",
+                "Länsi-Australia",
+                "西オーストラリア",
+                "Vakarų Australija",
+                "Vest-Australia",
+                "Austrália Ocidental",
+                "Западная Австралия",
+                "Western Australia",
+                "Західна Австралія",
+                "Western Australia",
+                "Nyugat-Ausztrália"
               ]
             }
           }
@@ -1032,29 +2090,62 @@
             "Nieuw-Zeeland",
             "Nový Zéland",
             "Nuova Zelanda",
-            "Nowa Zelandia"
+            "Nowa Zelandia",
+            "Nueva Zelanda",
+            "Uusi Seelanti",
+            "ニュージーランド",
+            "Naujoji Zelandija",
+            "New Zealand",
+            "Nova Zelândia",
+            "Новая Зеландия",
+            "Nya Zeeland",
+            "Нова Зеландія",
+            "New Zealand",
+            "Új-Zéland"
           ],
           "regions": {
             "NZ-N": {
               "name": [
                 "Nordinsel",
                 "North Island",
-                "Île du Nord",
-                "Noord eiland",
+                "île du Nord",
+                "Noordelijk eiland",
                 "Severní ostrov",
                 "Isola del nord",
-                "Północna Wyspa"
+                "Północna Wyspa",
+                "Isla del Norte",
+                "Pohjois saari",
+                "北島",
+                "Šiaurės sala",
+                "Nordøya",
+                "Ilha do Norte",
+                "Северный остров",
+                "norra ön",
+                "Північний острів",
+                "Nordøen",
+                "Északi-sziget"
               ]
             },
             "NZ-S": {
               "name": [
                 "Südinsel",
                 "South Island",
-                "Île du Sud",
-                "zuidelijk eiland",
+                "île du sud",
+                "Zuidelijk eiland",
                 "Jižní ostrov",
                 "Isola del Sud",
-                "Południowa Wyspa"
+                "Południowa Wyspa",
+                "Isla del Sur",
+                "Etelä saari",
+                "南島",
+                "Pietų sala",
+                "Sørøya",
+                "Ilha do Sul",
+                "Южный остров",
+                "Sydön",
+                "Південний острів",
+                "Sydøen",
+                "Déli-sziget"
               ]
             }
           }
@@ -1066,10 +2157,21 @@
         "Nordamerika",
         "North America",
         "Amérique du Nord",
-        "Noord-Amerika",
+        "Noord Amerika",
         "Severní Amerika",
         "Nord America",
-        "Ameryka północna"
+        "Ameryka północna",
+        "América del norte",
+        "Pohjois-Amerikka",
+        "北米",
+        "Šiaurės Amerika",
+        "Nord Amerika",
+        "América do Norte",
+        "Северная Америка",
+        "Nordamerika",
+        "Північна Америка",
+        "Nordamerika",
+        "Észak-Amerika"
       ],
       "regions": {
         "CA": {
@@ -1079,6 +2181,17 @@
             "Canada",
             "Canada",
             "Kanada",
+            "Canada",
+            "Kanada",
+            "Canadá",
+            "Kanada",
+            "カナダ",
+            "Kanada",
+            "Canada",
+            "Canadá",
+            "Канада",
+            "Kanada",
+            "Канада",
             "Canada",
             "Kanada"
           ],
@@ -1091,18 +2204,40 @@
                 "Alberta",
                 "Alberta",
                 "Alberta",
+                "Alberta",
+                "Alberta",
+                "Alberta",
+                "アルバータ",
+                "Albertas",
+                "Alberte",
+                "Alberta",
+                "Альберта",
+                "Alberta",
+                "Альберта",
+                "Alberta",
                 "Alberta"
               ]
             },
             "CA-BC": {
               "name": [
-                "British Colombia",
-                "British Colombia",
+                "Britisch-Kolumbien",
+                "British Columbia",
                 "Colombie britannique",
                 "Brits Columbia",
                 "Britská Kolumbie",
+                "Colombia britannica",
+                "Brytyjska Kolumbia",
+                "Colombia Británica",
+                "Brittiläinen Kolumbia",
+                "ブリティッシュコロンビア",
+                "Britų Kolumbija",
+                "Britisk Colombia",
+                "Colômbia britânica",
+                "Британская Колумбия",
                 "British Columbia",
-                "Brytyjska Kolumbia"
+                "Британська Колумбія",
+                "British Columbia",
+                "Brit Columbia"
               ]
             },
             "CA-MB": {
@@ -1112,6 +2247,17 @@
                 "Manitoba",
                 "Manitoba",
                 "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "マニトバ",
+                "Manitoba",
+                "Manitoba",
+                "Manitoba",
+                "Манитоба",
+                "Manitoba",
+                "Манітоба",
                 "Manitoba",
                 "Manitoba"
               ]
@@ -1124,6 +2270,17 @@
                 "Ontario",
                 "Ontario",
                 "Ontario",
+                "Ontario",
+                "Ontario",
+                "Ontario",
+                "オンタリオ",
+                "Ontarijas",
+                "Ontario",
+                "Ontário",
+                "Онтарио",
+                "Ontario",
+                "Онтаріо",
+                "Ontario",
                 "Ontario"
               ]
             },
@@ -1135,6 +2292,17 @@
                 "Québec",
                 "Québec",
                 "Québec",
+                "Québec",
+                "Québec",
+                "Québec",
+                "ケベック",
+                "Kvebekas",
+                "Québec",
+                "Quebec",
+                "Квебек",
+                "Québec",
+                "Квебек",
+                "Quebec",
                 "Québec"
               ]
             },
@@ -1146,7 +2314,172 @@
                 "Saskatchewan",
                 "Saskatchewan",
                 "Saskatchewan",
+                "Saskatchewan",
+                "Saskatchewan",
+                "Saskatchewan",
+                "サスカチュワン",
+                "Saskačevanas",
+                "Saskatchewan",
+                "Saskatchewan",
+                "Саскачеван",
+                "Saskatchewan",
+                "Саскачеван",
+                "Saskatchewan",
                 "Saskatchewan"
+              ]
+            },
+            "CA-NT": {
+              "name": [
+                "Nordwest-Territorien",
+                "Northwest Territories",
+                "Territoires du Nord-Ouest",
+                "Noordwestterritoria",
+                "Severozápadní teritoria",
+                "Territori del Nord-Ovest",
+                "Terytoria Północno-Zachodnie",
+                "Territorios del Noroeste",
+                "Luoteisterritoriot",
+                "ノースウエスト準州",
+                "Šiaurės Vakarų teritorijos",
+                "Nordvestterritoriene",
+                "Territórios do Noroeste",
+                "Северо-Западные территории",
+                "Nordvästterritorierna",
+                "Північно-західні території",
+                "Nordvestterritorierne",
+                "Északnyugati területek"
+              ]
+            },
+            "CA-NU": {
+              "name": [
+                "Nunavut",
+                "Nunavut",
+                "Nunavut",
+                "Nunavut",
+                "Nunavut",
+                "Nunavut",
+                "Nunavut",
+                "Nunavut",
+                "Nunavut",
+                "ヌナブト準州",
+                "Nunavutas",
+                "Nunavut",
+                "Nunavut",
+                "Нунавут",
+                "Nunavut",
+                "Нунавут",
+                "Nunavut",
+                "Nunavut"
+              ]
+            },
+            "CA-NS": {
+              "name": [
+                "Neuschottland",
+                "Nova Scotia",
+                "Nouvelle-Écosse",
+                "Nova Scotia",
+                "Nové Skotsko",
+                "Nuova Scozia",
+                "Nowa Szkocja",
+                "Nueva Escocia",
+                "Nova Scotia",
+                "ノバスコシア州",
+                "Naujoji Škotija",
+                "Nova Scotia",
+                "Nova Escócia",
+                "Новая Шотландия",
+                "Nova Scotia",
+                "Нова Шотландія",
+                "Nova Scotia",
+                "Új-Skócia"
+              ]
+            },
+            "CA-NB": {
+              "name": [
+                "Neubraunschweig",
+                "New Brunswick",
+                "Nouveau-Brunswick",
+                "New Brunswick",
+                "Nový Brunšvik",
+                "Nuovo Brunswick",
+                "Nowy Brunszwik",
+                "Nuevo Brunswick",
+                "New Brunswick",
+                "ニューブランズウィック州",
+                "Naujasis Bransvikas",
+                "New Brunswick",
+                "Novo Brunswick",
+                "Нью-Брансуик",
+                "New Brunswick",
+                "Нью-Брансвік",
+                "New Brunswick",
+                "Új-Brunswick"
+              ]
+            },
+            "CA-YT": {
+              "name": [
+                "Yukon",
+                "Yukon",
+                "Yukon",
+                "Yukon",
+                "Yukon",
+                "Yukon",
+                "Jukon",
+                "Yukón",
+                "Yukon",
+                "ユーコン準州",
+                "Jukonas",
+                "Yukon",
+                "Yukon",
+                "Юкон",
+                "Yukon",
+                "Юкон",
+                "Yukon",
+                "Yukon"
+              ]
+            },
+            "CA-NL": {
+              "name": [
+                "Neufundland und Labrador",
+                "Newfoundland and Labrador",
+                "Terre-Neuve-et-Labrador",
+                "Newfoundland en Labrador",
+                "Newfoundland a Labrador",
+                "Terranova e Labrador",
+                "Nowa Fundlandia i Labrador",
+                "Terranova y Labrador",
+                "Newfoundland ja Labrador",
+                "ニューファンドランド・ラブラドール州",
+                "Niufaundlandas ir Labradoras",
+                "Newfoundland og Labrador",
+                "Terra Nova e Labrador",
+                "Ньюфаундленд и Лабрадор",
+                "Newfoundland och Labrador",
+                "Ньюфаундленд і Лабрадор",
+                "Newfoundland og Labrador",
+                "Új-Fundland és Labrador"
+              ]
+            },
+            "CA-PE": {
+              "name": [
+                "Prinz-Eduard-Insel",
+                "Prince Edward Island",
+                "Île-du-Prince-Édouard",
+                "Prince Edward Island",
+                "Ostrov prince Edvarda",
+                "Isola del Principe Edoardo",
+                "Wyspa Księcia Edwarda",
+                "Isla del Príncipe Eduardo",
+                "Prinssi Edwardin saari",
+                "プリンスエドワードアイランド州",
+                "Princo Edvardo sala",
+                "Prince Edward Island",
+                "Ilha do Príncipe Eduardo",
+                "Остров Принца Эдуарда",
+                "Prince Edward Island",
+                "Острів Принца Едварда",
+                "Prince Edward Island",
+                "Prince Edward-sziget"
               ]
             }
           }
@@ -1159,7 +2492,18 @@
             "Mexico",
             "Mexiko",
             "Messico",
-            "Meksyk"
+            "Meksyk",
+            "México",
+            "Meksiko",
+            "メキシコ",
+            "Meksika",
+            "Mexico",
+            "México",
+            "Мексика",
+            "Mexiko",
+            "Мексика",
+            "Mexico",
+            "Mexikó"
           ]
         },
         "US": {
@@ -1169,8 +2513,19 @@
             "États-Unis",
             "Verenigde Staten",
             "Spojené státy",
-            "stati Uniti",
-            "Stany Zjednoczone"
+            "Stati Uniti",
+            "Stany Zjednoczone",
+            "Estados Unidos",
+            "Yhdysvallat",
+            "アメリカ",
+            "Jungtinės Valstijos",
+            "forente stater",
+            "Estados Unidos",
+            "Соединенные Штаты",
+            "USA",
+            "Сполучені Штати",
+            "Forenede Stater",
+            "Egyesült Államok"
           ],
           "regions": {
             "US-AL": {
@@ -1180,6 +2535,17 @@
                 "Alabama",
                 "Alabama",
                 "Alabama",
+                "Alabama",
+                "Alabama",
+                "Alabama",
+                "Alabama",
+                "アラバマ",
+                "Alabama",
+                "Alabama",
+                "Alabama",
+                "Алабама",
+                "Alabama",
+                "Алабама",
                 "Alabama",
                 "Alabama"
               ]
@@ -1192,7 +2558,18 @@
                 "Alaska",
                 "Aljaška",
                 "Alaska",
-                "Alaska"
+                "Alaska",
+                "Alaska",
+                "Alaska",
+                "アラスカ",
+                "Aliaska",
+                "Alaska",
+                "Alasca",
+                "Аляска",
+                "Alaska",
+                "Аляска",
+                "Alaska",
+                "Alaszka"
               ]
             },
             "US-AZ": {
@@ -1202,6 +2579,17 @@
                 "Arizona",
                 "Arizona",
                 "Arizona",
+                "Arizona",
+                "Arizona",
+                "Arizona",
+                "Arizona",
+                "アリゾナ",
+                "Arizona",
+                "Arizona",
+                "Arizona",
+                "Аризона",
+                "Arizona",
+                "Арізона",
                 "Arizona",
                 "Arizona"
               ]
@@ -1214,6 +2602,17 @@
                 "Arkansas",
                 "Arkansas",
                 "Arkansas",
+                "Arkansas",
+                "Arkansas",
+                "Arkansas",
+                "アーカンソー",
+                "Arkanzasas",
+                "Arkansas",
+                "Arkansas",
+                "Арканзас",
+                "Arkansas",
+                "Арканзас",
+                "Arkansas",
                 "Arkansas"
               ]
             },
@@ -1225,6 +2624,17 @@
                 "Californië",
                 "Kalifornie",
                 "California",
+                "Kalifornia",
+                "California",
+                "Kalifornia",
+                "カリフォルニア",
+                "Kalifornija",
+                "California",
+                "Califórnia",
+                "Калифорния",
+                "Kalifornien",
+                "Каліфорнія",
+                "Californien",
                 "Kalifornia"
               ]
             },
@@ -1236,7 +2646,18 @@
                 "Colorado",
                 "Colorado",
                 "Colorado",
-                "Kolorado"
+                "Kolorado",
+                "Colorado",
+                "Colorado",
+                "コロラド",
+                "Koloradas",
+                "Colorado",
+                "Colorado",
+                "Колорадо",
+                "Colorado",
+                "Колорадо",
+                "Colorado",
+                "Colorado"
               ]
             },
             "US-CT": {
@@ -1246,6 +2667,17 @@
                 "Connecticut",
                 "Connecticut",
                 "Connecticut",
+                "Connecticut",
+                "Connecticut",
+                "Connecticut",
+                "Connecticut",
+                "コネチカット",
+                "Konektikutas",
+                "Connecticut",
+                "Connecticut",
+                "Коннектикут",
+                "Connecticut",
+                "Коннектикут",
                 "Connecticut",
                 "Connecticut"
               ]
@@ -1258,6 +2690,17 @@
                 "Delaware",
                 "Delaware",
                 "Delaware",
+                "Delaware",
+                "Delaware",
+                "Delaware",
+                "デラウェア",
+                "Delaveras",
+                "Delaware",
+                "Delaware",
+                "Делавэр",
+                "Delaware",
+                "Делавер",
+                "Delaware",
                 "Delaware"
               ]
             },
@@ -1269,7 +2712,18 @@
                 "Florida",
                 "Florida",
                 "Florida",
-                "Floryda"
+                "Floryda",
+                "Florida",
+                "Florida",
+                "フロリダ",
+                "Florida",
+                "Florida",
+                "Flórida",
+                "Флорида",
+                "Florida",
+                "Флорида",
+                "Florida",
+                "Florida"
               ]
             },
             "US-GA": {
@@ -1280,7 +2734,18 @@
                 "Georgië",
                 "Gruzie",
                 "Georgia",
-                "Gruzja"
+                "Gruzja",
+                "Georgia",
+                "Georgia",
+                "ジョージア",
+                "Gruzija",
+                "Georgia",
+                "Geórgia",
+                "Грузия",
+                "Georgien",
+                "Грузія",
+                "Georgia",
+                "Georgia"
               ]
             },
             "US-HI": {
@@ -1291,7 +2756,18 @@
                 "Hawaii",
                 "Havaj",
                 "Hawaii",
-                "Hawaje"
+                "Hawaje",
+                "Hawai",
+                "Havaiji",
+                "ハワイ",
+                "Havajai",
+                "Hawaii",
+                "Havaí",
+                "Гавайи",
+                "Hawaii",
+                "Гаваї",
+                "Hawaii",
+                "Hawaii"
               ]
             },
             "US-ID": {
@@ -1301,6 +2777,17 @@
                 "Idaho",
                 "Idaho",
                 "Idaho",
+                "Idaho",
+                "Idaho",
+                "Idaho",
+                "Idaho",
+                "アイダホ",
+                "Aidahas",
+                "Idaho",
+                "Idaho",
+                "Айдахо",
+                "Idaho",
+                "Айдахо",
                 "Idaho",
                 "Idaho"
               ]
@@ -1313,6 +2800,17 @@
                 "Illinois",
                 "Illinois",
                 "Illinois",
+                "Illinois",
+                "Illinois",
+                "Illinois",
+                "イリノイ",
+                "Ilinojus",
+                "Illinois",
+                "Illinois",
+                "Иллинойс",
+                "Illinois",
+                "Іллінойс",
+                "Illinois",
                 "Illinois"
               ]
             },
@@ -1324,11 +2822,41 @@
                 "Indiana",
                 "Indiana",
                 "Indiana",
+                "Indiana",
+                "Indiana",
+                "Indiana",
+                "インディアナ",
+                "Indiana",
+                "Indiana",
+                "Indiana",
+                "Индиана",
+                "Indiana",
+                "Індіана",
+                "Indiana",
                 "Indiana"
               ]
             },
             "US-IA": {
-              "name": ["Iowa", "Iowa", "Iowa", "Iowa", "Iowo", "Iowa", "Iowa"]
+              "name": [
+                "Iowa",
+                "Iowa",
+                "Iowa",
+                "Iowa",
+                "Iowo",
+                "Iowa",
+                "Iowa",
+                "Iowa",
+                "Iowa",
+                "アイオワ",
+                "Ajova",
+                "Iowa",
+                "Iowa",
+                "Айова",
+                "Iowa",
+                "Айова",
+                "Iowa",
+                "Iowa"
+              ]
             },
             "US-KS": {
               "name": [
@@ -1337,6 +2865,17 @@
                 "Kansas",
                 "Kansas",
                 "Kansas",
+                "Kansas",
+                "Kansas",
+                "Kansas",
+                "Kansas",
+                "カンザス",
+                "Kanzasas",
+                "Kansas",
+                "Kansas",
+                "Канзас",
+                "Kansas",
+                "Канзас",
                 "Kansas",
                 "Kansas"
               ]
@@ -1349,6 +2888,17 @@
                 "Kentucky",
                 "Kentucky",
                 "Kentucky",
+                "Kentucky",
+                "Kentucky",
+                "Kentucky",
+                "ケンタッキー",
+                "Kentukis",
+                "Kentucky",
+                "Kentucky",
+                "Кентукки",
+                "Kentucky",
+                "Кентуккі",
+                "Kentucky",
                 "Kentucky"
               ]
             },
@@ -1360,7 +2910,18 @@
                 "Louisiana",
                 "Louisiana",
                 "Louisiana",
-                "Luizjana"
+                "Luizjana",
+                "Luisiana",
+                "Louisiana",
+                "ルイジアナ",
+                "Luiziana",
+                "Louisiana",
+                "Luisiana",
+                "Луизиана",
+                "Louisiana",
+                "Луїзіана",
+                "Louisiana",
+                "Louisiana"
               ]
             },
             "US-ME": {
@@ -1370,6 +2931,17 @@
                 "Maine",
                 "Maine",
                 "Maine",
+                "Maine",
+                "Maine",
+                "Maine",
+                "Maine",
+                "メイン",
+                "Meinas",
+                "Maine",
+                "Maine",
+                "Мэн",
+                "Maine",
+                "Мен",
                 "Maine",
                 "Maine"
               ]
@@ -1382,6 +2954,17 @@
                 "Maryland",
                 "Maryland",
                 "Maryland",
+                "Maryland",
+                "Maryland",
+                "Maryland",
+                "メリーランド",
+                "Merilendas",
+                "Maryland",
+                "Maryland",
+                "Мэриленд",
+                "Maryland",
+                "Меріленд",
+                "Maryland",
                 "Maryland"
               ]
             },
@@ -1392,6 +2975,17 @@
                 "Massachusetts",
                 "Massachusetts",
                 "Massachusetts",
+                "Massachusetts",
+                "Massachusetts",
+                "Massachusetts",
+                "Massachusetts",
+                "マサチューセッツ",
+                "Masačusetsas",
+                "Massachusetts",
+                "Massachusetts",
+                "Массачусетс",
+                "Massachusetts",
+                "Массачусетс",
                 "Massachusetts",
                 "Massachusetts"
               ]
@@ -1404,6 +2998,17 @@
                 "Michigan",
                 "Michigan",
                 "Michigan",
+                "Michigan",
+                "Michigan",
+                "Michigan",
+                "ミシガン",
+                "Mičiganas",
+                "Michigan",
+                "Michigan",
+                "Мичиган",
+                "Michigan",
+                "Мічиган",
+                "Michigan",
                 "Michigan"
               ]
             },
@@ -1414,6 +3019,17 @@
                 "Minnesota",
                 "Minnesota",
                 "Minnesota",
+                "Minnesota",
+                "Minnesota",
+                "Minnesota",
+                "Minnesota",
+                "ミネソタ",
+                "Minesota",
+                "Minnesota",
+                "Minnesota",
+                "Миннесота",
+                "Minnesota",
+                "Міннесота",
                 "Minnesota",
                 "Minnesota"
               ]
@@ -1426,6 +3042,17 @@
                 "Mississippi",
                 "Mississippi",
                 "Mississippi",
+                "Mississippi",
+                "Misisipí",
+                "Mississippi",
+                "ミシシッピ",
+                "Misisipė",
+                "Mississippi",
+                "Mississipi",
+                "Миссисипи",
+                "Mississippi",
+                "Міссісіпі",
+                "Mississippi",
                 "Mississippi"
               ]
             },
@@ -1436,6 +3063,17 @@
                 "Missouri",
                 "Missouri",
                 "Missouri",
+                "Missouri",
+                "Missouri",
+                "Misuri",
+                "Missouri",
+                "ミズーリ",
+                "Misūris",
+                "Missouri",
+                "Missouri",
+                "Миссури",
+                "Missouri",
+                "Міссурі",
                 "Missouri",
                 "Missouri"
               ]
@@ -1448,6 +3086,17 @@
                 "Montana",
                 "Montana",
                 "Montana",
+                "Montana",
+                "Montana",
+                "Montana",
+                "モンタナ",
+                "Montana",
+                "Montana",
+                "Montana",
+                "Монтана",
+                "Montana",
+                "Монтана",
+                "Montana",
                 "Montana"
               ]
             },
@@ -1458,6 +3107,17 @@
                 "Nebraska",
                 "Nebraska",
                 "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "ネブラスカ",
+                "Nebraska",
+                "Nebraska",
+                "Nebraska",
+                "Небраска",
+                "Nebraska",
+                "Небраска",
                 "Nebraska",
                 "Nebraska"
               ]
@@ -1470,6 +3130,17 @@
                 "Nevada",
                 "Nevada",
                 "Nevada",
+                "Nevada",
+                "Nevada",
+                "Nevada",
+                "ネバダ",
+                "Nevada",
+                "Nevada",
+                "Nevada",
+                "Невада",
+                "Nevada",
+                "Невада",
+                "Nevada",
                 "Nevada"
               ]
             },
@@ -1480,6 +3151,17 @@
                 "New Hampshire",
                 "New Hampshire",
                 "New Hampshire",
+                "New Hampshire",
+                "New Hampshire",
+                "Nuevo Hampshire",
+                "New Hampshire",
+                "ニューハンプシャー",
+                "Naujasis Hampšyras",
+                "New Hampshire",
+                "Nova Hampshire",
+                "Нью-Гемпшир",
+                "New Hampshire",
+                "Нью-Гемпшир",
                 "New Hampshire",
                 "New Hampshire"
               ]
@@ -1492,6 +3174,17 @@
                 "New Jersey",
                 "New Jersey",
                 "New Jersey",
+                "New Jersey",
+                "New Jersey",
+                "New Jerseyssä",
+                "ニュージャージー",
+                "Naujasis Džersis",
+                "New Jersey",
+                "Nova Jersey",
+                "Нью-Джерси",
+                "New Jersey",
+                "Нью Джерсі",
+                "New Jersey",
                 "New Jersey"
               ]
             },
@@ -1503,7 +3196,18 @@
                 "New Mexico",
                 "Nové Mexiko",
                 "Nuovo Messico",
-                "Nowy Meksyk"
+                "Nowy Meksyk",
+                "Nuevo Mexico",
+                "Uusi Meksiko",
+                "ニューメキシコ",
+                "Naujasis Meksikas",
+                "New Mexico",
+                "Novo México",
+                "Нью-Мексико",
+                "New Mexico",
+                "Нью-Мексико",
+                "New Mexico",
+                "Új-Mexikó"
               ]
             },
             "US-NY": {
@@ -1514,7 +3218,18 @@
                 "New York",
                 "New York",
                 "New York",
-                "Nowy Jork"
+                "Nowy Jork",
+                "Nueva York",
+                "New York",
+                "ニューヨーク",
+                "Niujorkas",
+                "New York",
+                "Nova Iorque",
+                "Нью-Йорк",
+                "New York",
+                "Нью-Йорк",
+                "New York",
+                "New York"
               ]
             },
             "US-NC": {
@@ -1525,22 +3240,63 @@
                 "Noord Carolina",
                 "Severní Karolina",
                 "Carolina del Nord",
-                "Karolina Północna"
+                "Karolina Północna",
+                "Carolina del Norte",
+                "Pohjois-Carolina",
+                "ノースカロライナ州",
+                "Šiaurės Karolina",
+                "Nord-Carolina",
+                "Carolina do Norte",
+                "Северная Каролина",
+                "norra Carolina",
+                "Північна Кароліна",
+                "North Carolina",
+                "Észak-Karolina"
               ]
             },
             "US-ND": {
               "name": [
                 "North Dakota",
                 "North Dakota",
-                "Dakota du Nord",
+                "Dakota du nord",
                 "Noord-Dakota",
                 "Severní Dakota",
                 "Nord Dakota",
-                "Północna Dakota"
+                "Północna Dakota",
+                "Dakota del Norte",
+                "Pohjois-Dakota",
+                "ノースダコタ",
+                "Šiaurės Dakota",
+                "Norddakota",
+                "Dakota do Norte",
+                "Северная Дакота",
+                "norra Dakota",
+                "Північна Дакота",
+                "North Dakota",
+                "Észak-Dakota"
               ]
             },
             "US-OH": {
-              "name": ["Ohio", "Ohio", "Ohio", "Ohio", "Ohio", "Ohio", "Ohio"]
+              "name": [
+                "Ohio",
+                "Ohio",
+                "Ohio",
+                "Ohio",
+                "Ohio",
+                "Ohio",
+                "Ohio",
+                "Ohio",
+                "Ohio",
+                "オハイオ",
+                "Ohajas",
+                "Ohio",
+                "Ohio",
+                "Огайо",
+                "Ohio",
+                "Огайо",
+                "Ohio",
+                "Ohio"
+              ]
             },
             "US-OK": {
               "name": [
@@ -1549,6 +3305,17 @@
                 "Oklahoma",
                 "Oklahoma",
                 "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "オクラホマ",
+                "Oklahoma",
+                "Oklahoma",
+                "Oklahoma",
+                "Оклахома",
+                "Oklahoma",
+                "Оклахома",
                 "Oklahoma",
                 "Oklahoma"
               ]
@@ -1561,6 +3328,17 @@
                 "Oregon",
                 "Oregon",
                 "Oregon",
+                "Oregon",
+                "Oregón",
+                "Oregon",
+                "オレゴン",
+                "Oregonas",
+                "Oregon",
+                "Óregon",
+                "Орегон",
+                "Oregon",
+                "Орегон",
+                "Oregon",
                 "Oregon"
               ]
             },
@@ -1572,7 +3350,18 @@
                 "Pennsylvania",
                 "Pensylvánie",
                 "Pennsylvania",
-                "Pensylwania"
+                "Pensylwania",
+                "Pensilvania",
+                "Pennsylvania",
+                "ペンシルベニア",
+                "Pensilvanija",
+                "Pennsylvania",
+                "Pensilvânia",
+                "Пенсильвания",
+                "Pennsylvania",
+                "Пенсільванія",
+                "Pennsylvania",
+                "Pennsylvania"
               ]
             },
             "US-RI": {
@@ -1582,6 +3371,17 @@
                 "Rhode Island",
                 "Rhode Island",
                 "Rhode Island",
+                "Rhode Island",
+                "Rhode Island",
+                "Rhode Island",
+                "Rhode Island",
+                "ロードアイランド",
+                "Rodo sala",
+                "Rhode Island",
+                "Rhode Island",
+                "Род-Айленд",
+                "Rhode Island",
+                "Род-Айленд",
                 "Rhode Island",
                 "Rhode Island"
               ]
@@ -1594,7 +3394,18 @@
                 "zuid Carolina",
                 "Jižní Karolína",
                 "Carolina del Sud",
-                "Karolina Południowa"
+                "Karolina Południowa",
+                "Carolina del Sur",
+                "Etelä-Carolina",
+                "サウスカロライナ",
+                "Pietų Karolina",
+                "Sør-Carolina",
+                "Carolina do Sul",
+                "Южная Каролина",
+                "South Carolina",
+                "Південна Кароліна",
+                "South Carolina",
+                "Dél-Karolina"
               ]
             },
             "US-SD": {
@@ -1605,7 +3416,18 @@
                 "zuid Dakota",
                 "Jižní Dakota",
                 "Sud Dakota",
-                "Południowa Dakota"
+                "Południowa Dakota",
+                "Dakota del Sur",
+                "Etelä-Dakota",
+                "サウス・ダコタ",
+                "Pietų Dakota",
+                "Sør Dakota",
+                "Dakota do Sul",
+                "Северная Дакота",
+                "South Dakota",
+                "Південна Дакота",
+                "South Dakota",
+                "Dél-Dakota"
               ]
             },
             "US-TN": {
@@ -1615,6 +3437,17 @@
                 "Tennessee",
                 "Tennessee",
                 "Tennessee",
+                "Tennessee",
+                "Tennessee",
+                "Tennesse",
+                "Tennessee",
+                "テネシー",
+                "Tenesis",
+                "Tennessee",
+                "Tennessee",
+                "Теннесси",
+                "Tennessee",
+                "Теннессі",
                 "Tennessee",
                 "Tennessee"
               ]
@@ -1627,11 +3460,41 @@
                 "Texas",
                 "Texas",
                 "Texas",
-                "Teksas"
+                "Teksas",
+                "Texas",
+                "Texas",
+                "テキサス",
+                "Teksasas",
+                "Texas",
+                "Texas",
+                "Техас",
+                "Texas",
+                "Техас",
+                "Texas",
+                "Texas"
               ]
             },
             "US-UT": {
-              "name": ["Utah", "Utah", "Utah", "Utah", "Utah", "Utah", "Utah"]
+              "name": [
+                "Utah",
+                "Utah",
+                "Utah",
+                "Utah",
+                "Utah",
+                "Utah",
+                "Utah",
+                "Utah",
+                "Utah",
+                "ユタ",
+                "Juta",
+                "Utah",
+                "Utá",
+                "Юта",
+                "Utah",
+                "Юта",
+                "Utah",
+                "Utah"
+              ]
             },
             "US-VT": {
               "name": [
@@ -1640,6 +3503,17 @@
                 "Vermont",
                 "Vermont",
                 "Vermont",
+                "Vermont",
+                "Vermont",
+                "Vermont",
+                "Vermont",
+                "バーモント",
+                "Vermontas",
+                "Vermont",
+                "Vermont",
+                "Вермонт",
+                "Vermont",
+                "Вермонт",
                 "Vermont",
                 "Vermont"
               ]
@@ -1652,6 +3526,17 @@
                 "Virginia",
                 "Virginie",
                 "Virginia",
+                "Virginia",
+                "Virginia",
+                "Virginia",
+                "バージニア",
+                "Virdžinija",
+                "Virginia",
+                "Virgínia",
+                "Вирджиния",
+                "Virginia",
+                "Вірджинія",
+                "Virginia",
                 "Virginia"
               ]
             },
@@ -1662,6 +3547,17 @@
                 "Washington",
                 "Washington",
                 "Washington",
+                "Washington",
+                "Washington",
+                "Washington",
+                "Washington",
+                "ワシントン",
+                "Vašingtonas",
+                "Washington",
+                "Washington",
+                "Вашингтон",
+                "Washington",
+                "Вашингтон",
                 "Washington",
                 "Washington"
               ]
@@ -1674,7 +3570,18 @@
                 "Virginia Occidentale",
                 "západní Virginie",
                 "Virginia dell'ovest",
-                "Wirginia Zachodnia"
+                "Wirginia Zachodnia",
+                "Virginia del Oeste",
+                "Länsi-Virginia",
+                "ウェストバージニア",
+                "Vakarų Virdžinija",
+                "vest.virginia",
+                "West Virginia",
+                "Западная Виргиния",
+                "västra Virginia",
+                "Західна Вірджинія",
+                "West Virginia",
+                "Nyugat-Virginia"
               ]
             },
             "US-WI": {
@@ -1684,6 +3591,17 @@
                 "Wisconsin",
                 "Wisconsin",
                 "Wisconsin",
+                "Wisconsin",
+                "Wisconsin",
+                "Wisconsin",
+                "Wisconsin",
+                "ウィスコンシン",
+                "Viskonsinas",
+                "Wisconsin",
+                "Wisconsin",
+                "Висконсин",
+                "Wisconsin",
+                "Вісконсін",
                 "Wisconsin",
                 "Wisconsin"
               ]
@@ -1695,6 +3613,17 @@
                 "Wyoming",
                 "Wyoming",
                 "Wyoming",
+                "Wyoming",
+                "Wyoming",
+                "Wyoming",
+                "Wyoming",
+                "ワイオミング",
+                "Vajomingas",
+                "Wyoming",
+                "Wyoming",
+                "Вайоминг",
+                "Wyoming",
+                "Вайомінг",
                 "Wyoming",
                 "Wyoming"
               ]
@@ -1711,18 +3640,40 @@
         "Zuid-Amerika",
         "Jižní Amerika",
         "Sud America",
-        "Ameryka Południowa"
+        "Ameryka Południowa",
+        "Sudamerica",
+        "Etelä-Amerikka",
+        "南アメリカ",
+        "Pietų Amerika",
+        "Sør Amerika",
+        "América do Sul",
+        "Южная Америка",
+        "Sydamerika",
+        "Південна Америка",
+        "Sydamerika",
+        "Dél-Amerika"
       ],
       "regions": {
         "AR": {
           "name": [
             "Argentinien",
-            "Argentinia",
+            "Argentina",
             "Argentine",
             "Argentinië",
             "Argentina",
             "Argentina",
-            "Argentyna"
+            "Argentyna",
+            "Argentina",
+            "Argentiina",
+            "アルゼンチン",
+            "Argentina",
+            "Argentina",
+            "Argentina",
+            "Аргентина",
+            "Argentina",
+            "Аргентина",
+            "Argentina",
+            "Argentína"
           ]
         },
         "BR": {
@@ -1733,7 +3684,18 @@
             "Brazilië",
             "Brazílie",
             "Brasile",
-            "Brazylia"
+            "Brazylia",
+            "Brasil",
+            "Brasilia",
+            "ブラジル",
+            "Brazilija",
+            "Brasil",
+            "Brasil",
+            "Бразилия",
+            "Brasilien",
+            "Бразилія",
+            "Brasilien",
+            "Brazília"
           ]
         },
         "CL": {
@@ -1743,6 +3705,17 @@
             "Chili",
             "Chili",
             "Chile",
+            "Chile",
+            "Chile",
+            "Chile",
+            "Chile",
+            "チリ",
+            "Čilė",
+            "Chile",
+            "Chile",
+            "Чили",
+            "Chile",
+            "Чилі",
             "Chile",
             "Chile"
           ]
@@ -1755,6 +3728,17 @@
             "Colombia",
             "Kolumbie",
             "Colombia",
+            "Kolumbia",
+            "Colombia",
+            "Kolumbia",
+            "コロンビア",
+            "Kolumbija",
+            "Colombia",
+            "Colômbia",
+            "Колумбия",
+            "Colombia",
+            "Колумбія",
+            "Colombia",
             "Kolumbia"
           ]
         },
@@ -1766,7 +3750,18 @@
             "Ecuador",
             "Ekvádor",
             "Ecuador",
-            "Ekwador"
+            "Ekwador",
+            "Ecuador",
+            "Ecuador",
+            "エクアドル",
+            "Ekvadoras",
+            "Ecuador",
+            "Equador",
+            "Эквадор",
+            "Ecuador",
+            "Еквадор",
+            "Ecuador",
+            "Ecuador"
           ]
         }
       }

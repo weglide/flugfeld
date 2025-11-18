@@ -13,10 +13,18 @@ Then you can download, parse and augment the data:
 
 ```sh
 export OPENAIP_API_KEY=your_api_key
-uv run python -m src.main
+uv run python -m flugfeld.src.main
 ```
 
-## Test
+## Pre-Commit Hook
+
+Install the pre-commit hook for tests.
+
+```sh
+cp pre-commit .git/hooks/ && chmod +x .git/hooks/pre-commit
+```
+
+## Testing
 
 ```sh
 uv run pytest

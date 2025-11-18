@@ -1,0 +1,27 @@
+#!/bin/sh
+
+# --- Run linter ---
+echo "Running linter..."
+uv run ruff check .
+if [ $? -ne 0 ]; then
+    echo "❌ Lint failed. Aborting commit."
+    exit 1
+fi
+
+# --- Run formatter ---
+echo "Running formatter..."
+uv run ruff format --diff .
+if [ $? -ne 0 ]; then
+    echo "❌ Format failed. Aborting commit."
+    exit 1
+fi
+
+# --- Run tests ---
+echo "Running tests..."
+uv run pytest
+if [ $? -ne 0 ]; then
+    echo "❌ Tests failed. Aborting commit."
+    exit 1
+fi
+
+exit 0
