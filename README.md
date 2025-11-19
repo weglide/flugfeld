@@ -54,6 +54,13 @@ To have a look at the tiles, run the code below and open `localhost:8080` in you
 docker run --rm -it -v $(pwd):/data -p 8080:80 maptiler/tileserver-gl
 ```
 
+## CI
+
+The airport.geojson is automatically uploaded to S3 and then ready to be loaded from other applications.
+
+The tiles are also automatically uploaded to S3 with the current date in the filename, e.g. airport-2024-04-10.pmtiles
+AWS Lambda functions is then serving individual tiles on the fly from this .pmtiles file.
+
 ## Contributing
 
 ### Missing airfield
