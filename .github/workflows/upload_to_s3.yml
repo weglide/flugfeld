@@ -1,66 +1,46 @@
-name: Upload flugfeld to S3
+name: Upload to S3
 
 on:
   workflow_dispatch:
   push:
     branches:
-    - main
+      - main
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@main
-    - name: Install uv
-      uses: astral-sh/setup-uv@v5
-      with:
-        enable-cache: true
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version-file: "pyproject.toml"
-    - name: Install OpenBLAS system libraries
-      run: sudo apt-get update && sudo apt-get install -y libopenblas-dev
-    - name: Install dependencies
-      run: uv sync --frozen
-    - name: Download data & build geojson
-      env:
-        X_OPENAIP_CLIENT_ID: ${{ secrets.X_OPENAIP_CLIENT_ID }}
-      run: uv run python -m src.download
-    
-    - name: Configure AWS credentials
-      uses: aws-actions/configure-aws-credentials@v4
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: eu-central-1
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
 
-    - name: Copy geojson to S3
-      env: 
-        AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
-      run: |
-        aws s3 cp airport.geojson s3://$AWS_S3_BUCKET/airport.geojson
-        
-    - name: Checkout tippecanoe
-      uses: actions/checkout@v4
-      with:
-        repository: felt/tippecanoe
-        path: tippecanoe
-    
-    - name: Build tippecanoe
-      run: |
-        cd tippecanoe
-        make -j
-        sudo make install
-      
-    - name: Bake tiles
-      run: |
-        tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -y radio_frequency -y radio_description -J airport_filter.json -o airport.pmtiles airport.geojson
-      
-    - name: Copy pmtiles to S3
-      env: 
-        AWS_S3_TILE_BUCKET: ${{ secrets.AWS_S3_TILE_BUCKET }}
-      run: |
-        aws s3 cp airport.pmtiles s3://$AWS_S3_TILE_BUCKET/airport-$(date +%Y-%m-%d).pmtiles --acl public-read
+      - name: Copy airport.geojson to S3 for DB ingestion
+        env:
+          AWS_S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
+        run: |
+          aws s3 cp airport.geojson s3://$AWS_S3_BUCKET/airport.geojson
 
-    
+      - name: Checkout tippecanoe
+        uses: actions/checkout@v4
+        with:
+          repository: felt/tippecanoe
+          path: tippecanoe
+
+      - name: Build tippecanoe
+        run: |
+          cd tippecanoe
+          make -j
+          sudo make install
+
+      - name: Bake tiles
+        run: |
+          tippecanoe -Z3 -z14 -f -r1 -pk -pf -y id -y openaip_id -y name -y reign -y elevation -y runway_rotation -y lng -y lat -y radio_frequency -y radio_description -J airport_filter.json -o airport.pmtiles airport.geojson
+
+      - name: Copy pmtiles to S3 for frontend
+        env:
+          AWS_S3_TILE_BUCKET: ${{ secrets.AWS_S3_TILE_BUCKET }}
+        run: |
+          aws s3 cp airport.pmtiles s3://$AWS_S3_TILE_BUCKET/airport-$(date +%Y-%m-%d).pmtiles --acl public-read

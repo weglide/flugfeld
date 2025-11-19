@@ -19,7 +19,6 @@ data/*
 tippecanoe/*
 
 # Mbtiles and geojson
-*.geojson
 *.mbtiles
 *.pmtiles
 
