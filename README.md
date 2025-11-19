@@ -61,6 +61,9 @@ The airport.geojson is automatically uploaded to S3 and then ready to be loaded 
 The tiles are also automatically uploaded to S3 with the current date in the filename, e.g. airport-2024-04-10.pmtiles
 AWS Lambda functions is then serving individual tiles on the fly from this .pmtiles file.
 
+The tiles are reachable at the following URL: 
+https://wgld-protomaps.b-cdn.net/airport-2024-04-10/{z}/{x}/{y}.mvt (adjust the date to the date of last CI run).
+
 ## Contributing
 
 ### Missing airfield
