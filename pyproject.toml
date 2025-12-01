@@ -14,4 +14,4 @@ version = "0.1.0"
 description = ""
 
 [dependency-groups]
-dev = ["pytest<9.0.0,>=8.0.2", "ruff<1.0.0,>=0.3.0"]
+dev = ["pytest>=8.0.2,<10.0.0", "ruff<1.0.0,>=0.3.0"]
